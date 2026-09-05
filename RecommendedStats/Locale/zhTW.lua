@@ -22,9 +22,6 @@ L.SCHEMA_OUT_OF_DATE = "此插件版本的屬性數據已過時，請更新。"
 -- Core.lua — slash command / chat messages (appended to L.CHAT_PREFIX)
 --------------------------------------------------------------------------------
 L.MSG_CONTENT_SET      = " 內容設定為 %s"
--- Fixed from the submitted "已於 % 更新" (a bare % isn't a valid format specifier) to "%s" —
--- this string is formatted with 3 arguments (date, sample size, patch) and needs 3 matching
--- conversions or Lua's string.format throws a hard error the moment this actually fires.
 L.MSG_DATA_REFRESHED   = " 屬性目標以及最佳裝備已於 %s 更新（排名前%d的玩家，版本 %s）。"
 L.MSG_POSITIONS_RESET  = " 面板位置重置。拖曳面板來重新移動。"
 L.MSG_CONTENT_STATUS   = " 內容 = %s  (使用 /rs raid|mythicplus|resetpos|options|skin export|skin import)"
@@ -64,7 +61,12 @@ L.FOOTER_TOP_N            = "頂尖的%d玩家"
 L.FOOTER_LINE             = "目標: %s \194\183 %s \194\183 已更新於 %s"
 L.FOOTER_MAYBE_STALE      = " (可能已經過時了)"
 L.TARGET_INLINE           = "目標 %.0f%%"
+L.CURRENT_VALUE           = "%.1f%%"
+L.CURRENT_VALUE_WITH_RATING = "%d (%.1f%%)"
+L.TARGET_INLINE           = "目標 %.0f%%"
+L.TARGET_WITH_RATING      = "目標 %.0f (%.0f%%)"
 L.DELTA_FROM_TARGET       = "%+.1f%% 目標差距"
+L.DELTA_FROM_TARGET_WITH_RATING = "%+.0f (%+.1f%%) 目標差距"
 L.PRIORITY_LINE           = "最優先: %s"
 
 --------------------------------------------------------------------------------
@@ -100,6 +102,8 @@ L.BIS_SOURCE_PREFIX  = "來源: "
 L.BIS_SOURCE_WITH_DIFFICULTY = "%s (%s)"
 L.BIS_ENCHANT_LABEL = "附魔 "
 L.BIS_GEM_LABEL     = "寶石 "
+L.RATING_WITH_PCT = "+%d %s (%.1f%%)"
+L.RATING_NO_PCT   = "+%d %s"
 
 --------------------------------------------------------------------------------
 -- UI/OptionsPanel.lua
