@@ -76,6 +76,8 @@ L.TARGET_WITH_RATING_AND_HIGH = "目標 %.0f (%.0f%%) \194\183 頂尖 %.0f%%"
 L.DELTA_FROM_TARGET       = "%+.1f%% 目標差距"
 L.DELTA_FROM_TARGET_WITH_RATING = "%+.0f (%+.1f%%) 目標差距"
 L.PRIORITY_LINE           = "最優先: %s"
+L.PRIORITY_TOOLTIP        = "根據每個屬性數據的頂級玩家值聚集程度來排名，而非模擬戰鬥值。首先顯示大多數玩家關注的屬性數據；最後顯示的是分佈廣泛的一個。"
+L.TREND_SINCE_LOGIN       = "自上次登入以來 (%s): %+.1f%%"
 
 --------------------------------------------------------------------------------
 
