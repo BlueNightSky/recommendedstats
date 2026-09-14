@@ -302,6 +302,20 @@ local function CreateRow(parent)
     row.delta:SetJustifyH("LEFT")
     row.delta:Hide()
 
+    -- "Since last login" trend tooltip (Core.lua's RS:Evaluate, stat.sinceLogin/sinceLoginDate) —
+    -- tooltip-only by design, so the always-visible row stays exactly as dense as before. Content
+    -- is set on the row table each Render() call and read here at hover time (self.sinceLogin
+    -- etc.), same deferred-read pattern as BiSWindow.lua's item-tooltip rows.
+    row:EnableMouse(true)
+    row:SetScript("OnEnter", function(self)
+        if self.sinceLogin == nil then return end
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:SetText(self.statLabel or "", 1, 1, 1)
+        GameTooltip:AddLine(L.TREND_SINCE_LOGIN:format(self.sinceLoginDate or "?", self.sinceLogin), 0.8, 0.8, 0.8)
+        GameTooltip:Show()
+    end)
+    row:SetScript("OnLeave", function() GameTooltip:Hide() end)
+
     return row
 end
 
@@ -357,7 +371,7 @@ end
 --------------------------------------------------------------------------------
 local panel, dropdown, sizeDropdown, statsTab, bisTab, statsPage
 local rows = {}
-local emptyText, footerText, priorityText
+local emptyText, footerText, priorityText, priorityHitbox
 
 local function ContentLabel()
     local cur = RS:GetContent()
@@ -526,12 +540,27 @@ local function EnsurePanel()
     footerText:SetPoint("BOTTOMLEFT", statsPage, "BOTTOMLEFT", 12, 0)
     footerText:SetText(FooterLine())
 
-    -- Stat-priority line (RecommendedStatsData_StatWeights, from bloodmallet — see Render()) sits
-    -- just above the footer; hidden by default since most keys won't have this data until a
-    -- rebuild resolves it (or ever, for a spec/patch bloodmallet doesn't cover).
+    -- Stat-priority line (RecommendedStatsData_StatWeights, variance-based — see Render()) sits
+    -- just above the footer; hidden whenever this key was skipped for having too small a sample
+    -- to trust (RecommendedStatsNode's config.minSampleForStatWeights).
     priorityText = statsPage:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     priorityText:SetPoint("BOTTOMLEFT", footerText, "TOPLEFT", 0, 4)
     priorityText:Hide()
+
+    -- FontStrings can't receive mouse events directly in the WoW API — this transparent frame
+    -- tracks priorityText's bounds (SetPoint is a live relationship, so it follows as the text's
+    -- width changes) purely to carry the "how is this computed" tooltip on hover.
+    priorityHitbox = CreateFrame("Frame", nil, statsPage)
+    priorityHitbox:SetPoint("TOPLEFT", priorityText, "TOPLEFT", 0, 2)
+    priorityHitbox:SetPoint("BOTTOMRIGHT", priorityText, "BOTTOMRIGHT", 0, -2)
+    priorityHitbox:EnableMouse(true)
+    priorityHitbox:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:SetText(L.PRIORITY_TOOLTIP, 1, 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    priorityHitbox:SetScript("OnLeave", function() GameTooltip:Hide() end)
+    priorityHitbox:Hide()
 
     -- "BiS Gear" page: an empty container UI/BiSWindow.lua populates with its own rows the
     -- first time this merged window is created (see that file's SyncVisibility/EnsureContent).
@@ -549,6 +578,7 @@ local function ShowEmpty(msg)
     for _, row in ipairs(rows) do row:Hide() end
     if footerText then footerText:Hide() end
     if priorityText then priorityText:Hide() end
+    if priorityHitbox then priorityHitbox:Hide() end
     emptyText:SetText(msg)
     emptyText:Show()
 end
@@ -580,10 +610,11 @@ local function Render(data, key)
     footerText:SetText(FooterLine(key))
     ApplyFooterColor(key)
 
-    -- Additive alongside the % targets above, not a replacement — see RecommendedStatsNode/
-    -- src/bloodmallet.js's own header comment for why this is a rank ORDER, not a true per-player
-    -- marginal value. Hidden whenever this key has no resolved weights (bloodmallet fetch failed/
-    -- skipped for this spec, or hasn't run yet) rather than showing a misleading default order.
+    -- Additive alongside the % targets above, not a replacement — see RecommendedStatsNode's
+    -- aggregate.js for why this is a variance-based rank ORDER (how tightly top players converge
+    -- on each stat), not a true simulated per-player marginal value; PRIORITY_TOOLTIP on
+    -- priorityHitbox below carries that caveat to players. Hidden whenever this key has no
+    -- resolved weights (sample under config.minSampleForStatWeights, or hasn't rebuilt yet).
     local weights = RecommendedStatsData_StatWeights and RecommendedStatsData_StatWeights[key]
     if weights then
         local order = {}
@@ -593,17 +624,28 @@ local function Render(data, key)
         for _, o in ipairs(order) do labels[#labels + 1] = SHORT_STAT_LABEL[o.name] or o.name end
         priorityText:SetText(L.PRIORITY_LINE:format(table.concat(labels, " > ")))
         priorityText:Show()
+        priorityHitbox:Show()
     else
         priorityText:Hide()
+        priorityHitbox:Hide()
     end
 
     local statusLabel = StatusLabels()
     for i, row in ipairs(rows) do
         local stat = data[i]
-        if not stat then row:Hide()
+        if not stat then
+            row:Hide()
+            row.sinceLogin = nil
         else
             row:Show()
             local col = COLOR[stat.state]
+
+            -- Read at hover time by the OnEnter handler in CreateRow above — stat.sinceLogin is
+            -- nil whenever there's no prior-session baseline yet (Core.lua), which OnEnter treats
+            -- as "no tooltip" rather than showing a misleading "+0.0%".
+            row.sinceLogin = stat.sinceLogin
+            row.sinceLoginDate = stat.sinceLoginDate
+            row.statLabel = STAT_LABEL[stat.name] or stat.name
 
             row.name:SetText(STAT_LABEL[stat.name] or stat.name)
             -- SetFormattedText is a sanctioned direct sink for secret values (unlike ("%s"):format

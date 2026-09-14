@@ -316,12 +316,25 @@ function RS:IsSampleSizeLow(key)
     return n ~= nil and target ~= nil and n < target
 end
 
+-- "Since last login" trend baseline (RecommendedStatsDBChar.trend[specToken]) — frozen into
+-- RS.trendBaseline the FIRST time Evaluate() runs each session (false, not nil, once checked
+-- with nothing on record) so the delta shown stays "since you logged in", not "since your last
+-- gear change 10 seconds ago", as Evaluate() keeps re-running through the session. Scoped by
+-- spec token, not just per-character, so a dual-spec swap mid-session doesn't compare one spec's
+-- readings against the other's — see RS.trendCapturedThisSession below for when it's written back.
 function RS:Evaluate()
     if not RS:SchemaOK() then return nil, "schema" end
     local key = RS:GetKey()
     local targets = key and RecommendedStatsData_Targets[key]
     if not targets then return nil, key end
     local cur, ratings, out = ReadStats(), ReadRatings(), {}
+    local specToken = GetSpecToken()
+    if specToken and RS.trendBaseline == nil then
+        RecommendedStatsDBChar = RecommendedStatsDBChar or {}
+        RecommendedStatsDBChar.trend = RecommendedStatsDBChar.trend or {}
+        RS.trendBaseline = RecommendedStatsDBChar.trend[specToken] or false
+    end
+    local allNonSecretThisRun = true
     for _, name in ipairs({ "haste", "crit", "mastery", "versatility" }) do
         local c, t = cur[name], targets[name]
         -- 90th-percentile reading among top players (RecommendedStatsNode's aggregate.js), stored
@@ -338,6 +351,7 @@ function RS:Evaluate()
             -- through to SetFormattedText untouched rather than compared/subtracted, since
             -- GetCombatRating is presumably restricted under the same rule as the percent getters.
             if issecretvalue(c) then
+                allNonSecretThisRun = false
                 out[#out+1] = { name = name, current = c, target = t, delta = nil, state = "secret", rating = ratings[name], high = high }
             else
                 local delta = c - t
@@ -359,12 +373,33 @@ function RS:Evaluate()
                 -- the p90 "high" reading instead of the median target — nil under the same
                 -- conditions (secret rating, or a 0% current reading with nothing to derive from).
                 local highRating = (high and ratingPerPercent) and (high * ratingPerPercent) or nil
+                -- sinceLogin: this stat's move against RS.trendBaseline (frozen above), nil when
+                -- there's no prior-session baseline for this spec yet (first login on it, or a
+                -- fresh install). `c` is already confirmed non-secret in this branch, and
+                -- baseline values are plain numbers pulled from SavedVariables, so this subtract
+                -- needs none of the secret-value care ratingPerPercent above needs.
+                local baselineStat = RS.trendBaseline and RS.trendBaseline[name]
+                local sinceLogin = baselineStat and (c - baselineStat) or nil
+                local sinceLoginDate = RS.trendBaseline and RS.trendBaseline.date or nil
                 out[#out+1] = {
                     name = name, current = c, target = t, delta = delta, state = state, rating = r,
                     targetRating = targetRating, deltaRating = deltaRating, high = high, highRating = highRating,
+                    sinceLogin = sinceLogin, sinceLoginDate = sinceLoginDate,
                 }
             end
         end
+    end
+
+    -- Write back THIS run's readings as next session's baseline — only once we get a run with no
+    -- secret-value gaps (never capture a baseline that's silently missing a stat), and only the
+    -- first time that happens this session (RS.trendCapturedThisSession), so a mid-session gear
+    -- change never overwrites the baseline players are still comparing "since login" against.
+    if specToken and allNonSecretThisRun and not RS.trendCapturedThisSession then
+        RS.trendCapturedThisSession = true
+        RecommendedStatsDBChar.trend[specToken] = {
+            haste = cur.haste, crit = cur.crit, mastery = cur.mastery, versatility = cur.versatility,
+            date = date("%Y-%m-%d"),
+        }
     end
     return out, key
 end

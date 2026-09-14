@@ -85,6 +85,8 @@ L.TARGET_WITH_RATING_AND_HIGH = "target %.0f (%.0f%%) \194\183 top %.0f%%"
 L.DELTA_FROM_TARGET       = "%+.1f%% from target"
 L.DELTA_FROM_TARGET_WITH_RATING = "%+.0f (%+.1f%%) from target"
 L.PRIORITY_LINE           = "Priority: %s"
+L.PRIORITY_TOOLTIP        = "Ranked by how tightly top players' values cluster for each stat, not a simulated combat value. A stat most players converge on is shown first; one with wide spread is shown last."
+L.TREND_SINCE_LOGIN       = "Since last login (%s): %+.1f%%"
 
 --------------------------------------------------------------------------------
 -- UI/BiSWindow.lua
