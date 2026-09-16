@@ -261,14 +261,13 @@ local function CreateRow(parent)
     row.bar:SetStatusBarTexture("Interface\\Buttons\\WHITE8x8")
     row.bar:SetMinMaxValues(0, 1)
 
-    -- target tick — positioned here at the TICK_FRAC fallback spot (matches what Render() computes
-    -- whenever a key has no "high" reading yet, see stat.high handling there) purely so it isn't
+    -- target tick — positioned here at the arbitrary TICK_FRAC fallback spot purely so it isn't
     -- sitting at 0,0 for the one frame before the first Render call. Every real render repositions
-    -- it based on that key's actual target/barMax ratio, which varies once a "high" reading is
-    -- present (see barMax below) — it's no longer a fixed fraction across every row. Colored via
-    -- TickColor() (white under the Default skin, matching this addon's original look, or the skin
-    -- accent under Class/Custom); re-tinted in place on a skin change by the RS.skinListeners
-    -- registration at the bottom of this file.
+    -- it based on that key's actual target/barMax ratio (barMax now depends on current/target/high
+    -- all being under 100 or not, see Render() below) — it's never a fixed fraction across rows.
+    -- Colored via TickColor() (white under the Default skin, matching this addon's original look,
+    -- or the skin accent under Class/Custom); re-tinted in place on a skin change by the
+    -- RS.skinListeners registration at the bottom of this file.
     local tickColor = TickColor()
     row.tick = row:CreateTexture(nil, "OVERLAY")
     row.tick:SetSize(2, BAR_H + 6)
@@ -682,15 +681,22 @@ local function Render(data, key)
 
             -- SetMinMaxValues + SetValue let the StatusBar do its own clamping/fill math natively
             -- (also a sanctioned secret sink) instead of us dividing stat.current ourselves.
-            -- barMax scales off whichever of target/high is larger, so the bar doesn't just read
-            -- "full" the instant you clear the median target — a stat.high reading (present once a
-            -- key has one; see Core.lua) pushes the ceiling out past it, leaving room to show BOTH
-            -- ticks and a visible "safe" gap between them, matching how it already reads when
-            -- stat.high isn't available (that fallback is exactly the old target*TARGET_HEADROOM
-            -- behavior, not a separate code path).
+            -- Bar is a fixed 0-100% scale by default (stat.current/target/high are already plain
+            -- percent numbers, e.g. 30.1 for 30.1%) — a normal 20-40% reading fills a fraction of
+            -- the bar instead of always reading "full" against some tighter target-derived ceiling.
+            -- Only stretches past 100 once a reading actually needs it: barMax rounds UP to the
+            -- next multiple of 100 that covers the largest of current/target/high, so e.g. a 432%
+            -- mastery reading (mistweaver-style) gets a 0-500% bar instead of pinning at the cap.
+            -- stat.current is excluded from that math entirely in the "secret" state (in
+            -- instance/combat) — it's an opaque taint-checked value there, and math.max/ceil on it
+            -- isn't a sanctioned sink the same way SetMinMaxValues/SetValue below are (see Core.lua's
+            -- own issecretvalue comments for why arithmetic on a secret value hard-errors). barMax
+            -- just falls back to target/high in that case, same as before this bar could scale off
+            -- current at all — the bar still visually clamps to whatever SetValue(stat.current) is.
             local hasHigh = stat.high and stat.high > stat.target
-            local ceiling = hasHigh and stat.high or stat.target
-            local barMax = math.max(ceiling * TARGET_HEADROOM, 0.01)
+            local ceiling = (stat.state ~= "secret") and math.max(stat.current, stat.target, stat.high or 0, 100)
+                or math.max(stat.target, stat.high or 0, 100)
+            local barMax = math.ceil(ceiling / 100) * 100
             row.bar:SetMinMaxValues(0, barMax)
             row.bar:SetValue(stat.current)
             -- Both ticks are repositioned every render (not just once at row creation) since their

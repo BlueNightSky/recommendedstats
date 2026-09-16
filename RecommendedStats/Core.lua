@@ -13,9 +13,12 @@ local EXPECTED_SCHEMA = 1
 -- the same character at the same moment. That gap disproves the "GetCombatRatingBonus == total for
 -- a passive-free stat" premise the swap relied on, so it isn't safe to assume for haste/crit/mastery
 -- either. Back to the total-percent getters, which is what actually matches the character sheet.
--- The real itemization-vs-total mismatch against RecommendedStatsNode's targets is still open —
--- next step is fixing it on the Node side (aggregate.js targets built from `.value` instead of
--- `.rating_bonus`, since each StatTargets key is already scoped to one class+spec) rather than here.
+-- The real itemization-vs-total mismatch against RecommendedStatsNode's targets was traced to
+-- aggregate.js's targets being built from `.rating_bonus` (itemization-only) while this file reads
+-- TOTAL percent — fixed 2026-09-16 on the Node side (bnet.js's extractStats now reads `.value`
+-- instead), so both sides of the comparison are total-vs-total. That fix only changes what a fresh
+-- data build produces; RecommendedStatsData_Targets stays on old itemization-only numbers until the
+-- next real (non-mock) `npm run build` + publish.
 local function ReadStats()
     return {
         haste       = GetHaste(),
