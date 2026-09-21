@@ -15,7 +15,9 @@ local function EnsurePopup()
     popup = CreateFrame("Frame", "RecommendedStatsCopyPopup", UIParent, "BackdropTemplate")
     popup:SetSize(380, 118)
     popup:SetPoint("CENTER")
-    popup:SetFrameStrata("DIALOG")
+    -- Above the talents window (UI/TalentsWindow.lua, FULLSCREEN_DIALOG), which opens this popup
+    -- from its Copy button; ShowCopyPopup also Raise()s it so it wins within the shared strata.
+    popup:SetFrameStrata("FULLSCREEN_DIALOG")
     popup:SetClampedToScreen(true)
     popup:EnableMouse(true)
     popup:SetMovable(true)
@@ -119,4 +121,5 @@ function RS:ShowCopyPopup(opts)
                                              -- previous ShowCopyPopup caller can't linger
     popup.editBox:SetFocus()
     popup:Show()
+    popup:Raise()
 end

@@ -64,6 +64,7 @@ end
 -- (statsPage here, RS.bisPage from BiSWindow.lua) anchor their own top-left below this.
 local TAB_H          = 24
 local TAB_GAP        = 4
+local TALENTS_BTN_W  = 84 -- the "Talents" launcher button beside the two tabs
 local DROPDOWN_ROW_H = 20
 local HEADER_H       = 8 + TAB_H + 6 + DROPDOWN_ROW_H + 8
 
@@ -321,6 +322,22 @@ end
 -- Shows/hides/positions each row's elements for the given size — pure layout, no data. Content
 -- is always filled in by Render() regardless of which elements are currently shown, so a size
 -- change never needs to re-fetch RS:Evaluate() to look right.
+-- Positions/shows both ticks from the fractions Render() cached on the row. Re-run from
+-- ApplyRowSize too, since SMALL hides them and clears barBG's anchor, and a size change alone
+-- never re-Renders. No-op until Render() has populated the row once.
+local function ApplyTicks(row)
+    if not row.tickFrac then return end
+    row.tick:ClearAllPoints()
+    row.tick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * row.tickFrac, 0)
+    row.highTick:ClearAllPoints()
+    if row.highFrac then
+        row.highTick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * row.highFrac, 0)
+        row.highTick:Show()
+    else
+        row.highTick:Hide()
+    end
+end
+
 local function ApplyRowSize(row, size)
     row.name:ClearAllPoints()
     row.status:ClearAllPoints()
@@ -343,6 +360,7 @@ local function ApplyRowSize(row, size)
             -- row.highTick is left alone here — Render() is the sole authority on whether it's
             -- actually shown (only when stat.high is present), not this pure-layout function.
             row.barBG:SetPoint("TOPLEFT", row.combined, "BOTTOMLEFT", 0, -BAR_GAP)
+            ApplyTicks(row)
         end
     else -- DEFAULT / LARGE
         row.combined:Hide()
@@ -355,6 +373,7 @@ local function ApplyRowSize(row, size)
         row.current:SetPoint("TOPLEFT", row.name, "BOTTOMLEFT", 0, -4)
         row.target:SetPoint("LEFT", row.current, "RIGHT", 8, -1)
         row.barBG:SetPoint("TOPLEFT", row.current, "BOTTOMLEFT", 0, -BAR_GAP)
+        ApplyTicks(row)
 
         if size == "LARGE" then
             row.delta:Show()
@@ -368,7 +387,7 @@ end
 --------------------------------------------------------------------------------
 -- Panel + dropdown + tabs (created lazily)
 --------------------------------------------------------------------------------
-local panel, dropdown, sizeDropdown, statsTab, bisTab, statsPage
+local panel, dropdown, sizeDropdown, statsTab, bisTab, talentsBtn, statsPage
 local rows = {}
 local emptyText, footerText, priorityText, priorityHitbox
 
@@ -506,13 +525,21 @@ local function EnsurePanel()
 
     -- Tabs replace the old static title — each label doubles as the section name.
     statsTab = CreateTabButton(panel, L.TAB_STATS, "STATS")
-    local tabW = (PANEL_W - 24 - TAB_GAP) / 2
+    local tabW = (PANEL_W - 24 - TAB_GAP * 2 - TALENTS_BTN_W) / 2
     statsTab:SetSize(tabW, TAB_H)
     statsTab:SetPoint("TOPLEFT", 12, -8)
 
     bisTab = CreateTabButton(panel, L.TAB_BIS, "BIS")
     bisTab:SetSize(tabW, TAB_H)
     bisTab:SetPoint("TOPLEFT", statsTab, "TOPRIGHT", TAB_GAP, 0)
+
+    -- Not a tab: opens the separate talents window (UI/TalentsWindow.lua), since the talent tree
+    -- needs far more room than this panel has. Same flat look as a tab, accent-colored text so it
+    -- reads as an action rather than a page (see SyncTabUI for the skin-aware color).
+    talentsBtn = CreateTabButton(panel, L.TALENTS_BUTTON, "TALENTS")
+    talentsBtn:SetSize(TALENTS_BTN_W, TAB_H)
+    talentsBtn:SetPoint("TOPLEFT", bisTab, "TOPRIGHT", TAB_GAP, 0)
+    talentsBtn:SetScript("OnClick", function() if RS.ToggleTalents then RS:ToggleTalents() end end)
 
     BuildDropdown()
     BuildSizeDropdown()
@@ -702,13 +729,11 @@ local function Render(data, key)
             -- Both ticks are repositioned every render (not just once at row creation) since their
             -- fraction of barMax now varies per key once stat.high is in play, rather than staying
             -- pinned at the fixed TICK_FRAC every row used to share.
-            row.tick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * (stat.target / barMax), 0)
-            if hasHigh then
-                row.highTick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * (stat.high / barMax), 0)
-                row.highTick:Show()
-            else
-                row.highTick:Hide()
-            end
+            -- Cached on the row so ApplyRowSize can restore them after a size change (which
+            -- doesn't re-Render) hides/re-anchors the bar.
+            row.tickFrac = stat.target / barMax
+            row.highFrac = hasHigh and (stat.high / barMax) or nil
+            ApplyTicks(row)
             row.bar:SetStatusBarColor(col[1], col[2], col[3])
 
             -- SMALL/MEDIUM's single-line readout — always filled in regardless of which size is
@@ -779,6 +804,8 @@ local function SyncTabUI()
     bisTab:SetShown(RS:GetShowBiS())
     ApplyTabVisual(statsTab, active == "STATS")
     ApplyTabVisual(bisTab, active == "BIS")
+    local accent = RS:GetAccentColor()
+    talentsBtn.label:SetTextColor(accent[1], accent[2], accent[3])
     statsPage:SetShown(active == "STATS" and RS:GetShowStats())
     if sizeDropdown then sizeDropdown:SetShown(active == "STATS" and RS:GetShowStats()) end
     -- The window used to always stand as tall as the taller of the two tabs (BiS Gear's 16

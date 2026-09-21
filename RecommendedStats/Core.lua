@@ -248,9 +248,15 @@ function RS:AnnounceDataUpdateIfNew()
 end
 
 function RS:GetKey()
+    return RS:GetKeyFor(RS:GetContent())
+end
+
+-- Same key for an explicit content, for UI that has its own Raid/Mythic+ choice independent of
+-- the stats panel's (UI/TalentsWindow.lua).
+function RS:GetKeyFor(content)
     local class, spec = GetClassToken(), GetSpecToken()
     if not (class and spec) then return nil end
-    return class .. "_" .. spec .. "_" .. RS:GetContent()
+    return class .. "_" .. spec .. "_" .. content
 end
 
 function RS:SchemaOK()
@@ -585,6 +591,10 @@ SlashCmdList.RECSTATS = function(msg)
             applyDefault()
         end
         print(L.CHAT_PREFIX .. L.MSG_POSITIONS_RESET)
+        return
+    end
+    if msg == "talents" then
+        if RS.ToggleTalents then RS:ToggleTalents() end
         return
     end
     if msg == "options" or msg == "config" then
