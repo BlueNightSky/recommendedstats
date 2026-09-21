@@ -8,9 +8,7 @@ RecommendedStats_Locale = RecommendedStats_Locale or {}
 local L = RecommendedStats_Locale
 
 --------------------------------------------------------------------------------
-
 -- Shared chrome (tabs, generic fallbacks, "Got it" reused across popups)
-
 --------------------------------------------------------------------------------
 L.CHAT_PREFIX     = "|cff33ff99屬性建議|r"
 L.ADDON_TITLE     = "屬性建議"
@@ -21,22 +19,16 @@ L.GOT_IT          = "知道了"
 L.SCHEMA_OUT_OF_DATE = "此插件版本的屬性數據已過時，請更新。"
 
 --------------------------------------------------------------------------------
-
 -- Core.lua — slash command / chat messages (appended to L.CHAT_PREFIX)
-
 --------------------------------------------------------------------------------
-
 L.MSG_CONTENT_SET      = " 內容設定為 %s"
 L.MSG_DATA_REFRESHED   = " 屬性目標以及最佳裝備已於 %s 更新（排名前%d的玩家，版本 %s）。"
 L.MSG_POSITIONS_RESET  = " 面板位置重置。拖曳面板來重新移動。"
 L.MSG_CONTENT_STATUS   = " 內容 = %s  (使用 /rs raid|mythicplus|resetpos|options|skin export|skin import)"
 
 --------------------------------------------------------------------------------
-
 -- UI/CharacterPanel.lua
-
 --------------------------------------------------------------------------------
-
 L.STATUS_UNDER    = "太低"
 L.STATUS_ON       = "達標"
 L.STATUS_OVER     = "過多"
@@ -67,9 +59,9 @@ L.FOOTER_SAMPLE_OF_TARGET = "%d的%d玩家"
 L.FOOTER_TOP_N            = "頂尖的%d玩家"
 L.FOOTER_LINE             = "目標: %s \194\183 %s \194\183 已更新於 %s"
 L.FOOTER_MAYBE_STALE      = " (可能已經過時了)"
-L.TARGET_INLINE           = "目標 %.0f%%"
 L.CURRENT_VALUE           = "%.1f%%"
 L.CURRENT_VALUE_WITH_RATING = "%d (%.1f%%)"
+L.TARGET_INLINE           = "目標 %.0f%%"
 L.TARGET_WITH_RATING      = "目標 %.0f (%.0f%%)"
 L.TARGET_WITH_HIGH        = "目標 %.0f%% \194\183 頂尖 %.0f%%"
 L.TARGET_WITH_RATING_AND_HIGH = "目標 %.0f (%.0f%%) \194\183 頂尖 %.0f%%"
@@ -80,9 +72,7 @@ L.PRIORITY_TOOLTIP        = "根據每個屬性數據的頂級玩家值聚集程
 L.TREND_SINCE_LOGIN       = "自上次登入以來 (%s): %+.1f%%"
 
 --------------------------------------------------------------------------------
-
 -- UI/BiSWindow.lua
-
 --------------------------------------------------------------------------------
 
 L.SLOT_HEAD      = "頭"
@@ -119,16 +109,38 @@ L.RATING_WITH_PCT = "+%d %s (%.1f%%)"
 L.RATING_NO_PCT   = "+%d %s"
 
 --------------------------------------------------------------------------------
-
 -- UI/OptionsPanel.lua
-
 --------------------------------------------------------------------------------
-
 L.OPTIONS_WINDOW_POSITION  = "視窗位置"
 L.ATTACH_MODE_ATTACHED = "與角色視窗連動"
 L.ATTACH_MODE_FREE     = "不連動 (自由移動)"
 L.OPTIONS_SHOW_STATS_TAB   = "顯示 \"屬性建議\" 標籤"
 L.OPTIONS_SHOW_BIS_TAB     = "顯示 \"最佳裝備\" 標籤"
+
+--------------------------------------------------------------------------------
+-- UI/TalentsWindow.lua, Talents.lua
+--------------------------------------------------------------------------------
+L.TALENTS_BUTTON            = "天賦"
+L.TALENTS_SCOPE_OVERALL     = "整體 (全部首領 / 地下城)"
+L.TALENTS_SCOPE_FALLBACK    = "%s (整體構建)"
+L.TALENTS_SCOPE_DIFFICULTY  = "%s (%s)"
+L.TALENTS_COPY_LONG         = "複製構建字串"
+L.TALENTS_SRC_OVERALL       = "來自頂級玩家的專精範圍構建"
+L.TALENTS_SRC_RAID          = "%s 此首領擊殺"
+L.TALENTS_SRC_RAID_LOWER    = "%s 此首領擊殺 (高難度的擊殺太少)"
+L.TALENTS_SRC_DUNGEON       = "此地下城的最佳紀錄"
+L.TALENTS_SRC_FALLBACK      = "目前還沒有足夠的數據，顯示專精範圍內的構建"
+L.TALENTS_SAMPLE            = "基於 %d 的玩家，%d 不同的構建"
+L.TALENTS_NO_DATA          = "尚無此專精的天賦數據。"
+L.TALENTS_NOT_READY         = "尚未提供天賦資訊。稍後再試一次。"
+L.TALENTS_DECODE_FAILED     = "無法讀取此天賦資料。它可能適用於不同的遊戲版本。"
+L.TALENTS_TREE_TITLE        = "%s | %s"
+L.TALENTS_TREE_HINT         = "金色 = 在這個構建中 (最接近大多數玩家的真實構建)。將滑鼠懸停在天賦上可查看選擇率。"
+L.TALENTS_PICKED_BY         = "被選擇在 %d%% 的玩家 (%d 之 %d)"
+L.TALENTS_OPTION_PICKED_BY  = "%s: %d%%"
+L.TALENTS_COPY_TITLE        = "天賦構建"
+L.TALENTS_COPY_HINT         = "複製此字串，然後再天賦頁面使用匯入。"
+L.TALENTS_DIFFICULTY = { mythic = "傳奇", heroic = "英雄", normal = "普通" }
 L.OPTIONS_SHOW_MINIMAP     = "顯示小地圖按鈕"
 L.OPTIONS_COLORBLIND       = "色盲友善的圖示"
 L.OPTIONS_ROW_SIZE         = "屬性建議行列大小"
@@ -141,32 +153,21 @@ L.OPTIONS_IMPORT_SKIN = "匯入外觀"
 L.OPTIONS_DISCLAIMER = "屬性建議本身不會讓你獲得更多DPS \226\128\148 它只是幫助您達到適合您專精的正確屬性權重。"
 
 --------------------------------------------------------------------------------
-
 -- UI/MinimapButton.lua
-
 --------------------------------------------------------------------------------
-
 L.MINIMAP_TOOLTIP_LEFT  = "左鍵點擊: 顯示/隱藏面板"
 L.MINIMAP_TOOLTIP_RIGHT = "右鍵點擊: 選項"
 
-
 --------------------------------------------------------------------------------
-
 -- UI/CopyPopup.lua (generic fallback defaults — callers usually pass their own)
-
 --------------------------------------------------------------------------------
-
 L.COPY_APPLY            = "套用"
 L.COPY_APPLIED          = "已套用。"
 L.COPY_SOMETHING_WRONG  = "出了點問題。"
 
-
 --------------------------------------------------------------------------------
-
 -- UI/SkinShare.lua
-
 --------------------------------------------------------------------------------
-
 L.SKIN_EXPORT_TITLE = "匯出外觀"
 L.SKIN_EXPORT_HINT  = "複製此代碼並分享 (Ctrl+A, Ctrl+C):"
 L.SKIN_IMPORT_TITLE = "匯入外觀"
@@ -177,10 +178,7 @@ L.SKIN_ERR_UNRECOGNIZED = "無法辨識的外觀 \"%s\"."
 L.SKIN_APPLIED          = "外觀已套用。"
 
 --------------------------------------------------------------------------------
-
 -- UI/RatingNudge.lua
-
 --------------------------------------------------------------------------------
-
 L.RATING_NUDGE_TITLE = "喜歡屬性建議嗎？"
 L.RATING_NUDGE_HINT  = "如果它有用，CurseForge上的評論會有很大幫助:"
