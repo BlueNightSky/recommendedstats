@@ -237,8 +237,10 @@ local function RenderTree()
     end
     if #shown == 0 then return end
 
-    -- Game coordinates: posY grows upward (row 0 is the top of the tree), so y is flipped here.
-    -- Class tree ends up left, hero tree centre, spec tree right, same as the in-game window.
+    -- Game coordinates: posY grows DOWNWARD (verified live 2026-09-22 — a Holy Paladin's entry
+    -- nodes sit at the lowest posY, its capstones at the highest, opposite what an earlier
+    -- comment here assumed and which rendered every tree upside down), so no flip is needed, just
+    -- offset by minY. Class tree ends up left, hero tree centre, spec tree right, same as in-game.
     local rangeX, rangeY = math.max(maxX - minX, 1), math.max(maxY - minY, 1)
     local scale = math.min((CANVAS_W - 2 * PAD) / rangeX, (CANVAS_H - 2 * PAD) / rangeY)
     local offX = (CANVAS_W - 2 * PAD - rangeX * scale) / 2
@@ -253,7 +255,7 @@ local function RenderTree()
         b:SetSize(size, size)
         b:ClearAllPoints()
         b:SetPoint("CENTER", canvas, "TOPLEFT",
-            PAD + offX + (info.posX - minX) * scale, -(PAD + offY + (maxY - info.posY) * scale))
+            PAD + offX + (info.posX - minX) * scale, -(PAD + offY + (info.posY - minY) * scale))
         b.nodeID = nodeID
 
         -- Which entry to draw: the one this build picked on a choice node, otherwise the first.
