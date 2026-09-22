@@ -19,6 +19,14 @@ local ANNOUNCEMENTS = {
             "You'll now see a chat note whenever fresh stat/BiS data lands.",
         },
     },
+    {
+        id = "2026-09-22-scoped-talents",
+        title = "What's New in RecommendedStats",
+        lines = {
+            "Talents window: pick a specific Mythic+ dungeon or raid boss from the dropdown to see the build top players actually run there, not just an overall spec build.",
+            "Falls back to your spec's overall build automatically wherever a specific dungeon/boss doesn't have enough sampled players yet.",
+        },
+    },
 }
 
 local function LatestAnnouncement()

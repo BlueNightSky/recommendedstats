@@ -4,6 +4,7 @@
 ## Author: CtrlShift_Zed
 ## Version: 2026-09-22
 ## Category: CtrlShift_Zed
+## IconTexture: Interface\AddOns\RecommendedStats\icon
 ## SavedVariables: RecommendedStatsDB
 ## SavedVariablesPerCharacter: RecommendedStatsDBChar
 ## X-License: MIT
