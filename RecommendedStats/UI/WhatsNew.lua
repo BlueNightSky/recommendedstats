@@ -47,7 +47,8 @@ end
 -- Popup frame (built lazily — most sessions never need it, since it's only shown
 -- once per feature release rather than every login)
 --------------------------------------------------------------------------------
-local POPUP_W = 320
+local POPUP_W = 360
+local PAD = 14
 
 local popup
 
@@ -74,13 +75,18 @@ local function EnsurePopup()
     popup:SetBackdropBorderColor(0.25, 0.27, 0.33, 0.7)
 
     popup.title = popup:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    popup.title:SetPoint("TOPLEFT", 14, -14)
-    popup.title:SetPoint("TOPRIGHT", -30, -14)
+    popup.title:SetPoint("TOPLEFT", PAD, -PAD)
+    -- Explicit width, not anchor-derived (SetPoint on both sides only resolves its wrap width
+    -- on the NEXT layout pass, not synchronously) — ShowIfUnseen below reads GetStringHeight()
+    -- immediately after SetText() in the same call, so an anchor-derived width read stale/
+    -- unwrapped geometry there and undersized the popup, letting the Got It button land on
+    -- top of the actual (taller) wrapped text instead of below it.
+    popup.title:SetWidth(POPUP_W - PAD - 30)
     popup.title:SetJustifyH("LEFT")
 
     popup.body = popup:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
     popup.body:SetPoint("TOPLEFT", popup.title, "BOTTOMLEFT", 0, -10)
-    popup.body:SetPoint("RIGHT", -14, 0)
+    popup.body:SetWidth(POPUP_W - PAD - PAD) -- see popup.title's SetWidth comment above
     popup.body:SetJustifyH("LEFT")
     popup.body:SetSpacing(4)
 
@@ -106,7 +112,7 @@ local function ShowIfUnseen()
 
     EnsurePopup()
     popup.title:SetText(latest.title)
-    popup.body:SetText(table.concat(latest.lines, "\n"))
+    popup.body:SetText(table.concat(latest.lines, "\n\n"))
 
     -- GetStringHeight() (not a hand-counted line count) so the frame fits correctly however
     -- many lines a given release's entry has, wrapped or not.

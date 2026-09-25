@@ -50,7 +50,18 @@ do
     end
 end
 
-icon:Register("RecommendedStats", dataObject, RecommendedStatsDBChar.minimapIcon)
+if icon:IsRegistered("RecommendedStats") then
+    -- Almost certainly a duplicate copy of this addon in AddOns/ (a leftover folder from
+    -- installing via CurseForge and Wago, or a manual update that didn't replace the old one) —
+    -- registering the same LDB name twice makes LibDBIcon hard-error and abort the REST of this
+    -- file for whichever copy loses the race, silently leaving the minimap button backed by
+    -- whichever copy's config table won instead. That reads exactly like "my dragged position
+    -- never saves" even though nothing about persistence itself is broken, so surface it clearly
+    -- instead of letting it fail as an easy-to-miss Lua error.
+    print("|cffff4444RecommendedStats|r: minimap icon was already registered — you likely have a duplicate copy of this addon in AddOns. Remove the old folder and /reload.")
+else
+    icon:Register("RecommendedStats", dataObject, RecommendedStatsDBChar.minimapIcon)
+end
 
 -- Shim so Core.lua's RS:SetShowMinimapIcon() (an existing account-wide preference toggle,
 -- unrelated to the position fix above) can keep calling :SetShown without knowing this is now

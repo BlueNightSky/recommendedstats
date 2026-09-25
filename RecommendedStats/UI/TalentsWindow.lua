@@ -224,38 +224,78 @@ local function RenderTree()
         end
     end
 
-    local shown, minX, maxX, minY, maxY = {}, nil, nil, nil, nil
+    -- Class + spec nodes (subTreeID 0) drive the main layout below. The chosen hero sub-tree's
+    -- nodes are tracked separately — see the scale/offset comment for why they get their own
+    -- local layout instead of sharing this one.
+    local mainShown, heroShown = {}, {}
+    local minX, maxX, minY, maxY
+    local heroMinX, heroMaxX, heroMinY, heroMaxY
     for _, nodeID in ipairs(tree.nodeIDs) do
         local info = infos[nodeID]
         local sub = info and info.subTreeID or 0
-        if info and info.isVisible ~= false and (sub == 0 or sub == chosenSub) then
-            shown[#shown + 1] = nodeID
-            local x, y = info.posX, info.posY
-            minX = minX and math.min(minX, x) or x; maxX = maxX and math.max(maxX, x) or x
-            minY = minY and math.min(minY, y) or y; maxY = maxY and math.max(maxY, y) or y
+        if info and info.isVisible ~= false then
+            if sub == 0 then
+                mainShown[#mainShown + 1] = nodeID
+                minX = minX and math.min(minX, info.posX) or info.posX
+                maxX = maxX and math.max(maxX, info.posX) or info.posX
+                minY = minY and math.min(minY, info.posY) or info.posY
+                maxY = maxY and math.max(maxY, info.posY) or info.posY
+            elseif sub == chosenSub then
+                heroShown[#heroShown + 1] = nodeID
+                heroMinX = heroMinX and math.min(heroMinX, info.posX) or info.posX
+                heroMaxX = heroMaxX and math.max(heroMaxX, info.posX) or info.posX
+                heroMinY = heroMinY and math.min(heroMinY, info.posY) or info.posY
+                heroMaxY = heroMaxY and math.max(heroMaxY, info.posY) or info.posY
+            end
         end
     end
-    if #shown == 0 then return end
+    if #mainShown == 0 then return end
 
     -- Game coordinates: posY grows DOWNWARD (verified live 2026-09-22 — a Holy Paladin's entry
     -- nodes sit at the lowest posY, its capstones at the highest, opposite what an earlier
     -- comment here assumed and which rendered every tree upside down), so no flip is needed, just
-    -- offset by minY. Class tree ends up left, hero tree centre, spec tree right, same as in-game.
+    -- offset by minY.
+    --
+    -- Scale/offset come from the class+spec nodes ONLY, not the hero sub-tree — this used to
+    -- include hero too, on the assumption its raw coordinates already sit in a clean centre
+    -- column between class and spec the way the game's own UI shows it. Reported 2026-09-22 on a
+    -- Death Knight San'Layn build: San'Layn's raw X range actually overlaps Blood's spec-tree
+    -- range rather than sitting in the gap between Death Knight and Blood, so it rendered on top
+    -- of the spec tree instead of beside it. The hero tree is placed below using its own local
+    -- shape, centred on the real empty gap this box has between the class and spec trees (gapX),
+    -- instead of trusting its raw coordinates.
     local rangeX, rangeY = math.max(maxX - minX, 1), math.max(maxY - minY, 1)
     local scale = math.min((CANVAS_W - 2 * PAD) / rangeX, (CANVAS_H - 2 * PAD) / rangeY)
     local offX = (CANVAS_W - 2 * PAD - rangeX * scale) / 2
     local offY = (CANVAS_H - 2 * PAD - rangeY * scale) / 2
     local size = math.max(18, math.min(38, 600 * scale * 0.78)) -- nodes sit ~600 units apart
 
+    -- Largest gap between consecutive distinct X values among the class+spec nodes, in the same
+    -- screen-space X the loop below places them in — the empty band between the class tree's
+    -- right edge and the spec tree's left edge, which is where the hero tree belongs.
+    local gapX = CANVAS_W / 2
+    do
+        local xs = {}
+        for _, nodeID in ipairs(mainShown) do xs[#xs + 1] = infos[nodeID].posX end
+        table.sort(xs)
+        local bestGap
+        for i = 2, #xs do
+            local gap, mid = xs[i] - xs[i - 1], (xs[i] + xs[i - 1]) / 2
+            if not bestGap or gap > bestGap then
+                bestGap = gap
+                gapX = PAD + offX + (mid - minX) * scale
+            end
+        end
+    end
+
     local displayed, used = {}, 0
-    for _, nodeID in ipairs(shown) do
+    local function PlaceNode(nodeID, screenX, screenY)
         used = used + 1
         local info, rec = infos[nodeID], sel[nodeID]
         local b = AcquireNode(used)
         b:SetSize(size, size)
         b:ClearAllPoints()
-        b:SetPoint("CENTER", canvas, "TOPLEFT",
-            PAD + offX + (info.posX - minX) * scale, -(PAD + offY + (info.posY - minY) * scale))
+        b:SetPoint("CENTER", canvas, "TOPLEFT", screenX, -screenY)
         b.nodeID = nodeID
 
         -- Which entry to draw: the one this build picked on a choice node, otherwise the first.
@@ -295,6 +335,31 @@ local function RenderTree()
         b:Show()
         displayed[nodeID] = b
     end
+
+    for _, nodeID in ipairs(mainShown) do
+        local info = infos[nodeID]
+        PlaceNode(nodeID, PAD + offX + (info.posX - minX) * scale, PAD + offY + (info.posY - minY) * scale)
+    end
+
+    local shown = {}
+    for _, nodeID in ipairs(mainShown) do shown[#shown + 1] = nodeID end
+
+    if #heroShown > 0 then
+        -- Hero tree's own local shape, scaled the same as class/spec for a consistent icon size,
+        -- centred horizontally on gapX and vertically on the class/spec trees' midline — matching
+        -- how the game's own UI centres the compact hero diamond between the two full trees.
+        local heroCenterX = (heroMinX + heroMaxX) / 2
+        local heroCenterY = (heroMinY + heroMaxY) / 2
+        local mainCenterScreenY = PAD + offY + (rangeY * scale) / 2
+        for _, nodeID in ipairs(heroShown) do
+            local info = infos[nodeID]
+            PlaceNode(nodeID,
+                gapX + (info.posX - heroCenterX) * scale,
+                mainCenterScreenY + (info.posY - heroCenterY) * scale)
+            shown[#shown + 1] = nodeID
+        end
+    end
+
     for i = used + 1, #nodePool do nodePool[i]:Hide() end
 
     local lineCount = 0
@@ -411,15 +476,21 @@ local function EnsureWindow()
     scopeDropdown:SetPoint("TOPLEFT", 16 + 2 * (toggleW + 4) + 12, controlsY + 2)
     scopeDropdown:SetupMenu(function(_, root)
         local content = GetContent()
-        local selected = GetEntry(content)
         for _, e in ipairs(RS:GetTalentEntries(content)) do
             root:CreateRadio(
                 EntryLabel(content, e),
-                function() return selected.value == e.value end,
+                function() return GetEntry(content).value == e.value end,
                 function()
                     SetScope(content, e.value)
                     Refresh()
-                    return MenuResponse.Refresh
+                    -- MenuResponse.Refresh was meant to redraw the already-open menu with the new
+                    -- selection, but in practice the radio dot never moved until the menu was
+                    -- closed and reopened (reported 2026-09-22, and still true after making the
+                    -- isSelected check above read live state instead of a stale snapshot — so
+                    -- Refresh isn't re-running these checks against an open menu the way it was
+                    -- assumed to). Closing on select sidesteps that: it's the one state we've
+                    -- confirmed always renders correctly.
+                    return MenuResponse.Close
                 end
             )
         end
