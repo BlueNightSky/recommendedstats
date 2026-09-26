@@ -67,6 +67,12 @@ end
 
 local function SourceLine(resolved)
     if resolved.scoped then
+        if resolved.current then
+            if resolved.content == "RAID" then
+                return L.TALENTS_SRC_CURRENT_RAID:format(L.TALENTS_DIFFICULTY[resolved.difficulty] or resolved.difficulty or "?")
+            end
+            return L.TALENTS_SRC_CURRENT_DUNGEON
+        end
         if resolved.content == "RAID" then
             local diff = L.TALENTS_DIFFICULTY[resolved.difficulty] or resolved.difficulty or "?"
             if resolved.difficulty == nil or resolved.difficulty == "mythic" then return L.TALENTS_SRC_RAID:format(diff) end
@@ -214,13 +220,37 @@ local function RenderTree()
     local sel = stats.best.sel
 
     -- Node info once per node. The hero tree holds every hero sub-tree's nodes, so work out which
-    -- sub-tree this build actually uses (any selected node tagged with a sub-tree) and drop the rest.
-    local infos, chosenSub = {}, nil
+    -- sub-tree this build actually uses and drop the rest. selectionNodeID is the hero-tree
+    -- selection node: the one node whose ENTRIES are the hero sub-trees themselves (same test
+    -- EntryVisual uses), so the entry a build picked on it is the authoritative answer.
+    local infos, selectionNodeID = {}, nil
     for _, nodeID in ipairs(tree.nodeIDs) do
         local info = C_Traits.GetNodeInfo(tree.configID, nodeID)
         if info and info.ID == nodeID then
             infos[nodeID] = info
-            if sel[nodeID] and info.subTreeID and info.subTreeID ~= 0 then chosenSub = chosenSub or info.subTreeID end
+            if not selectionNodeID and info.entryIDs and info.entryIDs[1] then
+                local first = C_Traits.GetEntryInfo(tree.configID, info.entryIDs[1])
+                if first and first.subTreeID and first.subTreeID ~= 0 then selectionNodeID = nodeID end
+            end
+        end
+    end
+
+    local chosenSub
+    local selRec = selectionNodeID and sel[selectionNodeID]
+    if selRec then
+        local entryID = infos[selectionNodeID].entryIDs[(selRec.pick or 0) + 1]
+        local entry = entryID and C_Traits.GetEntryInfo(tree.configID, entryID)
+        if entry and entry.subTreeID and entry.subTreeID ~= 0 then chosenSub = entry.subTreeID end
+    end
+    if not chosenSub then
+        -- No usable selection node: fall back to the first selected node tagged with a sub-tree. This
+        -- alone used to be the ONLY method and picked the wrong hero tree (a Lightsmith build drew
+        -- Herald of the Sun's nodes, all grey) — reported 2026-09-26 on a Holy Paladin's M+ builds.
+        -- Suspected cause (unverified): a node reads back tagged with the sub-tree active on the
+        -- VIEWING character's own config rather than the build's. Only a last resort now.
+        for _, nodeID in ipairs(tree.nodeIDs) do
+            local info = infos[nodeID]
+            if info and sel[nodeID] and info.subTreeID and info.subTreeID ~= 0 then chosenSub = info.subTreeID; break end
         end
     end
 
@@ -233,14 +263,22 @@ local function RenderTree()
     for _, nodeID in ipairs(tree.nodeIDs) do
         local info = infos[nodeID]
         local sub = info and info.subTreeID or 0
-        if info and info.isVisible ~= false then
+        -- The selection node is placed separately (above the hero tree, see below): its raw position
+        -- sits in the gap between the class and spec trees, which both skewed the layout box and
+        -- split that gap in two, throwing off where the hero tree gets centred.
+        if info and nodeID ~= selectionNodeID then
             if sub == 0 then
-                mainShown[#mainShown + 1] = nodeID
-                minX = minX and math.min(minX, info.posX) or info.posX
-                maxX = maxX and math.max(maxX, info.posX) or info.posX
-                minY = minY and math.min(minY, info.posY) or info.posY
-                maxY = maxY and math.max(maxY, info.posY) or info.posY
+                if info.isVisible ~= false then
+                    mainShown[#mainShown + 1] = nodeID
+                    minX = minX and math.min(minX, info.posX) or info.posX
+                    maxX = maxX and math.max(maxX, info.posX) or info.posX
+                    minY = minY and math.min(minY, info.posY) or info.posY
+                    maxY = maxY and math.max(maxY, info.posY) or info.posY
+                end
             elseif sub == chosenSub then
+                -- No isVisible check here: the game may flag the nodes of a hero tree the viewing
+                -- character hasn't picked as not visible (unverified), which would blank a build
+                -- whose hero tree differs from the player's own.
                 heroShown[#heroShown + 1] = nodeID
                 heroMinX = heroMinX and math.min(heroMinX, info.posX) or info.posX
                 heroMaxX = heroMaxX and math.max(heroMaxX, info.posX) or info.posX
@@ -358,6 +396,14 @@ local function RenderTree()
                 mainCenterScreenY + (info.posY - heroCenterY) * scale)
             shown[#shown + 1] = nodeID
         end
+
+        -- The hero selection node (its icon is the chosen hero tree) sits centred just above the
+        -- hero tree, like the emblem above the hero panel in the game's own talent frame.
+        if selectionNodeID then
+            local heroTopY = mainCenterScreenY + (heroMinY - heroCenterY) * scale
+            PlaceNode(selectionNodeID, gapX, math.max(size, heroTopY - size * 1.6))
+            shown[#shown + 1] = selectionNodeID
+        end
     end
 
     for i = used + 1, #nodePool do nodePool[i]:Hide() end
@@ -382,10 +428,19 @@ end
 
 -- Rebuilds everything from the stored content + scope: toggle look, dropdown text, header lines,
 -- then either the tree or a message when there's nothing to draw.
-local function Refresh()
+-- fromMenu is true only for the scope dropdown's own radio click, which is mid-menu and must not
+-- rebuild the menu it is closing.
+local function Refresh(fromMenu)
     if not (frame and frame:IsShown()) then return end
     local content = GetContent()
     local entry = GetEntry(content)
+
+    -- The dropdown's shown text comes from whichever radio the menu last marked selected, and the
+    -- menu is only built from GetContent()'s entries when it is (re)generated — so after a Raid /
+    -- Mythic+ toggle (or a spec change, which changes which entries have data) it kept showing the
+    -- old content's selection, e.g. a dungeon's name while Raid was up. SetDefaultText below does
+    -- not override a selected radio.
+    if not fromMenu and scopeDropdown.GenerateMenu then scopeDropdown:GenerateMenu() end
 
     local accent = RS:GetAccentColor()
     for _, btn in ipairs(toggleBtns) do
@@ -482,7 +537,7 @@ local function EnsureWindow()
                 function() return GetEntry(content).value == e.value end,
                 function()
                     SetScope(content, e.value)
-                    Refresh()
+                    Refresh(true)
                     -- MenuResponse.Refresh was meant to redraw the already-open menu with the new
                     -- selection, but in practice the radio dot never moved until the menu was
                     -- closed and reopened (reported 2026-09-22, and still true after making the

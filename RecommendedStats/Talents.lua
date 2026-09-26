@@ -140,7 +140,9 @@ function RS:ResolveTalentBuilds(content, scope)
         local perSpec = ScopedTable(content) and ScopedTable(content)[key]
         local entry = perSpec and perSpec[scope]
         if entry and entry.builds and #entry.builds > 0 then
-            return { builds = entry.builds, players = entry.n, scoped = true, difficulty = entry.difficulty, scope = scope, content = content, key = key }
+            -- current = built from the players' current loadouts, not the build run on that kill/run
+            -- (see Node's talents.js): only ever fills a boss/dungeon that had too little run data.
+            return { builds = entry.builds, players = entry.n, scoped = true, difficulty = entry.difficulty, current = entry.source == "current", scope = scope, content = content, key = key }
         end
     end
 
