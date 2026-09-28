@@ -18,7 +18,7 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 L.CHAT_PREFIX     = "|cff33ff99RecommendedStats|r"
 L.ADDON_TITLE     = "Recommended Stats"
-L.TAB_STATS       = "Рекомендуемые характеристики"
+L.TAB_STATS       = "Рек. характеристики"
 L.TAB_BIS         = "BiS-экипировка"
 L.SELECT          = "Выбрать"
 L.GOT_IT          = "Понятно"
