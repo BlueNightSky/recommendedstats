@@ -1,6 +1,7 @@
 ## Interface: 120100
 ## Title: RecommendedStats
 ## Notes: Your secondary stats vs top-player targets, with BiS.
+## Notes-ruRU: Ваши вторичные характеристики в сравнении с показателями топовых игроков, включая BiS.
 ## Author: CtrlShift_Zed
 ## Version: 2026-09-27
 ## Category: CtrlShift_Zed
