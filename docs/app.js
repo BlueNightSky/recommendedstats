@@ -72,7 +72,10 @@ function readHash() {
   state.content = content === "mplus" ? "MYTHICPLUS" : "RAID";
   return true;
 }
-function writeHash() {
+// A section anchor (#download, #features) is left alone until the visitor picks a spec themselves.
+const isSectionHash = () => location.hash.length > 1 && !location.hash.startsWith("#/");
+function writeHash({ userPicked = true } = {}) {
+  if (!userPicked && isSectionHash()) return;
   const h = `#/${state.cls.toLowerCase()}/${state.spec.toLowerCase()}/${CONTENT[state.content].slug}`;
   if (location.hash !== h) history.replaceState(null, "", h);
 }
@@ -256,13 +259,13 @@ function renderBiS(detail) {
 
 /* Main render */
 let renderToken = 0;
-async function update() {
+async function update({ userPicked = true } = {}) {
   const byClass = specsByClass();
   renderSpecRow(byClass);
   const id = `${state.cls}_${state.spec}`;
   const spec = INDEX.specs[id];
   if (!spec.content[state.content]) state.content = spec.content.RAID ? "RAID" : "MYTHICPLUS";
-  writeHash();
+  writeHash({ userPicked });
 
   document.documentElement.style.setProperty("--class", CLASSES[state.cls]?.color ?? "var(--gold)");
   $("bannerIcon").src = classIcon(state.cls);
@@ -354,5 +357,8 @@ window.addEventListener("hashchange", () => { if (readHash()) { renderClassGrid(
     state.spec = byClass[first][0].spec;
   }
   renderClassGrid();
-  update();
+  await update({ userPicked: false });
+  // The explorer sits above the other sections, so filling it in pushed the anchor the browser
+  // already jumped to further down. Jump again now that the layout has settled.
+  if (isSectionHash()) document.getElementById(location.hash.slice(1))?.scrollIntoView();
 })();
