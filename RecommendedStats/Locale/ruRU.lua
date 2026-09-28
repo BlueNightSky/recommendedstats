@@ -10,6 +10,8 @@
 -- No other locale ships today — this file is the only one, and every key below is the enUS text
 -- used regardless of client locale until a translation file like that exists.
 
+if GetLocale() ~= "ruRU" then return end
+
 RecommendedStats_Locale = RecommendedStats_Locale or {}
 local L = RecommendedStats_Locale
 
@@ -150,8 +152,6 @@ L.TALENTS_SRC_OVERALL       = "Сборка для специализации о
 L.TALENTS_SRC_RAID          = "Убийства этого босса (%s)"
 L.TALENTS_SRC_RAID_LOWER    = "Убийства этого босса (%s) [недостаточно данных на более высокой сложности]"
 L.TALENTS_SRC_DUNGEON       = "Лучшие прохождения этого подземелья"
-L.TALENTS_SRC_CURRENT_RAID  = "Текущие сборки лучших игроков по логам (%s) на этом боссе (не точный билд на момент убийства)"
-L.TALENTS_SRC_CURRENT_DUNGEON = "Текущие сборки лучших игроков в этом подземелье (не точный билд на момент прохождения)"
 L.TALENTS_SRC_FALLBACK      = "Для этого босса/подземелья пока мало данных; показана общая сборка"
 L.TALENTS_SAMPLE            = "На основе %d игроков, %d разных сборок"
 L.TALENTS_NO_DATA          = "Для этой специализации пока нет данных о талантах."
