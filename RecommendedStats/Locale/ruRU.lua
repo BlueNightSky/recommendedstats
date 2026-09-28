@@ -10,6 +10,8 @@
 -- No other locale ships today — this file is the only one, and every key below is the enUS text
 -- used regardless of client locale until a translation file like that exists.
 
+if GetLocale() ~= "ruRU" then return end
+
 RecommendedStats_Locale = RecommendedStats_Locale or {}
 local L = RecommendedStats_Locale
 
@@ -18,7 +20,7 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 L.CHAT_PREFIX     = "|cff33ff99RecommendedStats|r"
 L.ADDON_TITLE     = "Recommended Stats"
-L.TAB_STATS       = "Рекомендуемые характеристики"
+L.TAB_STATS       = "Рек. характеристики"
 L.TAB_BIS         = "BiS-экипировка"
 L.SELECT          = "Выбрать"
 L.GOT_IT          = "Понятно"
@@ -169,8 +171,8 @@ L.OPTIONS_SKIN             = "Оформление"
 L.SKIN_DEFAULT = "По умолчанию"
 L.SKIN_CLASS   = "Цвет класса"
 L.SKIN_CUSTOM  = "Свой цвет"
-L.OPTIONS_EXPORT_SKIN = "Экспорт оформления"
-L.OPTIONS_IMPORT_SKIN = "Импорт оформления"
+L.OPTIONS_EXPORT_SKIN = "Экспорт"
+L.OPTIONS_IMPORT_SKIN = "Импорт"
 L.OPTIONS_DISCLAIMER = "Аддон Recommended Stats сам по себе не увеличит ваш ДПС \226\128\148 он лишь помогает подобрать правильные веса характеристик для вашей специализации."
 
 --------------------------------------------------------------------------------
