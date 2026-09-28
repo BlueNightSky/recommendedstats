@@ -169,8 +169,8 @@ L.OPTIONS_SKIN             = "Оформление"
 L.SKIN_DEFAULT = "По умолчанию"
 L.SKIN_CLASS   = "Цвет класса"
 L.SKIN_CUSTOM  = "Свой цвет"
-L.OPTIONS_EXPORT_SKIN = "Экспорт оформления"
-L.OPTIONS_IMPORT_SKIN = "Импорт оформления"
+L.OPTIONS_EXPORT_SKIN = "Экспорт"
+L.OPTIONS_IMPORT_SKIN = "Импорт"
 L.OPTIONS_DISCLAIMER = "Аддон Recommended Stats сам по себе не увеличит ваш ДПС \226\128\148 он лишь помогает подобрать правильные веса характеристик для вашей специализации."
 
 --------------------------------------------------------------------------------
