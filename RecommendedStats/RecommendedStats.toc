@@ -3,7 +3,7 @@
 ## Notes: Your secondary stats vs top-player targets, with BiS.
 ## Notes-ruRU: Ваши вторичные характеристики в сравнении с показателями топовых игроков, включая BiS.
 ## Author: CtrlShift_Zed
-## Version: 2026-09-29
+## Version: 2026-09-30
 ## Category: CtrlShift_Zed
 ## IconTexture: Interface\AddOns\RecommendedStats\icon
 ## SavedVariables: RecommendedStatsDB
@@ -26,11 +26,13 @@ Data\TierSet.lua
 Data\StatWeights.lua
 Data\Talents.lua
 Data\TalentsScoped.lua
+Data\Rotation.lua
 Core.lua
 Talents.lua
 UI\CharacterPanel.lua
 UI\BiSWindow.lua
 UI\TalentsWindow.lua
+UI\RotationWindow.lua
 UI\CopyPopup.lua
 UI\SkinShare.lua
 UI\OptionsPanel.lua

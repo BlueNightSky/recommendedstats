@@ -12,10 +12,10 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RecommendedStats | WoW stat targets, BiS and talents from top players</title>
-<meta name="description" content="Secondary stat targets, best-in-slot gear and talent builds for every World of Warcraft spec, built daily from the top players in Raid and Mythic+.">
+<title>RecommendedStats | WoW stat targets, BiS, talents and rotations from top players</title>
+<meta name="description" content="Secondary stat targets, best-in-slot gear, talent builds and a rotation guide for every World of Warcraft spec, built from the top players in Raid and Mythic+.">
 <meta property="og:title" content="RecommendedStats">
-<meta property="og:description" content="Stat targets, BiS gear and talents for every spec, from the top 20 players in Raid and Mythic+.">
+<meta property="og:description" content="Stat targets, BiS gear, talents and rotations for every spec, from the top players in Raid and Mythic+.">
 <meta property="og:image" content="assets/icon.png">
 <meta name="theme-color" content="#0b0912">
 <link rel="icon" href="assets/icon.png">
@@ -49,7 +49,7 @@
     <div class="hero-copy">
       <p class="eyebrow"><span class="dot"></span><span id="heroStatus">World of Warcraft addon</span></p>
       <h1>Gear like the <span class="gold">top 20</span>.<br>For every spec.</h1>
-      <p class="lede">RecommendedStats shows your secondary stats against what the best players in your spec actually run, with best-in-slot gear and the talent builds they take for every boss and dungeon. Right on your character screen.</p>
+      <p class="lede">RecommendedStats shows your secondary stats against what the best players in your spec actually run, with best-in-slot gear, the talent builds they take for every boss and dungeon, and a rotation guide read from what they actually press. Right on your character screen.</p>
       <div class="hero-actions">
         <a class="btn btn-gold" href="https://www.curseforge.com/wow/addons/recommended-stats" target="_blank" rel="noopener">Get it on CurseForge</a>
         <a class="btn btn-ghost" href="#explorer">Browse the data</a>
@@ -153,12 +153,20 @@
       </div>
       <div class="feature">
         <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 5h4v4H4V5Zm6 1h10v2H10V6Zm-6 4h4v4H4v-4Zm6 1h10v2H10v-2Zm-6 4h4v4H4v-4Zm6 1h10v2H10v-2Z"/></svg>
+        </div>
+        <h3>Rotation guide</h3>
+        <p>The opener, the core of the rotation, the filler and when to use cooldowns, per raid boss. It shows which press feeds each proc and how many stacks to build first.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
           <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"/><path d="M14 2.1V10h7.9A9 9 0 0 0 14 2.1Z" opacity=".55"/></svg>
         </div>
         <h3>Raid and Mythic+</h3>
         <p>Separate targets, gear and talents for each, never mixed. Raid data falls back Mythic, Heroic, Normal only when it has to.</p>
       </div>
     </div>
+    <p class="section-sub feature-note">The rotation guide won't raise your DPS by itself. It teaches how your class works and what takes priority, it is not a "press this now" helper.</p>
   </section>
 
   <section class="screens" id="screenshots">
@@ -167,6 +175,7 @@
       <h2>See it in action</h2>
     </div>
     <div class="screen-grid">
+      <figure class="wide"><img loading="lazy" src="screenshot_mage_rotation.png" alt="Rotation window for Arcane Mage on one raid boss: opener, mid rotation, filler and cooldowns"><figcaption>Rotation window, per boss: what feeds each proc and when to spend it</figcaption></figure>
       <figure class="wide"><img loading="lazy" src="screenshot_druid_talents_raid.png" alt="Talents window for Restoration Druid in Raid"><figcaption>Talents window, build highlighted in gold</figcaption></figure>
       <figure><img loading="lazy" src="screenshot_druid_mythicplus_bis_gear.png" alt="BiS gear panel for Mythic+"><figcaption>BiS gear, Mythic+</figcaption></figure>
       <figure><img loading="lazy" src="screenshot_mythicplus_deathknight.png" alt="Large stat rows for a Death Knight"><figcaption>Large rows with delta from target</figcaption></figure>
@@ -200,7 +209,7 @@
     </a>
   </div>
   <p>Made by <strong>CtrlShift_Zed</strong>. Translations by <a href="https://github.com/Hubbotu" target="_blank" rel="noopener">Hubbotu</a> (ruRU) and <a href="https://github.com/BlueNightSky" target="_blank" rel="noopener">BlueNightSky</a> (zhTW). <a href="https://github.com/VaughanT31/recommendedstats#contributing-a-translation" target="_blank" rel="noopener">Add your language</a>.</p>
-  <p class="fine" id="footerSource">Data from Warcraft Logs, raider.io and the Battle.net API. Item tooltips by Wowhead. World of Warcraft is a trademark of Blizzard Entertainment; this project is not affiliated with Blizzard.</p>
+  <p class="fine" id="footerSource">Data and rotation logs from Warcraft Logs, raider.io and the Battle.net API. Item tooltips by Wowhead. World of Warcraft is a trademark of Blizzard Entertainment; this project is not affiliated with Blizzard.</p>
 </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>

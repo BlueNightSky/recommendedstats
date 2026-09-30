@@ -259,6 +259,13 @@ function RS:GetKeyFor(content)
     return class .. "_" .. spec .. "_" .. content
 end
 
+-- Spec-only key, for data that isn't split by content (Data/Rotation.lua, UI/RotationWindow.lua).
+function RS:GetSpecKey()
+    local class, spec = GetClassToken(), GetSpecToken()
+    if not (class and spec) then return nil end
+    return class .. "_" .. spec
+end
+
 function RS:SchemaOK()
     local m = RecommendedStatsData_Meta
     return m and m.schema == EXPECTED_SCHEMA
@@ -595,6 +602,10 @@ SlashCmdList.RECSTATS = function(msg)
     end
     if msg == "talents" then
         if RS.ToggleTalents then RS:ToggleTalents() end
+        return
+    end
+    if msg == "rotation" then
+        if RS.ToggleRotation then RS:ToggleRotation() end
         return
     end
     if msg == "options" or msg == "config" then

@@ -27,6 +27,16 @@ local ANNOUNCEMENTS = {
             "Falls back to your spec's overall build automatically wherever a specific dungeon/boss doesn't have enough sampled players yet.",
         },
     },
+    {
+        id = "2026-09-30-rotation",
+        title = "What's New in RecommendedStats",
+        lines = {
+            "New Rotation window: the opener, the core loop, the filler and when to use cooldowns for your spec and hero talents, read from what top players actually press on raid bosses.",
+            "It shows which press gives each proc and which press spends it, and how many stacks to build first. Hover any icon for the spell's tooltip.",
+            "Pick a raid boss from the dropdown to see how it is played on that fight, or leave it on Overall.",
+            "The panel tabs are now Stats, BiS, Talents and Rotation.",
+        },
+    },
 }
 
 local function LatestAnnouncement()

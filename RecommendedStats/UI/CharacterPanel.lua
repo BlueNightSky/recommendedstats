@@ -1,7 +1,8 @@
 -- RecommendedStats :: UI/CharacterPanel.lua
--- Single merged window, tabbed between "Recommended Stats" (stat readout + Raid/Mythic+
--- dropdown) and "BiS Gear" (UI/BiSWindow.lua's content) — one physical frame, one drag/escape/
--- attach-mode lifecycle, instead of two separately-docked panels.
+-- Single merged window, tabbed between "Stats" (stat readout + Raid/Mythic+ dropdown) and "BiS"
+-- (UI/BiSWindow.lua's content) — one physical frame, one drag/escape/attach-mode lifecycle,
+-- instead of two separately-docked panels. The header's other two buttons, "Talents" and
+-- "Rotation", open their own windows (UI/TalentsWindow.lua, UI/RotationWindow.lua).
 --
 -- Depends on Core.lua providing:
 --   RS:Evaluate()  -> { {name,current,target,delta,state}, ... }, key   (state = "under"|"on"|"over")
@@ -64,7 +65,7 @@ end
 -- (statsPage here, RS.bisPage from BiSWindow.lua) anchor their own top-left below this.
 local TAB_H          = 24
 local TAB_GAP        = 4
-local TALENTS_BTN_W  = 84 -- the "Talents" launcher button beside the two tabs
+local HEADER_BUTTONS = 4  -- Stats, BiS (tabs) + Talents, Rotation (window launchers), equal widths
 local DROPDOWN_ROW_H = 20
 local HEADER_H       = 8 + TAB_H + 6 + DROPDOWN_ROW_H + 8
 
@@ -387,7 +388,7 @@ end
 --------------------------------------------------------------------------------
 -- Panel + dropdown + tabs (created lazily)
 --------------------------------------------------------------------------------
-local panel, dropdown, sizeDropdown, statsTab, bisTab, talentsBtn, statsPage
+local panel, dropdown, sizeDropdown, statsTab, bisTab, talentsBtn, rotationBtn, statsPage
 local rows = {}
 local emptyText, footerText, priorityText, priorityHitbox
 
@@ -525,7 +526,7 @@ local function EnsurePanel()
 
     -- Tabs replace the old static title — each label doubles as the section name.
     statsTab = CreateTabButton(panel, L.TAB_STATS, "STATS")
-    local tabW = (PANEL_W - 24 - TAB_GAP * 2 - TALENTS_BTN_W) / 2
+    local tabW = (PANEL_W - 24 - TAB_GAP * (HEADER_BUTTONS - 1)) / HEADER_BUTTONS
     statsTab:SetSize(tabW, TAB_H)
     statsTab:SetPoint("TOPLEFT", 12, -8)
 
@@ -537,9 +538,16 @@ local function EnsurePanel()
     -- needs far more room than this panel has. Same flat look as a tab, accent-colored text so it
     -- reads as an action rather than a page (see SyncTabUI for the skin-aware color).
     talentsBtn = CreateTabButton(panel, L.TALENTS_BUTTON, "TALENTS")
-    talentsBtn:SetSize(TALENTS_BTN_W, TAB_H)
+    talentsBtn:SetSize(tabW, TAB_H)
     talentsBtn:SetPoint("TOPLEFT", bisTab, "TOPRIGHT", TAB_GAP, 0)
     talentsBtn:SetScript("OnClick", function() if RS.ToggleTalents then RS:ToggleTalents() end end)
+
+    -- Same kind of launcher as Talents: the rotation guide (UI/RotationWindow.lua) is four columns
+    -- wide and has no place inside this panel either.
+    rotationBtn = CreateTabButton(panel, L.ROTATION_BUTTON, "ROTATION")
+    rotationBtn:SetSize(tabW, TAB_H)
+    rotationBtn:SetPoint("TOPLEFT", talentsBtn, "TOPRIGHT", TAB_GAP, 0)
+    rotationBtn:SetScript("OnClick", function() if RS.ToggleRotation then RS:ToggleRotation() end end)
 
     BuildDropdown()
     BuildSizeDropdown()
@@ -806,6 +814,7 @@ local function SyncTabUI()
     ApplyTabVisual(bisTab, active == "BIS")
     local accent = RS:GetAccentColor()
     talentsBtn.label:SetTextColor(accent[1], accent[2], accent[3])
+    rotationBtn.label:SetTextColor(accent[1], accent[2], accent[3])
     statsPage:SetShown(active == "STATS" and RS:GetShowStats())
     if sizeDropdown then sizeDropdown:SetShown(active == "STATS" and RS:GetShowStats()) end
     -- The window used to always stand as tall as the taller of the two tabs (BiS Gear's 16

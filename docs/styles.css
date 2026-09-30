@@ -320,7 +320,8 @@ main > section { max-width: var(--max); margin: 0 auto; padding: 0 16px; }
 
 /* Features */
 .features { padding-bottom: 96px !important; }
-.feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.feature-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.feature-note { margin-top: 22px; text-align: center; }
 .feature {
   padding: 24px; border-radius: var(--radius); background: var(--panel); border: 1px solid var(--border);
   transition: transform .2s ease, border-color .2s ease;

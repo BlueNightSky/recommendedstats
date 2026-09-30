@@ -20,8 +20,11 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 L.CHAT_PREFIX     = "|cff33ff99RecommendedStats|r"
 L.ADDON_TITLE     = "Recommended Stats"
-L.TAB_STATS       = "Рек. характеристики"
-L.TAB_BIS         = "BiS-экипировка"
+-- Short on purpose: the panel header holds four equal buttons (see enUS.lua). The longer
+-- "Рек. характеристики" / "BiS-экипировка" no longer fit their ~100px.
+L.TAB_STATS       = "Статы"
+L.TAB_BIS         = "BiS"
+L.ROTATION_BUTTON = "Ротация"
 L.SELECT          = "Выбрать"
 L.GOT_IT          = "Понятно"
 L.SCHEMA_OUT_OF_DATE = "Данные о характеристиках устарели для этой версии аддона. Пожалуйста, обновите его."
