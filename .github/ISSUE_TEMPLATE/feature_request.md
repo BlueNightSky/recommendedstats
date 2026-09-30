@@ -1,20 +1,28 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+about: Suggest an idea or improvement for the addon
+title: "[FEATURE]"
+labels: enhancement
 assignees: VaughanT31
+type: Feature
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**What would you like to see?**
+A clear description of the feature or change.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**What problem does it solve?**
+What are you trying to do in game that the addon doesn't help with today? For example: "I can't tell which trinket top players use on a specific boss."
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Which part of the addon?**
+Stats / BiS / Talents / Rotation / Options / Minimap button / Something new
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Who is it for?**
+- Class and spec (or "all specs"):
+- Content: Raid / Mythic+ / Both
+
+**How would you expect it to look or work?**
+Describe it, or add a sketch or screenshot. A rough drawing is welcome.
+
+**Anything else?**
+Other addons or sites that already do something similar, or alternatives you've thought about.
