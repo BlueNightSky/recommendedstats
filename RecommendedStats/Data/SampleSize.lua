@@ -1,4 +1,4 @@
--- GENERATED 2026-10-12 - do not hand-edit
+-- GENERATED 2026-10-13 - do not hand-edit
 RecommendedStatsData_SampleSize = {
     ["SHAMAN_ENHANCEMENT_MYTHICPLUS"] = 20,
     ["SHAMAN_ENHANCEMENT_RAID"] = 20,
@@ -9,7 +9,7 @@ RecommendedStatsData_SampleSize = {
     ["HUNTER_SURVIVAL_MYTHICPLUS"] = 20,
     ["HUNTER_SURVIVAL_RAID"] = 20,
     ["PRIEST_DISCIPLINE_MYTHICPLUS"] = 20,
-    ["PRIEST_DISCIPLINE_RAID"] = 18,
+    ["PRIEST_DISCIPLINE_RAID"] = 17,
     ["MONK_BREWMASTER_MYTHICPLUS"] = 20,
     ["MONK_BREWMASTER_RAID"] = 20,
     ["WARRIOR_FURY_MYTHICPLUS"] = 20,
@@ -39,7 +39,7 @@ RecommendedStatsData_SampleSize = {
     ["PRIEST_SHADOW_MYTHICPLUS"] = 20,
     ["PRIEST_SHADOW_RAID"] = 20,
     ["ROGUE_SUBTLETY_MYTHICPLUS"] = 20,
-    ["ROGUE_SUBTLETY_RAID"] = 15,
+    ["ROGUE_SUBTLETY_RAID"] = 16,
     ["DRUID_FERAL_MYTHICPLUS"] = 20,
     ["DRUID_FERAL_RAID"] = 20,
     ["DRUID_GUARDIAN_MYTHICPLUS"] = 20,
