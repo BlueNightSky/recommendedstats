@@ -1,4 +1,4 @@
--- GENERATED 2026-10-13 - do not hand-edit
+-- GENERATED 2026-10-14 - do not hand-edit
 RecommendedStatsData_RaidDifficulty = {
     ["SHAMAN_ENHANCEMENT_RAID"] = "mythic",
     ["MONK_MISTWEAVER_RAID"] = "mythic",
@@ -25,7 +25,7 @@ RecommendedStatsData_RaidDifficulty = {
     ["DRUID_RESTORATION_RAID"] = "mythic",
     ["WARLOCK_DESTRUCTION_RAID"] = "mythic",
     ["PRIEST_HOLY_RAID"] = "mythic",
-    ["MAGE_FIRE_RAID"] = "mythic",
+    ["MAGE_FIRE_RAID"] = "heroic",
     ["DEATHKNIGHT_BLOOD_RAID"] = "mythic",
     ["DEATHKNIGHT_FROST_RAID"] = "mythic",
     ["ROGUE_OUTLAW_RAID"] = "mythic",
