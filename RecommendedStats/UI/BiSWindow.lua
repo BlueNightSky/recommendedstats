@@ -608,7 +608,7 @@ local function SetRowItem(row, slot, entry, conversion)
     elseif entry.altItemID and equippedID == entry.altItemID then
         row.statusDot:SetTexture(dotTex.alt)
     elseif equippedID and equippedID ~= 0 and entry.ilvl and equippedLink
-        and (select(1, GetDetailedItemLevelInfo(equippedLink)) or 0) >= entry.ilvl then
+        and (select(1, C_Item.GetDetailedItemLevelInfo(equippedLink)) or 0) >= entry.ilvl then
         row.statusDot:SetTexture(dotTex.alt)
     else
         row.statusDot:SetTexture(dotTex.missing)
