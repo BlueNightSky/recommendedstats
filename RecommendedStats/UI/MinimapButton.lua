@@ -33,45 +33,54 @@ local dataObject = LDB:NewDataObject("RecommendedStats", {
     end,
 })
 
--- LibDBIcon reads/writes this table itself (minimapPos, hide) — handing it the per-character
--- table (RecommendedStatsDBChar, ## SavedVariablesPerCharacter in the .toc) is what makes the
--- button's dragged position per-character rather than shared account-wide.
-RecommendedStatsDBChar = RecommendedStatsDBChar or {}
-RecommendedStatsDBChar.minimapIcon = RecommendedStatsDBChar.minimapIcon or {}
+-- LibDBIcon reads/writes this table itself (minimapPos, hide) and keeps a reference to it, so
+-- it must be handed the table SavedVariables actually loaded. WoW loads saved data only AFTER
+-- every addon file has run, and replaces the global then: registering at file load gave
+-- LibDBIcon a throwaway table, every drag was written there, and the position reset on each
+-- /reload or relog. So everything below waits for ADDON_LOADED. Per-character on purpose
+-- (RecommendedStatsDBChar, ## SavedVariablesPerCharacter in the .toc).
+local ADDON_NAME = ...
 
--- One-time migration: the old hand-rolled button stored its angle as the account-wide
--- RecommendedStatsDB.minimapAngle. LibDBIcon's field is named/shaped differently
--- (minimapPos, degrees 0-360 same as before) and lives per-character, so carry it over once.
-do
+local function Setup()
+    RecommendedStatsDBChar = RecommendedStatsDBChar or {}
+    RecommendedStatsDBChar.minimapIcon = RecommendedStatsDBChar.minimapIcon or {}
+
+    -- One-time migration: the old hand-rolled button stored its angle as the account-wide
+    -- RecommendedStatsDB.minimapAngle. LibDBIcon's field is named/shaped differently
+    -- (minimapPos, degrees 0-360 same as before) and lives per-character, so carry it over once.
     RecommendedStatsDB = RecommendedStatsDB or {}
     if RecommendedStatsDBChar.minimapIcon.minimapPos == nil and RecommendedStatsDB.minimapAngle ~= nil then
         RecommendedStatsDBChar.minimapIcon.minimapPos = RecommendedStatsDB.minimapAngle
         RecommendedStatsDB.minimapAngle = nil
     end
+
+    if icon:IsRegistered("RecommendedStats") then
+        -- Almost certainly a duplicate copy of this addon in AddOns/ (a leftover folder from
+        -- installing via CurseForge and Wago, or a manual update that didn't replace the old one).
+        -- Registering the same LDB name twice makes LibDBIcon hard-error, so say so plainly.
+        print("|cffff4444RecommendedStats|r: minimap icon was already registered, you likely have a duplicate copy of this addon in AddOns. Remove the old folder and /reload.")
+    else
+        icon:Register("RecommendedStats", dataObject, RecommendedStatsDBChar.minimapIcon)
+    end
+    if not RS:GetShowMinimapIcon() then icon:Hide("RecommendedStats") end
 end
 
-if icon:IsRegistered("RecommendedStats") then
-    -- Almost certainly a duplicate copy of this addon in AddOns/ (a leftover folder from
-    -- installing via CurseForge and Wago, or a manual update that didn't replace the old one) —
-    -- registering the same LDB name twice makes LibDBIcon hard-error and abort the REST of this
-    -- file for whichever copy loses the race, silently leaving the minimap button backed by
-    -- whichever copy's config table won instead. That reads exactly like "my dragged position
-    -- never saves" even though nothing about persistence itself is broken, so surface it clearly
-    -- instead of letting it fail as an easy-to-miss Lua error.
-    print("|cffff4444RecommendedStats|r: minimap icon was already registered — you likely have a duplicate copy of this addon in AddOns. Remove the old folder and /reload.")
-else
-    icon:Register("RecommendedStats", dataObject, RecommendedStatsDBChar.minimapIcon)
-end
+local loader = CreateFrame("Frame")
+loader:RegisterEvent("ADDON_LOADED")
+loader:SetScript("OnEvent", function(self, _, name)
+    if name ~= ADDON_NAME then return end
+    self:UnregisterEvent("ADDON_LOADED")
+    Setup()
+end)
 
--- Shim so Core.lua's RS:SetShowMinimapIcon() (an existing account-wide preference toggle,
--- unrelated to the position fix above) can keep calling :SetShown without knowing this is now
--- backed by LibDBIcon instead of a plain frame.
+-- Shim so Core.lua's RS:SetShowMinimapIcon() (an existing account-wide preference toggle) can
+-- keep calling :SetShown without knowing this is backed by LibDBIcon instead of a plain frame.
 RS.minimapButton = {
     SetShown = function(_, shown)
+        if not icon:IsRegistered("RecommendedStats") then return end
         if shown then icon:Show("RecommendedStats") else icon:Hide("RecommendedStats") end
     end,
 }
-if not RS:GetShowMinimapIcon() then icon:Hide("RecommendedStats") end
 
 --------------------------------------------------------------------------------
 -- Skins — LibDataBroker's dataobj.iconR/iconG/iconB are a public, sanctioned way to recolor
