@@ -633,7 +633,10 @@ local function Render(data, key)
     local weights = RecommendedStatsData_StatWeights and RecommendedStatsData_StatWeights[key]
     if weights then
         local order = {}
-        for _, name in ipairs(PRIORITY_STATS) do order[#order + 1] = { name = name, w = weights[name] or 0 } end
+        -- Only stats this spec has a weight for (a Classic caster has no Expertise).
+        for _, name in ipairs(PRIORITY_STATS) do
+            if weights[name] then order[#order + 1] = { name = name, w = weights[name] } end
+        end
         table.sort(order, function(a, b) return a.w > b.w end)
         local labels = {}
         for _, o in ipairs(order) do labels[#labels + 1] = SHORT_STAT_LABEL[o.name] or o.name end

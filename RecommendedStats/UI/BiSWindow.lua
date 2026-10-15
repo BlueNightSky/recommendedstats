@@ -40,7 +40,8 @@ local L = RecommendedStats_Locale
 local PAD          = 16
 local COL_W        = 420
 local COL_GAP      = 24
-local ROWS_PER_COL = 8
+-- 16 slots in two columns of 8; TBC adds the ranged slot (wands, bows, relics), so 9.
+local ROWS_PER_COL = RS.Flavor.RANGED_SLOT and 9 or 8
 -- Tall enough for slot label + item name + three stacked stat lines (neck/rings roll three
 -- secondaries; most other slots roll two and leave the third line empty).
 local ROW_H        = 66
@@ -78,11 +79,12 @@ local SLOT_ORDER = {
     "FINGER_1", "FINGER_2", "TRINKET_1", "TRINKET_2",
     "MAIN_HAND", "OFF_HAND",
 }
+if RS.Flavor.RANGED_SLOT then SLOT_ORDER[#SLOT_ORDER + 1] = "RANGED" end
 local SLOT_LABEL = {
     HEAD = L.SLOT_HEAD, NECK = L.SLOT_NECK, SHOULDER = L.SLOT_SHOULDER, BACK = L.SLOT_BACK, CHEST = L.SLOT_CHEST,
     WRIST = L.SLOT_WRIST, HANDS = L.SLOT_HANDS, WAIST = L.SLOT_WAIST, LEGS = L.SLOT_LEGS, FEET = L.SLOT_FEET,
     FINGER_1 = L.SLOT_FINGER_1, FINGER_2 = L.SLOT_FINGER_2, TRINKET_1 = L.SLOT_TRINKET_1, TRINKET_2 = L.SLOT_TRINKET_2,
-    MAIN_HAND = L.SLOT_MAIN_HAND, OFF_HAND = L.SLOT_OFF_HAND,
+    MAIN_HAND = L.SLOT_MAIN_HAND, OFF_HAND = L.SLOT_OFF_HAND, RANGED = L.SLOT_RANGED,
 }
 
 -- Rating readouts (item's own stats, and what a recommended enchant/gem itself grants). Which
@@ -103,7 +105,7 @@ local SLOT_TO_INVSLOT = {
     HEAD = 1, NECK = 2, SHOULDER = 3, BACK = 15, CHEST = 5, WRIST = 9,
     HANDS = 10, WAIST = 6, LEGS = 7, FEET = 8,
     FINGER_1 = 11, FINGER_2 = 12, TRINKET_1 = 13, TRINKET_2 = 14,
-    MAIN_HAND = 16, OFF_HAND = 17,
+    MAIN_HAND = 16, OFF_HAND = 17, RANGED = 18,
 }
 
 -- Status dot: green if the player has the #1 BiS pick equipped. Yellow covers two cases now —
