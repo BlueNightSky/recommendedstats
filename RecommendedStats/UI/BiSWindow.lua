@@ -4,8 +4,7 @@
 -- inside the main panel (RS.bisPage), which at 440px wide truncated item names and squeezed
 -- every stat onto one line; out here the 16 slots sit in two columns and each item's secondary
 -- stats are stacked one per line, with the recommended enchant/gem in their own sub-column.
--- Item links + hover tooltip only, no tooltip rewriting (12.x taint hazard flagged
--- in scope.md).
+-- Item links + hover tooltip only, no tooltip rewriting (a 12.x taint hazard).
 --
 -- The Raid / Mythic+ toggle here drives the SAME setting as the stats panel's dropdown
 -- (RS:GetContent()/RS:SetContent()), unlike the Talents window's independent one: BiS picks and

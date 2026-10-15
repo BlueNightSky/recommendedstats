@@ -9,7 +9,7 @@
 --   - Percents are the gear part only (GetCombatRatingBonus), matching what the targets measure
 --     (Blizzard's rating_normalized), not the character sheet total with buffs and passives.
 --   - Raid only (no Mythic+), no Analyzer link, no secret values.
--- ⚠ Not yet checked in a MoP Classic client (scope.md, step 4). Things for testers to confirm:
+-- ⚠ Not yet checked in a MoP Classic client. Things for testers to confirm:
 --   GetCombatRatingBonus/CR_* values, the spirit-to-hit conversion showing in CR_HIT_SPELL for
 --   Balance, Shadow and Elemental, and GetSpecializationInfo's spec ids.
 

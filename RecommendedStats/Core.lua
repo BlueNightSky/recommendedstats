@@ -7,7 +7,7 @@ local EXPECTED_SCHEMA = 1
 
 -- The stat getters themselves now live in Flavor/Retail.lua (F.STAT_INFO[stat].percent); this
 -- note stays here because it's about how Evaluate() below compares them with the targets.
--- ⚠ VERIFY these return PERCENT (not rating) on live 12.1 before shipping (see scope.md §11).
+-- ⚠ VERIFY these return PERCENT (not rating) on live 12.1 before shipping.
 -- Reverted 2026-09-09: swapping these to GetCombatRatingBonus (to match RecommendedStatsNode's
 -- itemization-only rating_bonus targets) was based on the assumption that GetCombatRatingBonus
 -- returns a clean itemization-only percent. A live /dump of GetCombatRatingBonus(CR_VERSATILITY_
