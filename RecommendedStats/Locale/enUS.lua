@@ -66,6 +66,9 @@ L.STAT_HIT_SHORT       = "Hit"
 L.STAT_SPELLHIT_SHORT  = "Hit"
 L.STAT_EXPERTISE_SHORT = "Exp"
 L.CAP_TARGET           = "cap %d (%.1f%%)"
+-- Classic Era / SoD: Hit and Crit as the % your gear's "Equip:" effects give
+L.STAT_HIT_GEAR        = "Hit (gear)"
+L.STAT_CRIT_GEAR       = "Crit (gear)"
 
 L.CONTENT_RAID       = "Raid"
 L.CONTENT_MYTHICPLUS = "Mythic+"

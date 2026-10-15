@@ -1,0 +1,27 @@
+-- GENERATED 2026-10-15 - do not hand-edit
+if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
+RecommendedStatsData_SampleSize = {
+    ["DRUID_BALANCE_RAID"] = 20,
+    ["DRUID_FERAL_RAID"] = 20,
+    ["DRUID_GUARDIAN_RAID"] = 20,
+    ["DRUID_RESTORATION_RAID"] = 20,
+    ["HUNTER_MARKSMANSHIP_RAID"] = 20,
+    ["MAGE_FIRE_RAID"] = 20,
+    ["MAGE_ARCANE_RAID"] = 16,
+    ["MAGE_FROST_RAID"] = 4,
+    ["PALADIN_HOLY_RAID"] = 20,
+    ["PALADIN_PROTECTION_RAID"] = 20,
+    ["PALADIN_RETRIBUTION_RAID"] = 20,
+    ["PRIEST_HOLY_RAID"] = 15,
+    ["PRIEST_DISCIPLINE_RAID"] = 7,
+    ["PRIEST_SHADOW_RAID"] = 18,
+    ["ROGUE_COMBAT_RAID"] = 20,
+    ["SHAMAN_ELEMENTAL_RAID"] = 20,
+    ["SHAMAN_ENHANCEMENT_RAID"] = 20,
+    ["SHAMAN_RESTORATION_RAID"] = 19,
+    ["WARLOCK_DESTRUCTION_RAID"] = 8,
+    ["WARLOCK_DEMONOLOGY_RAID"] = 11,
+    ["WARLOCK_AFFLICTION_RAID"] = 1,
+    ["WARRIOR_FURY_RAID"] = 20,
+    ["WARRIOR_PROTECTION_RAID"] = 20,
+}

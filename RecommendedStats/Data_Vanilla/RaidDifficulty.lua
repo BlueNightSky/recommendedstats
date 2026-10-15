@@ -1,0 +1,27 @@
+-- GENERATED 2026-10-15 - do not hand-edit
+if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
+RecommendedStatsData_RaidDifficulty = {
+    ["DRUID_BALANCE_RAID"] = "normal",
+    ["DRUID_FERAL_RAID"] = "normal",
+    ["DRUID_GUARDIAN_RAID"] = "normal",
+    ["DRUID_RESTORATION_RAID"] = "normal",
+    ["HUNTER_MARKSMANSHIP_RAID"] = "normal",
+    ["MAGE_FIRE_RAID"] = "normal",
+    ["MAGE_ARCANE_RAID"] = "normal",
+    ["MAGE_FROST_RAID"] = "normal",
+    ["PALADIN_HOLY_RAID"] = "normal",
+    ["PALADIN_PROTECTION_RAID"] = "normal",
+    ["PALADIN_RETRIBUTION_RAID"] = "normal",
+    ["PRIEST_HOLY_RAID"] = "normal",
+    ["PRIEST_DISCIPLINE_RAID"] = "normal",
+    ["PRIEST_SHADOW_RAID"] = "normal",
+    ["ROGUE_COMBAT_RAID"] = "normal",
+    ["SHAMAN_ELEMENTAL_RAID"] = "normal",
+    ["SHAMAN_ENHANCEMENT_RAID"] = "normal",
+    ["SHAMAN_RESTORATION_RAID"] = "normal",
+    ["WARLOCK_DESTRUCTION_RAID"] = "normal",
+    ["WARLOCK_DEMONOLOGY_RAID"] = "normal",
+    ["WARLOCK_AFFLICTION_RAID"] = "normal",
+    ["WARRIOR_FURY_RAID"] = "normal",
+    ["WARRIOR_PROTECTION_RAID"] = "normal",
+}
