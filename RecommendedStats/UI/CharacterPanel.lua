@@ -53,7 +53,7 @@ local function CurrentRowH()
     return ROW_H_BY_SIZE[RS:GetStatsSize()] or ROW_H_BY_SIZE.DEFAULT
 end
 local function StatsContentH()
-    return (CurrentRowH() + ROW_GAP) * 4 + PRIORITY_H + FOOTER_H + 6
+    return (CurrentRowH() + ROW_GAP) * RS.Flavor.MAX_ROWS + PRIORITY_H + FOOTER_H + 6
 end
 
 -- Shared header: 8px top pad + tab row + gap + dropdown row + 8px bottom pad. statsPage anchors
@@ -97,19 +97,18 @@ end
 -- Stat names and the stat list come from the version layer (Flavor/<Version>.lua).
 local Flavor = RS.Flavor
 local STAT_LABEL, SHORT_STAT_LABEL = {}, {}
-for _, stat in ipairs(Flavor.STATS) do
-    STAT_LABEL[stat] = Flavor.StatLabel(stat)
-    SHORT_STAT_LABEL[stat] = Flavor.StatShort(stat)
+for _, list in ipairs({ Flavor.STATS, Flavor.CAP_STATS or {} }) do
+    for _, stat in ipairs(list) do
+        STAT_LABEL[stat] = Flavor.StatLabel(stat)
+        SHORT_STAT_LABEL[stat] = Flavor.StatShort(stat)
+    end
 end
 -- Order the priority line's underlying weights are read in — RecommendedStatsData_StatWeights[key]
 -- is a flat {stat = weight} table with no inherent order, sorted descending by weight at render
 -- time (see Render()'s priorityText block).
 local PRIORITY_STATS = Flavor.STATS
 
-local CONTENTS = {
-    { text = L.CONTENT_RAID,       value = "RAID" },
-    { text = L.CONTENT_MYTHICPLUS, value = "MYTHICPLUS" },
-}
+local CONTENTS = RS:ContentChoices() -- Raid / Mythic+, as far as this game version has them
 
 -- Bar shows target at a fixed position shy of the right edge (not the far end) so "over"
 -- readings have room to visibly extend past the tick instead of clipping at the bar's edge.
@@ -549,7 +548,7 @@ local function EnsurePanel()
     statsPage:SetPoint("TOPRIGHT", 0, -HEADER_H)
     statsPage:SetHeight(StatsContentH())
 
-    for i = 1, 4 do
+    for i = 1, Flavor.MAX_ROWS do
         rows[i] = CreateRow(statsPage)
     end
     LayoutRows()
@@ -683,7 +682,9 @@ local function Render(data, key)
             -- stat.high (Core.lua) is the 90th-percentile reading among top players, alongside the
             -- median target — nil for data built before this field existed, so this falls back to
             -- the plain target-only strings above rather than ever showing a blank "top" reading.
-            if stat.targetRating and stat.high then
+            if stat.cap then
+                row.target:SetText(L.CAP_TARGET:format(stat.targetRating, stat.target))
+            elseif stat.targetRating and stat.high then
                 row.target:SetText(L.TARGET_WITH_RATING_AND_HIGH:format(stat.targetRating, stat.target, stat.high))
             elseif stat.targetRating then
                 row.target:SetText(L.TARGET_WITH_RATING:format(stat.targetRating, stat.target))
@@ -730,7 +731,12 @@ local function Render(data, key)
             -- active (ApplyRowSize is what decides whether it's actually shown), same sanctioned
             -- SetFormattedText sink as row.current above since stat.current may be secret. Same
             -- rating-alongside-percent treatment as row.current above.
-            if stat.rating and stat.targetRating then
+            if stat.cap and stat.rating then
+                row.combined:SetFormattedText(
+                    "%s   %d (%.1f%%)  9483  " .. L.CAP_TARGET .. "  9483  " .. ColorHex(col) .. "%s|r",
+                    STAT_LABEL[stat.name] or stat.name, stat.rating, stat.current, stat.targetRating, stat.target, statusLabel[stat.state]
+                )
+            elseif stat.rating and stat.targetRating then
                 row.combined:SetFormattedText(
                     "%s   %d (%.1f%%)  \194\183  target %.0f (%.0f%%)  \194\183  " .. ColorHex(col) .. "%s|r",
                     STAT_LABEL[stat.name] or stat.name, stat.rating, stat.current, stat.targetRating, stat.target, statusLabel[stat.state]
@@ -796,6 +802,9 @@ local function SyncTabUI()
     bisBtn.label:SetTextColor(accent[1], accent[2], accent[3])
     talentsBtn.label:SetTextColor(accent[1], accent[2], accent[3])
     rotationBtn.label:SetTextColor(accent[1], accent[2], accent[3])
+    -- A game version without a window (no rotation guide on Classic yet) just has no button.
+    talentsBtn:SetShown(RS.ToggleTalents ~= nil)
+    rotationBtn:SetShown(RS.ToggleRotation ~= nil)
     statsPage:SetShown(showStats)
     if sizeDropdown then sizeDropdown:SetShown(showStats) end
     -- With the Stats page off, the panel is just the header (launcher buttons + the Raid/Mythic+

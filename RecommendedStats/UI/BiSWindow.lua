@@ -88,12 +88,10 @@ local SLOT_LABEL = {
 -- Rating readouts (item's own stats, and what a recommended enchant/gem itself grants). Which
 -- stats exist, their names and how they're read come from the version layer (Flavor/<Version>.lua).
 local Flavor = RS.Flavor
-local STAT_ORDER = Flavor.STATS
+-- Stats read off items: the version's stats plus Hit/Expertise on Classic (Flavor.ITEM_STATS).
+local STAT_ORDER = Flavor.ITEM_STATS or Flavor.STATS
 
-local CONTENT_CHOICES = {
-    { value = "RAID",       text = L.CONTENT_RAID },
-    { value = "MYTHICPLUS", text = L.CONTENT_MYTHICPLUS },
-}
+local CONTENT_CHOICES = RS:ContentChoices() -- Raid / Mythic+, as far as this game version has them
 
 local QUESTION_MARK_ICON = 134400 -- INV_Misc_QuestionMark, placeholder while the item loads
 local ENCHANT_ICON = "Interface\\Icons\\INV_Enchant_Disenchant"
@@ -186,7 +184,7 @@ local function StatKeyFromName(name)
     if not name then return nil end
     if not STAT_NAME_TO_KEY then
         STAT_NAME_TO_KEY = {}
-        for _, stat in ipairs(Flavor.STATS) do STAT_NAME_TO_KEY[Flavor.StatLabel(stat)] = stat end
+        for _, stat in ipairs(STAT_ORDER) do STAT_NAME_TO_KEY[Flavor.StatLabel(stat)] = stat end
     end
     return STAT_NAME_TO_KEY[name]
 end
@@ -228,10 +226,11 @@ end
 -- see ScanItemTooltipRatings above).
 local function ItemRatings(itemLink)
     if not itemLink then return nil end
-    local stats = C_Item and C_Item.GetItemStats and C_Item.GetItemStats(itemLink)
+    local getStats = (C_Item and C_Item.GetItemStats) or GetItemStats -- Classic clients may only have the global
+    local stats = getStats and getStats(itemLink)
     if stats then
         local out = {}
-        for _, stat in ipairs(Flavor.STATS) do
+        for _, stat in ipairs(STAT_ORDER) do
             for _, key in ipairs(Flavor.STAT_INFO[stat].itemKeys or {}) do
                 local v = stats[key]
                 if v and v > 0 then out[stat] = v; break end
@@ -252,7 +251,7 @@ end
 -- showing the plain rating with no percent rather than a wrong one.
 local function RatingConversion()
     local conv = {}
-    for _, stat in ipairs(Flavor.STATS) do
+    for _, stat in ipairs(STAT_ORDER) do
         local info = Flavor.STAT_INFO[stat]
         local ratingType, pctFn = info.rating, info.percent
         local rating = ratingType and GetCombatRating and GetCombatRating(ratingType)

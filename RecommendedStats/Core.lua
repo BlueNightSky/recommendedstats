@@ -32,9 +32,24 @@ local function GetClassToken() local _, c = UnitClass("player"); return c end
 
 local GetSpecToken = Flavor.GetSpecToken
 
+-- Content types this game version has (Flavor.CONTENTS); a saved choice it doesn't have (Mythic+
+-- on a Classic version) falls back to the first one.
+function RS:HasContent(c)
+    for _, v in ipairs(Flavor.CONTENTS) do if v == c then return true end end
+    return false
+end
+
+-- { value, text } per content type this version has, for the dropdown and the BiS toggle.
+function RS:ContentChoices()
+    local out = {}
+    for _, v in ipairs(Flavor.CONTENTS) do out[#out + 1] = { value = v, text = L["CONTENT_" .. v] or v } end
+    return out
+end
+
 function RS:GetContent()
     RecommendedStatsDB = RecommendedStatsDB or {}
-    return RecommendedStatsDB.content or "RAID"
+    local c = RecommendedStatsDB.content
+    return (c and RS:HasContent(c)) and c or Flavor.CONTENTS[1]
 end
 function RS:SetContent(c)
     RecommendedStatsDB = RecommendedStatsDB or {}
@@ -265,7 +280,7 @@ function RS:GetAnalyzerURL()
 end
 
 function RS:ShowAnalyzerLink()
-    if not RS.ShowCopyPopup then return end
+    if not (RS.ShowCopyPopup and Flavor.HAS_ANALYZER) then return end
     RS:ShowCopyPopup({
         title = L.ANALYZER_TITLE,
         hint  = L.ANALYZER_HINT,
@@ -364,6 +379,12 @@ function RS:Evaluate()
         -- alongside the median target as e.g. targets.hasteHigh — nil for data built before this
         -- field existed, so callers below must treat it as optional, same as targetRating.
         local high = targets[name .. "High"]
+        -- Classic data holds ratings (Flavor.TARGET_UNIT): turn the target and the top reading
+        -- into the same percent `c` is in, so everything below works the same for every version.
+        if t and Flavor.TARGET_UNIT == "rating" then
+            t = Flavor.RatingToPercent(name, t)
+            high = high and Flavor.RatingToPercent(name, high)
+        end
         if t and c ~= nil then
             -- Blizzard's Secret Values system (Patch 12.0+) marks these getters
             -- SecretWhenUnitStatsRestricted: while inside an instance and/or in combat, `c`
@@ -373,7 +394,7 @@ function RS:Evaluate()
             -- `rating` (raw combat rating, ReadRatings above) gets the same treatment — passed
             -- through to SetFormattedText untouched rather than compared/subtracted, since
             -- GetCombatRating is presumably restricted under the same rule as the percent getters.
-            if issecretvalue(c) then
+            if Flavor.IsSecret(c) then
                 allNonSecretThisRun = false
                 out[#out+1] = { name = name, current = c, target = t, delta = nil, state = "secret", rating = ratings[name], high = high }
             else
@@ -388,7 +409,7 @@ function RS:Evaluate()
                 -- `r` is checked for secrecy independently of `c` (confirmed live: GetCombatRating can
                 -- be secret) — and that check must short-circuit BEFORE `r / c` below, not alongside
                 -- it, the same ordering bug BiSWindow.lua's own copy of this pattern hit live.
-                local rSecret = r and issecretvalue and issecretvalue(r)
+                local rSecret = r and Flavor.IsSecret(r)
                 local ratingPerPercent = (r and not rSecret and c ~= 0) and (r / c) or nil
                 local targetRating = ratingPerPercent and (t * ratingPerPercent) or nil
                 local deltaRating = ratingPerPercent and (delta * ratingPerPercent) or nil
@@ -408,6 +429,26 @@ function RS:Evaluate()
                     name = name, current = c, target = t, delta = delta, state = state, rating = r,
                     targetRating = targetRating, deltaRating = deltaRating, high = high, highRating = highRating,
                     sinceLogin = sinceLogin, sinceLoginDate = sinceLoginDate,
+                }
+            end
+        end
+    end
+
+    -- Caps (Classic): Hit and Expertise have a known cap rather than a top-player median
+    -- (Data_<Version>/Caps.lua, in rating). Under is short of the cap, on is at it, over is more
+    -- than 1% past it (wasted). Never secret on the versions that have caps.
+    local caps = RecommendedStatsData_Caps and RecommendedStatsData_Caps[key]
+    if caps and Flavor.ReadCap then
+        for _, name in ipairs(Flavor.CAP_STATS or {}) do
+            local capRating = caps[name]
+            local c, r = Flavor.ReadCap(name)
+            if capRating and c then
+                local t = Flavor.RatingToPercent(name, capRating)
+                local delta = c - t
+                local state = (delta < -0.05) and "under" or (delta > 1) and "over" or "on"
+                out[#out+1] = {
+                    name = name, cap = true, current = c, target = t, delta = delta, state = state, rating = r,
+                    targetRating = capRating, deltaRating = r and (r - capRating) or nil,
                 }
             end
         end
@@ -619,6 +660,6 @@ SlashCmdList.RECSTATS = function(msg)
         return
     end
     local map = { raid="RAID", mythicplus="MYTHICPLUS" }
-    if map[msg] then RS:SetContent(map[msg])
+    if map[msg] and RS:HasContent(map[msg]) then RS:SetContent(map[msg])
     else print(L.CHAT_PREFIX .. L.MSG_CONTENT_STATUS:format(RS:GetContent())) end
 end

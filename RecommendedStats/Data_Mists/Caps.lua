@@ -13,7 +13,7 @@ RecommendedStatsData_Caps = {
         ["expertise"] = 2550,
     },
     ["DRUID_BALANCE_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["DRUID_FERAL_RAID"] = {
         ["hit"] = 2550,
@@ -36,13 +36,13 @@ RecommendedStatsData_Caps = {
         ["expertise"] = 2550,
     },
     ["MAGE_ARCANE_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["MAGE_FIRE_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["MAGE_FROST_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["MONK_BREWMASTER_RAID"] = {
         ["hit"] = 2550,
@@ -61,7 +61,7 @@ RecommendedStatsData_Caps = {
         ["expertise"] = 2550,
     },
     ["PRIEST_SHADOW_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
         ["hit"] = 2550,
@@ -76,20 +76,20 @@ RecommendedStatsData_Caps = {
         ["expertise"] = 2550,
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
         ["hit"] = 2550,
         ["expertise"] = 2550,
     },
     ["WARLOCK_AFFLICTION_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["WARLOCK_DEMONOLOGY_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
-        ["hit"] = 5100,
+        ["spellHit"] = 5100,
     },
     ["WARRIOR_ARMS_RAID"] = {
         ["hit"] = 2550,

@@ -12,6 +12,19 @@ local L = RecommendedStats_Locale
 local F = { id = "RETAIL" }
 RS.Flavor = F
 
+-- Content types this version has data for, in dropdown order (Core.lua, the panel, the BiS window).
+F.CONTENTS = { "RAID", "MYTHICPLUS" }
+-- "percent": Data/StatTargets.lua holds total percents, compared directly with F.ReadStats().
+-- "rating": it holds ratings, converted per stat with F.RatingToPercent (Classic versions).
+F.TARGET_UNIT = "percent"
+-- Most stat rows the panel ever needs (F.STATS plus any caps).
+F.MAX_ROWS = 4
+-- The Analyzer site (rs.ctrlshiftzed.com) only has retail logs.
+F.HAS_ANALYZER = true
+
+-- Midnight's secret values (in combat/instances). Versions without them never have one.
+F.IsSecret = issecretvalue or function() return false end
+
 -- The secondary stats this version has, in display order. Every stat table in the data
 -- (Data/StatTargets.lua, Data/StatWeights.lua) is keyed by these names.
 F.STATS = { "haste", "crit", "mastery", "versatility" }

@@ -1,0 +1,39 @@
+## Interface: 50504
+## Title: RecommendedStats
+## Notes: Your secondary stats vs top-player targets, with BiS.
+## Notes-ruRU: Ваши вторичные характеристики в сравнении с показателями топовых игроков, включая BiS.
+## Author: CtrlShift_Zed
+## Version: 2026-10-15
+## Category: CtrlShift_Zed
+## IconTexture: Interface\AddOns\RecommendedStats\icon
+## SavedVariables: RecommendedStatsDB
+## SavedVariablesPerCharacter: RecommendedStatsDBChar
+## X-License: MIT
+## X-Wago-ID: 56ndvpG9
+
+Libs\Libs.xml
+
+Locale\enUS.lua
+Locale\zhTW.lua
+Locale\ruRU.lua
+
+Flavor\Mists.lua
+
+Data_Mists\Meta.lua
+Data_Mists\StatTargets.lua
+Data_Mists\Caps.lua
+Data_Mists\BiS.lua
+Data_Mists\RaidDifficulty.lua
+Data_Mists\SampleSize.lua
+Data_Mists\StatWeights.lua
+Data_Mists\Talents.lua
+Core.lua
+UI\CharacterPanel.lua
+UI\BiSWindow.lua
+UI\TalentsWindowMists.lua
+UI\CopyPopup.lua
+UI\SkinShare.lua
+UI\OptionsPanel.lua
+UI\MinimapButton.lua
+UI\WhatsNew.lua
+UI\RatingNudge.lua
