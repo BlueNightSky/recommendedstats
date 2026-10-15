@@ -1,7 +1,7 @@
--- GENERATED 2026-10-14 - do not hand-edit
+-- GENERATED 2026-10-15 - do not hand-edit
 RecommendedStatsData_Meta = {
     ["schema"] = 1,
-    ["updated"] = "2026-10-14",
+    ["updated"] = "2026-10-15",
     ["gamePatch"] = "12.1.5",
     ["sampleSize"] = 20,
     ["source"] = "raider.io + Battle.net API",

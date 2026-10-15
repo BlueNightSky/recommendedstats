@@ -4,6 +4,20 @@ A World of Warcraft addon that shows your secondary stats (Haste, Critical Strik
 
 ![Recommended Stats panel for a Restoration Druid, Mythic+, with the Stats, BiS, Talents and Rotation tabs](docs/druid_default_skin.png)
 
+## Game versions
+
+One download works on every version: the addon loads the right data for your client by itself.
+
+| | Version | Status |
+|:---:|---|---|
+| <img src="docs/midnight-icon-128.webp" width="40" alt=""> | Retail | Everything below, Raid and Mythic+ |
+| <img src="docs/mop-icon-128.webp" width="40" alt=""> | MoP Classic | Beta: Haste, Crit and Mastery targets, Hit and Expertise caps, BiS, talents and glyphs |
+| <img src="docs/tbc-icon-128.webp" width="40" alt=""> | TBC Anniversary | Beta: Crit, Hit and Haste targets, BiS with the ranged slot, talent splits |
+| <img src="docs/classic-icon-128.webp" width="40" alt=""> | Classic Era and Season of Discovery | Beta: Hit and Crit from gear, BiS, talent splits |
+| <img src="docs/forever-icon-128.webp" width="40" alt=""> | WoW Forever | Coming soon |
+
+The Classic versions are raid only and have no Rotation window yet.
+
 ## Features
 
 - **Stat panel** docked next to the character screen, showing current vs. target for each secondary stat, with a progress bar and a target tick so you can see how far off you are, not just whether you're over or under.
