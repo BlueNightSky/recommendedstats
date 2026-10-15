@@ -10,7 +10,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 543,
             ["gemID"] = 95344,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104484,
@@ -21,7 +21,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76690,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 96573,
@@ -34,7 +34,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76695,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 96569,
@@ -47,7 +47,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76695,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 96446,
@@ -58,7 +58,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76695,
             ["gemPct"] = 105,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99186,
@@ -71,7 +71,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76697,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104418,
@@ -84,7 +84,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 65,
             ["gemID"] = 76695,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 105415,
@@ -97,7 +97,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76695,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 96570,
@@ -110,7 +110,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76695,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104496,
@@ -123,7 +123,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76617,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 95020,
@@ -136,7 +136,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76664,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 102308,
@@ -145,7 +145,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96398,
             ["altPct"] = 15,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 96501,
@@ -154,7 +154,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 102305,
             ["altPct"] = 15,
             ["altIlvl"] = 567,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -167,7 +167,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76695,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104483,
@@ -180,7 +180,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 65,
             ["gemID"] = 76695,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["DEATHKNIGHT_FROST_RAID"] = {
@@ -193,7 +193,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104517,
@@ -202,7 +202,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105513,
             ["altPct"] = 30,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99339,
@@ -215,7 +215,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76674,
             ["gemPct"] = 180,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99335,
@@ -225,7 +225,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76674,
             ["gemPct"] = 265,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104513,
@@ -236,7 +236,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104569,
@@ -249,7 +249,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76643,
             ["gemPct"] = 125,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104535,
@@ -262,7 +262,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76700,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104460,
@@ -275,7 +275,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99336,
@@ -288,7 +288,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76674,
             ["gemPct"] = 170,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104538,
@@ -301,7 +301,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76674,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104615,
@@ -314,7 +314,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76674,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104613,
@@ -323,7 +323,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105111,
             ["altPct"] = 15,
             ["altIlvl"] = 542,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104463,
@@ -332,7 +332,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105459,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -342,7 +342,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76674,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104464,
@@ -355,7 +355,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76674,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104464,
@@ -368,7 +368,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76674,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["DEATHKNIGHT_UNHOLY_RAID"] = {
@@ -381,7 +381,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 96420,
@@ -390,7 +390,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105513,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99339,
@@ -403,7 +403,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76661,
             ["gemPct"] = 115,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99335,
@@ -416,7 +416,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76661,
             ["gemPct"] = 125,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 96373,
@@ -427,7 +427,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76697,
             ["gemPct"] = 135,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 96572,
@@ -440,7 +440,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76641,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104535,
@@ -453,7 +453,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76697,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104460,
@@ -466,7 +466,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99336,
@@ -479,7 +479,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76661,
             ["gemPct"] = 110,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 95022,
@@ -492,7 +492,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76697,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 96500,
@@ -505,7 +505,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76661,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104495,
@@ -514,7 +514,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104463,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 96470,
@@ -523,7 +523,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 94508,
             ["altPct"] = 15,
             ["altIlvl"] = 530,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -533,7 +533,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76661,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104483,
@@ -546,7 +546,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["DRUID_BALANCE_RAID"] = {
@@ -559,7 +559,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 574,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104477,
@@ -568,7 +568,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104543,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99428,
@@ -581,7 +581,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76659,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99427,
@@ -594,7 +594,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76659,
             ["gemPct"] = 150,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104504,
@@ -605,7 +605,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 155,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99434,
@@ -618,7 +618,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 50,
             ["gemID"] = 76697,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104580,
@@ -631,7 +631,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104429,
@@ -644,7 +644,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76631,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99432,
@@ -654,7 +654,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76659,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104524,
@@ -667,7 +667,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76697,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 105606,
@@ -680,7 +680,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76697,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104426,
@@ -689,7 +689,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105540,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104544,
@@ -698,7 +698,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96930,
             ["altPct"] = 10,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -708,7 +708,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76659,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104631,
@@ -721,7 +721,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76659,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104525,
@@ -734,7 +734,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76697,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["DRUID_FERAL_RAID"] = {
@@ -747,7 +747,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104411,
@@ -758,7 +758,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76670,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99322,
@@ -771,7 +771,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76692,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99326,
@@ -784,7 +784,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104532,
@@ -795,7 +795,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76692,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104533,
@@ -808,7 +808,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76680,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104435,
@@ -821,7 +821,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76680,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104509,
@@ -834,7 +834,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76697,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99327,
@@ -847,7 +847,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76692,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104487,
@@ -860,7 +860,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76692,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104628,
@@ -873,7 +873,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76692,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 96546,
@@ -882,7 +882,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96918,
             ["altPct"] = 20,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104531,
@@ -891,7 +891,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104616,
             ["altPct"] = 10,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -901,7 +901,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76692,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104564,
@@ -914,7 +914,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76658,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["DRUID_GUARDIAN_RAID"] = {
@@ -927,7 +927,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 543,
             ["gemID"] = 95346,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104606,
@@ -938,7 +938,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99423,
@@ -951,7 +951,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76659,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99419,
@@ -964,7 +964,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76659,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104532,
@@ -975,7 +975,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 175,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99422,
@@ -988,7 +988,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76697,
             ["gemPct"] = 150,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104488,
@@ -1001,7 +1001,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76697,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 105505,
@@ -1014,7 +1014,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 104457,
@@ -1027,7 +1027,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104455,
@@ -1040,7 +1040,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76697,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104562,
@@ -1053,7 +1053,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76697,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104531,
@@ -1062,7 +1062,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105527,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104613,
@@ -1071,7 +1071,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105609,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -1084,7 +1084,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76659,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104412,
@@ -1097,7 +1097,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["DRUID_RESTORATION_RAID"] = {
@@ -1110,7 +1110,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 574,
             ["gemID"] = 95347,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104477,
@@ -1121,7 +1121,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76651,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 96588,
@@ -1134,7 +1134,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76668,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99430,
@@ -1147,7 +1147,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76668,
             ["gemPct"] = 135,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104504,
@@ -1158,7 +1158,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 96586,
@@ -1171,7 +1171,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76700,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104428,
@@ -1184,7 +1184,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76668,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104526,
@@ -1197,7 +1197,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76672,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99435,
@@ -1210,7 +1210,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76672,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104427,
@@ -1223,7 +1223,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76672,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104524,
@@ -1236,7 +1236,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76672,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104478,
@@ -1245,7 +1245,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105474,
             ["altPct"] = 30,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104611,
@@ -1254,7 +1254,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105607,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102247,
@@ -1264,7 +1264,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76668,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104545,
@@ -1277,7 +1277,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104448,
@@ -1290,7 +1290,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76645,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["HUNTER_BEASTMASTERY_RAID"] = {
@@ -1303,7 +1303,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104411,
@@ -1314,7 +1314,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76666,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99404,
@@ -1327,7 +1327,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76692,
             ["gemPct"] = 170,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99405,
@@ -1340,7 +1340,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 205,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104588,
@@ -1351,7 +1351,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76692,
             ["gemPct"] = 155,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99403,
@@ -1364,7 +1364,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76666,
             ["gemPct"] = 130,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104557,
@@ -1377,7 +1377,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76692,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104621,
@@ -1390,7 +1390,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76666,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99406,
@@ -1403,7 +1403,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76692,
             ["gemPct"] = 190,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104562,
@@ -1416,7 +1416,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76692,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104628,
@@ -1429,7 +1429,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76692,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104476,
@@ -1438,7 +1438,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105472,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104616,
@@ -1447,7 +1447,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105612,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -1457,7 +1457,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76692,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104563,
@@ -1470,7 +1470,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
@@ -1483,7 +1483,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 103750,
@@ -1492,7 +1492,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104606,
             ["altPct"] = 35,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99159,
@@ -1505,7 +1505,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76692,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99405,
@@ -1518,7 +1518,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 240,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 103888,
@@ -1529,7 +1529,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76692,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104458,
@@ -1542,7 +1542,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76680,
             ["gemPct"] = 120,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104557,
@@ -1555,7 +1555,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76692,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104491,
@@ -1568,7 +1568,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76626,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99406,
@@ -1581,7 +1581,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76692,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104455,
@@ -1594,7 +1594,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76680,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 96513,
@@ -1607,7 +1607,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76692,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104476,
@@ -1616,7 +1616,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 102292,
             ["altPct"] = 25,
             ["altIlvl"] = 567,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104531,
@@ -1625,7 +1625,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105472,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -1635,7 +1635,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76692,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104433,
@@ -1648,7 +1648,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["HUNTER_SURVIVAL_RAID"] = {
@@ -1661,7 +1661,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104606,
@@ -1672,7 +1672,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76592,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99404,
@@ -1685,7 +1685,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76692,
             ["gemPct"] = 135,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 104589,
@@ -1698,7 +1698,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 175,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104588,
@@ -1709,7 +1709,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76692,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99403,
@@ -1722,7 +1722,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76658,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104557,
@@ -1735,7 +1735,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104566,
@@ -1748,7 +1748,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76692,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99406,
@@ -1761,7 +1761,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76692,
             ["gemPct"] = 145,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104562,
@@ -1774,7 +1774,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76692,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104628,
@@ -1787,7 +1787,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76692,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104531,
@@ -1796,7 +1796,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105472,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104476,
@@ -1805,7 +1805,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96781,
             ["altPct"] = 10,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -1815,7 +1815,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76692,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104563,
@@ -1828,7 +1828,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["MAGE_ARCANE_RAID"] = {
@@ -1841,7 +1841,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 574,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104469,
@@ -1850,7 +1850,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104543,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99401,
@@ -1863,7 +1863,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99400,
@@ -1873,7 +1873,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 215,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104519,
@@ -1884,7 +1884,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99162,
@@ -1897,7 +1897,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76700,
             ["gemPct"] = 145,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104497,
@@ -1910,7 +1910,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76700,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104595,
@@ -1923,7 +1923,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76700,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99397,
@@ -1936,7 +1936,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76671,
             ["gemPct"] = 120,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104502,
@@ -1949,7 +1949,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76672,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104447,
@@ -1962,7 +1962,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76643,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104544,
@@ -1971,7 +1971,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 102300,
             ["altPct"] = 15,
             ["altIlvl"] = 567,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104426,
@@ -1980,7 +1980,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104924,
             ["altPct"] = 15,
             ["altIlvl"] = 542,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -1990,7 +1990,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76671,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104598,
@@ -2003,7 +2003,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104525,
@@ -2016,7 +2016,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76671,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["MAGE_FIRE_RAID"] = {
@@ -2029,7 +2029,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104469,
@@ -2038,7 +2038,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105465,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99401,
@@ -2051,7 +2051,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76659,
             ["gemPct"] = 170,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99400,
@@ -2061,7 +2061,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76659,
             ["gemPct"] = 275,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104573,
@@ -2072,7 +2072,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99399,
@@ -2085,7 +2085,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76697,
             ["gemPct"] = 170,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104541,
@@ -2098,7 +2098,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76641,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104465,
@@ -2109,7 +2109,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["enchantID"] = 4414,
             ["enchantPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99397,
@@ -2119,7 +2119,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76659,
             ["gemPct"] = 155,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104447,
@@ -2132,7 +2132,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76697,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 105443,
@@ -2145,7 +2145,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76575,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104426,
@@ -2154,7 +2154,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105540,
             ["altPct"] = 35,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104544,
@@ -2163,7 +2163,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105422,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -2173,7 +2173,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76659,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104598,
@@ -2186,7 +2186,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76659,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104525,
@@ -2199,7 +2199,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76659,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["MAGE_FROST_RAID"] = {
@@ -2212,7 +2212,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104469,
@@ -2221,7 +2221,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104543,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99401,
@@ -2234,7 +2234,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76694,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99400,
@@ -2247,7 +2247,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76694,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104519,
@@ -2258,7 +2258,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76694,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104520,
@@ -2271,7 +2271,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76672,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104497,
@@ -2284,7 +2284,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76694,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104465,
@@ -2295,7 +2295,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["enchantID"] = 4414,
             ["enchantPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99397,
@@ -2308,7 +2308,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76694,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104502,
@@ -2321,7 +2321,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76642,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104447,
@@ -2334,7 +2334,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76667,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104426,
@@ -2343,7 +2343,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105422,
             ["altPct"] = 30,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104544,
@@ -2352,7 +2352,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105540,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -2362,7 +2362,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76694,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104479,
@@ -2375,7 +2375,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76682,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104609,
@@ -2388,7 +2388,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76672,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["MONK_BREWMASTER_RAID"] = {
@@ -2401,7 +2401,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 543,
             ["gemID"] = 76697,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104606,
@@ -2412,7 +2412,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76697,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 96643,
@@ -2425,7 +2425,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76659,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 104456,
@@ -2438,7 +2438,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76659,
             ["gemPct"] = 125,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 96465,
@@ -2449,7 +2449,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76697,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99385,
@@ -2462,7 +2462,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76697,
             ["gemPct"] = 110,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 95007,
@@ -2475,7 +2475,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104509,
@@ -2488,7 +2488,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76697,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 104457,
@@ -2501,7 +2501,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 50,
             ["gemID"] = 76659,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 96513,
@@ -2512,7 +2512,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76641,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104455,
@@ -2523,7 +2523,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76697,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 96369,
@@ -2532,7 +2532,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96741,
             ["altPct"] = 20,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 96546,
@@ -2541,7 +2541,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104531,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -2554,7 +2554,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76659,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104434,
@@ -2567,7 +2567,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76659,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 96535,
@@ -2580,7 +2580,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76659,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["MONK_MISTWEAVER_RAID"] = {
@@ -2593,7 +2593,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95345,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104477,
@@ -2604,7 +2604,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76697,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 104449,
@@ -2617,7 +2617,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99391,
@@ -2630,7 +2630,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 230,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104504,
@@ -2641,7 +2641,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76660,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99149,
@@ -2654,7 +2654,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76697,
             ["gemPct"] = 105,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104471,
@@ -2667,7 +2667,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76697,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104429,
@@ -2680,7 +2680,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76697,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99388,
@@ -2693,7 +2693,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76660,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104578,
@@ -2706,7 +2706,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 30,
             ["gemID"] = 76697,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104427,
@@ -2719,7 +2719,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 30,
             ["gemID"] = 76697,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104553,
@@ -2728,7 +2728,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104478,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104611,
@@ -2737,7 +2737,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105549,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102247,
@@ -2747,7 +2747,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76660,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104554,
@@ -2760,7 +2760,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76660,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104525,
@@ -2773,7 +2773,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76697,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["MONK_WINDWALKER_RAID"] = {
@@ -2786,7 +2786,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104411,
@@ -2797,7 +2797,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99395,
@@ -2810,7 +2810,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76700,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99396,
@@ -2823,7 +2823,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76667,
             ["gemPct"] = 105,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 94998,
@@ -2834,7 +2834,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99145,
@@ -2847,7 +2847,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104586,
@@ -2860,7 +2860,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76641,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104509,
@@ -2873,7 +2873,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76699,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99392,
@@ -2886,7 +2886,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 50,
             ["gemID"] = 76667,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 96513,
@@ -2899,7 +2899,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76642,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104455,
@@ -2912,7 +2912,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76700,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 96546,
@@ -2921,7 +2921,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104531,
             ["altPct"] = 35,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 96918,
@@ -2930,7 +2930,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96741,
             ["altPct"] = 10,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -2940,7 +2940,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76667,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104508,
@@ -2953,7 +2953,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76670,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104434,
@@ -2966,7 +2966,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76670,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["PALADIN_HOLY_RAID"] = {
@@ -2979,7 +2979,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95345,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104597,
@@ -2990,7 +2990,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99378,
@@ -3003,7 +3003,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76672,
             ["gemPct"] = 130,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99374,
@@ -3016,7 +3016,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 190,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104431,
@@ -3027,7 +3027,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 115,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99377,
@@ -3040,7 +3040,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 65,
             ["gemID"] = 76700,
             ["gemPct"] = 135,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104604,
@@ -3053,7 +3053,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104506,
@@ -3066,7 +3066,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76700,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99375,
@@ -3079,7 +3079,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104427,
@@ -3092,7 +3092,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76700,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104610,
@@ -3105,7 +3105,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 20,
             ["gemID"] = 76700,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104478,
@@ -3114,7 +3114,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104553,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104426,
@@ -3123,7 +3123,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104924,
             ["altPct"] = 15,
             ["altIlvl"] = 542,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102247,
@@ -3133,7 +3133,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104545,
@@ -3146,7 +3146,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104470,
@@ -3159,7 +3159,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76672,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["PALADIN_PROTECTION_RAID"] = {
@@ -3172,7 +3172,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76667,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 96429,
@@ -3183,7 +3183,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76642,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 96427,
@@ -3196,7 +3196,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76699,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 104416,
@@ -3209,7 +3209,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76667,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104437,
@@ -3220,7 +3220,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76699,
             ["gemPct"] = 130,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99372,
@@ -3233,7 +3233,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76699,
             ["gemPct"] = 150,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104535,
@@ -3246,7 +3246,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76699,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104415,
@@ -3259,7 +3259,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76697,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 104515,
@@ -3272,7 +3272,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76699,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104593,
@@ -3285,7 +3285,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76667,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 95022,
@@ -3298,7 +3298,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76667,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104613,
@@ -3307,7 +3307,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104636,
             ["altPct"] = 30,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 96543,
@@ -3316,7 +3316,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 102308,
             ["altPct"] = 20,
             ["altIlvl"] = 567,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -3326,7 +3326,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76667,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104571,
@@ -3339,7 +3339,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76667,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104560,
@@ -3352,7 +3352,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76667,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["PALADIN_RETRIBUTION_RAID"] = {
@@ -3365,7 +3365,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104570,
@@ -3374,7 +3374,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96420,
             ["altPct"] = 15,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99373,
@@ -3387,7 +3387,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76674,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99387,
@@ -3400,7 +3400,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104513,
@@ -3411,7 +3411,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104644,
@@ -3424,7 +3424,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76577,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104535,
@@ -3437,7 +3437,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76700,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104460,
@@ -3450,7 +3450,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99380,
@@ -3463,7 +3463,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104593,
@@ -3476,7 +3476,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76671,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104538,
@@ -3489,7 +3489,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76671,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104495,
@@ -3498,7 +3498,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104463,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104613,
@@ -3507,7 +3507,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105111,
             ["altPct"] = 20,
             ["altIlvl"] = 542,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -3517,7 +3517,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76671,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104483,
@@ -3530,7 +3530,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76577,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
@@ -3543,7 +3543,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95345,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104597,
@@ -3552,7 +3552,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104477,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99358,
@@ -3565,7 +3565,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76660,
             ["gemPct"] = 155,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99357,
@@ -3578,7 +3578,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 260,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104467,
@@ -3589,7 +3589,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 135,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99367,
@@ -3602,7 +3602,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76697,
             ["gemPct"] = 170,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104541,
@@ -3615,7 +3615,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104446,
@@ -3628,7 +3628,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99365,
@@ -3641,7 +3641,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76660,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104578,
@@ -3654,7 +3654,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76697,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104427,
@@ -3667,7 +3667,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76697,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104478,
@@ -3676,7 +3676,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104619,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104553,
@@ -3685,7 +3685,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105549,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102247,
@@ -3698,7 +3698,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76660,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104479,
@@ -3711,7 +3711,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104525,
@@ -3724,7 +3724,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76697,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["PRIEST_HOLY_RAID"] = {
@@ -3737,7 +3737,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 574,
             ["gemID"] = 95345,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104597,
@@ -3748,7 +3748,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76660,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99358,
@@ -3761,7 +3761,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 105,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99357,
@@ -3774,7 +3774,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104467,
@@ -3785,7 +3785,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76660,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99367,
@@ -3798,7 +3798,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 35,
             ["gemID"] = 76697,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104552,
@@ -3811,7 +3811,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104446,
@@ -3822,7 +3822,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["enchantID"] = 4414,
             ["enchantPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99365,
@@ -3835,7 +3835,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 120,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104427,
@@ -3848,7 +3848,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 40,
             ["gemID"] = 76660,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104578,
@@ -3861,7 +3861,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 40,
             ["gemID"] = 76660,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104478,
@@ -3870,7 +3870,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105474,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104611,
@@ -3879,7 +3879,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104553,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102247,
@@ -3889,7 +3889,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 50,
             ["gemID"] = 76660,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104503,
@@ -3902,7 +3902,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76660,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 105521,
@@ -3915,7 +3915,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76697,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["PRIEST_SHADOW_RAID"] = {
@@ -3928,7 +3928,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104477,
@@ -3937,7 +3937,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104543,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99363,
@@ -3950,7 +3950,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76668,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99362,
@@ -3963,7 +3963,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76668,
             ["gemPct"] = 120,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104467,
@@ -3974,7 +3974,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76699,
             ["gemPct"] = 140,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99361,
@@ -3987,7 +3987,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76699,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104497,
@@ -4000,7 +4000,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76699,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104465,
@@ -4011,7 +4011,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["enchantID"] = 4414,
             ["enchantPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99359,
@@ -4024,7 +4024,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76668,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104524,
@@ -4037,7 +4037,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76699,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104502,
@@ -4050,7 +4050,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76699,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104544,
@@ -4059,7 +4059,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105422,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104426,
@@ -4068,7 +4068,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105540,
             ["altPct"] = 10,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -4078,7 +4078,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76667,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104479,
@@ -4091,7 +4091,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76668,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104654,
@@ -4104,7 +4104,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76667,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
@@ -4117,7 +4117,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104411,
@@ -4128,7 +4128,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76670,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99350,
@@ -4141,7 +4141,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 150,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99356,
@@ -4154,7 +4154,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 220,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104532,
@@ -4165,7 +4165,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76692,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104533,
@@ -4178,7 +4178,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76680,
             ["gemPct"] = 145,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104435,
@@ -4191,7 +4191,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76670,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104620,
@@ -4204,7 +4204,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76692,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99355,
@@ -4217,7 +4217,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76692,
             ["gemPct"] = 195,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104628,
@@ -4230,7 +4230,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76692,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104562,
@@ -4243,7 +4243,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76692,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104531,
@@ -4252,7 +4252,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105472,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104476,
@@ -4261,7 +4261,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96369,
             ["altPct"] = 15,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -4271,7 +4271,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76692,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 105547,
@@ -4284,7 +4284,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76692,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104551,
@@ -4297,7 +4297,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76692,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["ROGUE_COMBAT_RAID"] = {
@@ -4310,7 +4310,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104411,
@@ -4319,7 +4319,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105407,
             ["altPct"] = 15,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 96683,
@@ -4332,7 +4332,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76666,
             ["gemPct"] = 110,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 96679,
@@ -4345,7 +4345,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76666,
             ["gemPct"] = 110,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104532,
@@ -4356,7 +4356,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76699,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 96682,
@@ -4369,7 +4369,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76699,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104586,
@@ -4382,7 +4382,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76642,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 105616,
@@ -4395,7 +4395,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76699,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 96680,
@@ -4408,7 +4408,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76666,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104487,
@@ -4421,7 +4421,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76699,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104628,
@@ -4434,7 +4434,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76666,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104476,
@@ -4443,7 +4443,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105527,
             ["altPct"] = 40,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104531,
@@ -4452,7 +4452,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105472,
             ["altPct"] = 30,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -4462,7 +4462,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76666,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104508,
@@ -4475,7 +4475,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76666,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104585,
@@ -4488,7 +4488,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76666,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["ROGUE_SUBTLETY_RAID"] = {
@@ -4501,7 +4501,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104606,
@@ -4512,7 +4512,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76666,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99350,
@@ -4525,7 +4525,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76692,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99356,
@@ -4538,7 +4538,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76692,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104532,
@@ -4549,7 +4549,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76692,
             ["gemPct"] = 110,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104533,
@@ -4562,7 +4562,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76680,
             ["gemPct"] = 105,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104435,
@@ -4575,7 +4575,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 105505,
@@ -4588,7 +4588,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76666,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99355,
@@ -4601,7 +4601,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76692,
             ["gemPct"] = 135,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104455,
@@ -4614,7 +4614,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76692,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104487,
@@ -4627,7 +4627,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76692,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104476,
@@ -4636,7 +4636,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105472,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104531,
@@ -4645,7 +4645,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105527,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -4655,7 +4655,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76692,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104605,
@@ -4668,7 +4668,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104551,
@@ -4681,7 +4681,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76692,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
@@ -4694,7 +4694,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104597,
@@ -4705,7 +4705,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76634,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99334,
@@ -4718,7 +4718,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76672,
             ["gemPct"] = 190,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99344,
@@ -4731,7 +4731,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 290,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104601,
@@ -4742,7 +4742,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 567,
             ["gemID"] = 76700,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99333,
@@ -4755,7 +4755,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 45,
             ["gemID"] = 76700,
             ["gemPct"] = 170,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104622,
@@ -4768,7 +4768,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76700,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104528,
@@ -4779,7 +4779,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["enchantID"] = 4414,
             ["enchantPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 104505,
@@ -4792,7 +4792,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76672,
             ["gemPct"] = 115,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104427,
@@ -4805,7 +4805,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76700,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104610,
@@ -4818,7 +4818,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76700,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104426,
@@ -4827,7 +4827,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105422,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104544,
@@ -4836,7 +4836,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105540,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -4846,7 +4846,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76672,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104545,
@@ -4859,7 +4859,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104470,
@@ -4872,7 +4872,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76672,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
@@ -4885,7 +4885,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104411,
@@ -4896,7 +4896,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99343,
@@ -4909,7 +4909,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76670,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99347,
@@ -4922,7 +4922,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76670,
             ["gemPct"] = 155,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104490,
@@ -4933,7 +4933,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 120,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99342,
@@ -4946,7 +4946,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76700,
             ["gemPct"] = 115,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104511,
@@ -4959,7 +4959,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76700,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104621,
@@ -4972,7 +4972,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76700,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99340,
@@ -4985,7 +4985,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76670,
             ["gemPct"] = 115,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104455,
@@ -4998,7 +4998,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76643,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104487,
@@ -5011,7 +5011,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76700,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104476,
@@ -5020,7 +5020,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105472,
             ["altPct"] = 30,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104531,
@@ -5029,7 +5029,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104584,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102248,
@@ -5039,7 +5039,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 65,
             ["gemID"] = 76670,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104434,
@@ -5052,7 +5052,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76670,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104629,
@@ -5065,7 +5065,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76670,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["SHAMAN_RESTORATION_RAID"] = {
@@ -5078,7 +5078,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95347,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104477,
@@ -5089,7 +5089,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76633,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99346,
@@ -5102,7 +5102,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76668,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99351,
@@ -5115,7 +5115,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76668,
             ["gemPct"] = 110,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104547,
@@ -5126,7 +5126,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76668,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99354,
@@ -5139,7 +5139,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76668,
             ["gemPct"] = 40,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104622,
@@ -5152,7 +5152,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76631,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104473,
@@ -5165,7 +5165,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76633,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 104505,
@@ -5178,7 +5178,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76668,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104524,
@@ -5191,7 +5191,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 25,
             ["gemID"] = 76668,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104578,
@@ -5204,7 +5204,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 25,
             ["gemID"] = 76633,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104611,
@@ -5213,7 +5213,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105474,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104478,
@@ -5222,7 +5222,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105607,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102247,
@@ -5232,7 +5232,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76668,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104545,
@@ -5245,7 +5245,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76668,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104579,
@@ -5258,7 +5258,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 65,
             ["gemID"] = 76660,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["WARLOCK_AFFLICTION_RAID"] = {
@@ -5271,7 +5271,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104469,
@@ -5280,7 +5280,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105465,
             ["altPct"] = 30,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99417,
@@ -5293,7 +5293,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 155,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 104596,
@@ -5306,7 +5306,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 170,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104519,
@@ -5317,7 +5317,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 115,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104520,
@@ -5330,7 +5330,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76643,
             ["gemPct"] = 145,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104497,
@@ -5343,7 +5343,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104595,
@@ -5356,7 +5356,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76700,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99424,
@@ -5369,7 +5369,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104502,
@@ -5380,7 +5380,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76643,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104632,
@@ -5391,7 +5391,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76643,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104426,
@@ -5400,7 +5400,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105648,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104652,
@@ -5409,7 +5409,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105422,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -5419,7 +5419,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76671,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104598,
@@ -5432,7 +5432,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76671,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104654,
@@ -5445,7 +5445,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76671,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["WARLOCK_DEMONOLOGY_RAID"] = {
@@ -5458,7 +5458,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104469,
@@ -5467,7 +5467,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105465,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99417,
@@ -5480,7 +5480,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99416,
@@ -5493,7 +5493,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76672,
             ["gemPct"] = 120,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 105515,
@@ -5504,7 +5504,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104520,
@@ -5517,7 +5517,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76700,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104497,
@@ -5530,7 +5530,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76700,
             ["gemPct"] = 55,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104465,
@@ -5543,7 +5543,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99424,
@@ -5556,7 +5556,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 75,
             ["gemID"] = 76671,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104610,
@@ -5567,7 +5567,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76671,
             ["gemPct"] = 15,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 105498,
@@ -5578,7 +5578,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76643,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 96558,
@@ -5587,7 +5587,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105422,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104426,
@@ -5596,7 +5596,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96930,
             ["altPct"] = 15,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -5606,7 +5606,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76672,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104554,
@@ -5619,7 +5619,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76671,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104525,
@@ -5632,7 +5632,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76671,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
@@ -5645,7 +5645,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95347,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104469,
@@ -5654,7 +5654,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96453,
             ["altPct"] = 10,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 99417,
@@ -5667,7 +5667,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76671,
             ["gemPct"] = 125,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 99416,
@@ -5680,7 +5680,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76671,
             ["gemPct"] = 160,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 105515,
@@ -5691,7 +5691,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76700,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104520,
@@ -5704,7 +5704,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76643,
             ["gemPct"] = 85,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104497,
@@ -5717,7 +5717,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104595,
@@ -5730,7 +5730,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76700,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99424,
@@ -5743,7 +5743,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76672,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 96529,
@@ -5756,7 +5756,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 10,
             ["gemID"] = 76643,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104610,
@@ -5769,7 +5769,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 15,
             ["gemID"] = 76643,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104426,
@@ -5778,7 +5778,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104544,
             ["altPct"] = 25,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 102310,
@@ -5787,7 +5787,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105422,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102246,
@@ -5797,7 +5797,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76672,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104479,
@@ -5810,7 +5810,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76643,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104609,
@@ -5823,7 +5823,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 50,
             ["gemID"] = 76671,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["WARRIOR_ARMS_RAID"] = {
@@ -5836,7 +5836,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 561,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 96792,
@@ -5845,7 +5845,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96420,
             ["altPct"] = 15,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 96734,
@@ -5858,7 +5858,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 104536,
@@ -5871,7 +5871,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76659,
             ["gemPct"] = 105,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104537,
@@ -5882,7 +5882,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 549,
             ["gemID"] = 76697,
             ["gemPct"] = 190,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99199,
@@ -5895,7 +5895,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 165,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104482,
@@ -5908,7 +5908,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104460,
@@ -5921,7 +5921,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76697,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99412,
@@ -5934,7 +5934,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 95,
             ["gemID"] = 76659,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104440,
@@ -5947,7 +5947,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76697,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104615,
@@ -5960,7 +5960,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76697,
             ["gemPct"] = 35,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104463,
@@ -5969,7 +5969,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 104613,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104495,
@@ -5978,7 +5978,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105459,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -5988,7 +5988,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76659,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104483,
@@ -6001,7 +6001,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["WARRIOR_FURY_RAID"] = {
@@ -6014,7 +6014,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95346,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104570,
@@ -6025,7 +6025,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76641,
             ["gemPct"] = 5,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 104645,
@@ -6038,7 +6038,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 190,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 104536,
@@ -6051,7 +6051,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 210,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 104537,
@@ -6062,7 +6062,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 280,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 104569,
@@ -6075,7 +6075,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 260,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104482,
@@ -6088,7 +6088,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76659,
             ["gemPct"] = 60,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104460,
@@ -6101,7 +6101,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76697,
             ["gemPct"] = 100,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 99412,
@@ -6114,7 +6114,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 60,
             ["gemID"] = 76697,
             ["gemPct"] = 285,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104538,
@@ -6125,7 +6125,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 104615,
@@ -6136,7 +6136,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76697,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 104495,
@@ -6145,7 +6145,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 105491,
             ["altPct"] = 20,
             ["altIlvl"] = 580,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104613,
@@ -6154,7 +6154,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 102305,
             ["altPct"] = 10,
             ["altIlvl"] = 567,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -6164,7 +6164,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76697,
             ["gemPct"] = 70,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104483,
@@ -6177,7 +6177,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76697,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104483,
@@ -6190,7 +6190,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76697,
             ["gemPct"] = 90,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
     ["WARRIOR_PROTECTION_RAID"] = {
@@ -6203,7 +6203,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 95346,
             ["gemPct"] = 75,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["NECK"] = {
             ["itemID"] = 104626,
@@ -6214,7 +6214,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76641,
             ["gemPct"] = 10,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["SHOULDER"] = {
             ["itemID"] = 104420,
@@ -6227,7 +6227,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76695,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
             ["itemID"] = 104516,
@@ -6240,7 +6240,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76695,
             ["gemPct"] = 80,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WAIST"] = {
             ["itemID"] = 96446,
@@ -6251,7 +6251,7 @@ RecommendedStatsData_BiS = {
             ["altIlvl"] = 580,
             ["gemID"] = 76695,
             ["gemPct"] = 105,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["LEGS"] = {
             ["itemID"] = 99195,
@@ -6264,7 +6264,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 70,
             ["gemID"] = 76697,
             ["gemPct"] = 95,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FEET"] = {
             ["itemID"] = 104418,
@@ -6277,7 +6277,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 85,
             ["gemID"] = 76659,
             ["gemPct"] = 25,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
             ["itemID"] = 104568,
@@ -6290,7 +6290,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76695,
             ["gemPct"] = 45,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 104439,
@@ -6303,7 +6303,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 80,
             ["gemID"] = 76695,
             ["gemPct"] = 120,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_1"] = {
             ["itemID"] = 104540,
@@ -6316,7 +6316,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76697,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["FINGER_2"] = {
             ["itemID"] = 95020,
@@ -6329,7 +6329,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 5,
             ["gemID"] = 76695,
             ["gemPct"] = 20,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_1"] = {
             ["itemID"] = 96543,
@@ -6338,7 +6338,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 96501,
             ["altPct"] = 15,
             ["altIlvl"] = 549,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["TRINKET_2"] = {
             ["itemID"] = 104636,
@@ -6347,7 +6347,7 @@ RecommendedStatsData_BiS = {
             ["altItemID"] = 102308,
             ["altPct"] = 15,
             ["altIlvl"] = 567,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 102249,
@@ -6360,7 +6360,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 90,
             ["gemID"] = 76659,
             ["gemPct"] = 30,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
             ["itemID"] = 104421,
@@ -6373,7 +6373,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 55,
             ["gemID"] = 76695,
             ["gemPct"] = 65,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
         ["OFF_HAND"] = {
             ["itemID"] = 104485,
@@ -6386,7 +6386,7 @@ RecommendedStatsData_BiS = {
             ["enchantPct"] = 100,
             ["gemID"] = 76695,
             ["gemPct"] = 50,
-            ["changedAt"] = "2026-10-15",
+            ["changedAt"] = "2000-01-01",
         },
     },
 }

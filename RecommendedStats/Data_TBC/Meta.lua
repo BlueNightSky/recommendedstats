@@ -4,7 +4,7 @@ RecommendedStatsData_Meta = {
     ["updated"] = "2026-10-15",
     ["gamePatch"] = "2.5.6",
     ["sampleSize"] = 20,
-    ["source"] = "Warcraft Logs + Battle.net API",
+    ["source"] = "Warcraft Logs",
     ["flavor"] = "tbc",
     ["statUnit"] = "rating",
 }
