@@ -1,3 +1,5 @@
 # Packaging output
 .release/
 *.zip
+# Private
+scope.md

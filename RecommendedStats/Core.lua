@@ -2,8 +2,11 @@ local ADDON = ...
 RecommendedStats = RecommendedStats or {}
 local RS = RecommendedStats
 local L = RecommendedStats_Locale
+local Flavor = RS.Flavor -- Flavor/<Version>.lua: stats, spec and item level for this game version
 local EXPECTED_SCHEMA = 1
 
+-- The stat getters themselves now live in Flavor/Retail.lua (F.STAT_INFO[stat].percent); this
+-- note stays here because it's about how Evaluate() below compares them with the targets.
 -- ⚠ VERIFY these return PERCENT (not rating) on live 12.1 before shipping (see scope.md §11).
 -- Reverted 2026-09-09: swapping these to GetCombatRatingBonus (to match RecommendedStatsNode's
 -- itemization-only rating_bonus targets) was based on the assumption that GetCombatRatingBonus
@@ -19,52 +22,15 @@ local EXPECTED_SCHEMA = 1
 -- instead), so both sides of the comparison are total-vs-total. That fix only changes what a fresh
 -- data build produces; RecommendedStatsData_Targets stays on old itemization-only numbers until the
 -- next real (non-mock) `npm run build` + publish.
-local function ReadStats()
-    return {
-        haste       = GetHaste(),
-        crit        = GetCritChance(),        -- casters: GetSpellCritChance()
-        mastery     = GetMasteryEffect(),
-        versatility = GetCombatRatingBonus(CR_VERSATILITY_DAMAGE_DONE),
-    }
-end
+local ReadStats = Flavor.ReadStats
 
 -- Raw combat rating alongside the percent above — gear/enchants/gems are itemized in rating, not
--- percent (see UI/BiSWindow.lua's own rating readouts), so the stat panel shows both. Same
--- CR_HASTE_MELEE/CR_CRIT_MELEE constants BiSWindow.lua already uses for its own rating-to-percent
--- conversion estimate — melee/ranged/spell combat ratings are the same underlying gear stat, this
--- just reads whichever one happens to share a name with the unified percent getters above.
-local RATING_TYPE = {
-    haste = CR_HASTE_MELEE, crit = CR_CRIT_MELEE, mastery = CR_MASTERY, versatility = CR_VERSATILITY_DAMAGE_DONE,
-}
-local function ReadRatings()
-    local out = {}
-    for stat, ratingType in pairs(RATING_TYPE) do
-        out[stat] = GetCombatRating and ratingType and GetCombatRating(ratingType)
-    end
-    return out
-end
+-- percent (see UI/BiSWindow.lua's own rating readouts), so the stat panel shows both.
+local ReadRatings = Flavor.ReadRatings
 
 local function GetClassToken() local _, c = UnitClass("player"); return c end
 
-local SPEC_TOKENS = {
-    [71]  = "ARMS",           [72]  = "FURY",         [73]   = "PROTECTION",      -- Warrior
-    [65]  = "HOLY",           [66]  = "PROTECTION",   [70]   = "RETRIBUTION",     -- Paladin
-    [253] = "BEASTMASTERY",   [254] = "MARKSMANSHIP", [255]  = "SURVIVAL",        -- Hunter
-    [259] = "ASSASSINATION",  [260] = "OUTLAW",       [261]  = "SUBTLETY",        -- Rogue
-    [256] = "DISCIPLINE",     [257] = "HOLY",         [258]  = "SHADOW",          -- Priest
-    [250] = "BLOOD",          [251] = "FROST",        [252]  = "UNHOLY",          -- Death Knight
-    [262] = "ELEMENTAL",      [263] = "ENHANCEMENT",  [264]  = "RESTORATION",     -- Shaman
-    [62]  = "ARCANE",         [63]  = "FIRE",         [64]   = "FROST",           -- Mage
-    [265] = "AFFLICTION",     [266] = "DEMONOLOGY",   [267]  = "DESTRUCTION",     -- Warlock
-    [268] = "BREWMASTER",     [269] = "WINDWALKER",   [270]  = "MISTWEAVER",      -- Monk
-    [102] = "BALANCE",        [103] = "FERAL",        [104]  = "GUARDIAN",   [105] = "RESTORATION", -- Druid
-    [577] = "HAVOC",          [581] = "VENGEANCE",    [1480] = "DEVOURER",       -- Demon Hunter
-    [1467] = "DEVASTATION",   [1468] = "PRESERVATION", [1473] = "AUGMENTATION",   -- Evoker
-}
-local function GetSpecToken()
-    local idx = GetSpecialization(); if not idx then return nil end
-    return SPEC_TOKENS[(GetSpecializationInfo(idx))]
-end
+local GetSpecToken = Flavor.GetSpecToken
 
 function RS:GetContent()
     RecommendedStatsDB = RecommendedStatsDB or {}
@@ -392,7 +358,7 @@ function RS:Evaluate()
         RS.trendBaseline = RecommendedStatsDBChar.trend[specToken] or false
     end
     local allNonSecretThisRun = true
-    for _, name in ipairs({ "haste", "crit", "mastery", "versatility" }) do
+    for _, name in ipairs(Flavor.STATS) do
         local c, t = cur[name], targets[name]
         -- 90th-percentile reading among top players (RecommendedStatsNode's aggregate.js), stored
         -- alongside the median target as e.g. targets.hasteHigh — nil for data built before this
@@ -453,10 +419,9 @@ function RS:Evaluate()
     -- change never overwrites the baseline players are still comparing "since login" against.
     if specToken and allNonSecretThisRun and not RS.trendCapturedThisSession then
         RS.trendCapturedThisSession = true
-        RecommendedStatsDBChar.trend[specToken] = {
-            haste = cur.haste, crit = cur.crit, mastery = cur.mastery, versatility = cur.versatility,
-            date = date("%Y-%m-%d"),
-        }
+        local snapshot = { date = date("%Y-%m-%d") }
+        for _, name in ipairs(Flavor.STATS) do snapshot[name] = cur[name] end
+        RecommendedStatsDBChar.trend[specToken] = snapshot
     end
     return out, key
 end

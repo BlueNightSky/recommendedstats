@@ -85,13 +85,10 @@ local SLOT_LABEL = {
     MAIN_HAND = L.SLOT_MAIN_HAND, OFF_HAND = L.SLOT_OFF_HAND,
 }
 
--- Rating readouts (item's own stats, and what a recommended enchant/gem itself grants) — this
--- file owns its own copy of these rather than importing CharacterPanel.lua's, same "each file
--- owns its own layout locals independently" convention as the constants above.
-local STAT_ORDER = { "haste", "crit", "mastery", "versatility" }
-local SHORT_STAT_LABEL = {
-    haste = L.STAT_HASTE_SHORT, crit = L.STAT_CRIT_SHORT, mastery = L.STAT_MASTERY_SHORT, versatility = L.STAT_VERSATILITY_SHORT,
-}
+-- Rating readouts (item's own stats, and what a recommended enchant/gem itself grants). Which
+-- stats exist, their names and how they're read come from the version layer (Flavor/<Version>.lua).
+local Flavor = RS.Flavor
+local STAT_ORDER = Flavor.STATS
 
 local CONTENT_CHOICES = {
     { value = "RAID",       text = L.CONTENT_RAID },
@@ -176,17 +173,10 @@ end
 -- the existing % targets stay the primary readout on the Stats tab, this is additive detail here.
 --------------------------------------------------------------------------------
 
--- ⚠ VERIFY these exact key names live — Blizzard's internal ITEM_MOD_*_SHORT field names have
--- shifted before across expansions. Versatility lists two candidates since tooltips only ever
--- show one "Versatility" stat but C_Item.GetItemStats may expose it under either name depending
--- on client version; first present key wins. Any stat whose key doesn't match here is simply
--- omitted from the readout rather than shown as a wrong/zero value.
-local ITEM_STAT_KEYS = {
-    haste       = { "ITEM_MOD_HASTE_RATING_SHORT" },
-    crit        = { "ITEM_MOD_CRIT_RATING_SHORT" },
-    mastery     = { "ITEM_MOD_MASTERY_RATING_SHORT" },
-    versatility = { "ITEM_MOD_VERSATILITY", "ITEM_MOD_VERSATILITY_DAMAGE_DONE_SHORT" },
-}
+-- ⚠ VERIFY the item stat key names (Flavor STAT_INFO[stat].itemKeys) live — Blizzard's internal
+-- ITEM_MOD_*_SHORT field names have shifted before across expansions; first present key wins. Any
+-- stat whose key doesn't match is simply omitted from the readout rather than shown as a
+-- wrong/zero value.
 
 -- Maps a tooltip-scanned stat NAME (localized text, e.g. "Critical Strike") back to our internal
 -- stat key — built lazily so it picks up L's real values rather than evaluating at file-load
@@ -194,10 +184,10 @@ local ITEM_STAT_KEYS = {
 local STAT_NAME_TO_KEY
 local function StatKeyFromName(name)
     if not name then return nil end
-    STAT_NAME_TO_KEY = STAT_NAME_TO_KEY or {
-        [L.STAT_HASTE] = "haste", [L.STAT_CRIT] = "crit",
-        [L.STAT_MASTERY] = "mastery", [L.STAT_VERSATILITY] = "versatility",
-    }
+    if not STAT_NAME_TO_KEY then
+        STAT_NAME_TO_KEY = {}
+        for _, stat in ipairs(Flavor.STATS) do STAT_NAME_TO_KEY[Flavor.StatLabel(stat)] = stat end
+    end
     return STAT_NAME_TO_KEY[name]
 end
 
@@ -241,8 +231,8 @@ local function ItemRatings(itemLink)
     local stats = C_Item and C_Item.GetItemStats and C_Item.GetItemStats(itemLink)
     if stats then
         local out = {}
-        for stat, keys in pairs(ITEM_STAT_KEYS) do
-            for _, key in ipairs(keys) do
+        for _, stat in ipairs(Flavor.STATS) do
+            for _, key in ipairs(Flavor.STAT_INFO[stat].itemKeys or {}) do
                 local v = stats[key]
                 if v and v > 0 then out[stat] = v; break end
             end
@@ -262,14 +252,9 @@ end
 -- showing the plain rating with no percent rather than a wrong one.
 local function RatingConversion()
     local conv = {}
-    local specs = {
-        haste       = { CR_HASTE_MELEE, GetHaste },
-        crit        = { CR_CRIT_MELEE, GetCritChance },
-        mastery     = { CR_MASTERY, GetMasteryEffect },
-        versatility = { CR_VERSATILITY_DAMAGE_DONE, function() return GetCombatRatingBonus(CR_VERSATILITY_DAMAGE_DONE) end },
-    }
-    for stat, spec in pairs(specs) do
-        local ratingType, pctFn = spec[1], spec[2]
+    for _, stat in ipairs(Flavor.STATS) do
+        local info = Flavor.STAT_INFO[stat]
+        local ratingType, pctFn = info.rating, info.percent
         local rating = ratingType and GetCombatRating and GetCombatRating(ratingType)
         local pct = pctFn and pctFn()
         if rating and pct then
@@ -288,7 +273,7 @@ local function RatingConversion()
 end
 
 local function FormatRating(stat, rating, conversion)
-    local label = SHORT_STAT_LABEL[stat] or stat
+    local label = Flavor.StatShort(stat)
     local rate = conversion[stat]
     if rate then
         return L.RATING_WITH_PCT:format(rating, label, rating * rate)
@@ -608,7 +593,7 @@ local function SetRowItem(row, slot, entry, conversion)
     elseif entry.altItemID and equippedID == entry.altItemID then
         row.statusDot:SetTexture(dotTex.alt)
     elseif equippedID and equippedID ~= 0 and entry.ilvl and equippedLink
-        and (select(1, C_Item.GetDetailedItemLevelInfo(equippedLink)) or 0) >= entry.ilvl then
+        and Flavor.GetItemLevel(equippedLink) >= entry.ilvl then
         row.statusDot:SetTexture(dotTex.alt)
     else
         row.statusDot:SetTexture(dotTex.missing)
@@ -707,10 +692,7 @@ local function ShowEmpty(msg)
     emptyText:Show()
 end
 
-local function SpecName()
-    local idx = GetSpecialization and GetSpecialization()
-    return idx and select(2, GetSpecializationInfo(idx)) or ""
-end
+local SpecName = Flavor.GetSpecName
 
 local function Render()
     -- Recomputed stats/gear (login, gear change, rating update) must not force the window into

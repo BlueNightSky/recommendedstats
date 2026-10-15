@@ -94,16 +94,17 @@ local function StatusLabels()
     return RS:GetColorblindMode() and STATUS_LABEL_CB or STATUS_LABEL
 end
 
-local STAT_LABEL = {
-    haste = L.STAT_HASTE, crit = L.STAT_CRIT, mastery = L.STAT_MASTERY, versatility = L.STAT_VERSATILITY,
-}
-local SHORT_STAT_LABEL = {
-    haste = L.STAT_HASTE_SHORT, crit = L.STAT_CRIT_SHORT, mastery = L.STAT_MASTERY_SHORT, versatility = L.STAT_VERSATILITY_SHORT,
-}
+-- Stat names and the stat list come from the version layer (Flavor/<Version>.lua).
+local Flavor = RS.Flavor
+local STAT_LABEL, SHORT_STAT_LABEL = {}, {}
+for _, stat in ipairs(Flavor.STATS) do
+    STAT_LABEL[stat] = Flavor.StatLabel(stat)
+    SHORT_STAT_LABEL[stat] = Flavor.StatShort(stat)
+end
 -- Order the priority line's underlying weights are read in — RecommendedStatsData_StatWeights[key]
--- (RecommendedStatsNode/src/bloodmallet.js) is a flat {haste,crit,mastery,versatility} table with
--- no inherent order, sorted descending by weight at render time (see Render()'s priorityText block).
-local PRIORITY_STATS = { "haste", "crit", "mastery", "versatility" }
+-- is a flat {stat = weight} table with no inherent order, sorted descending by weight at render
+-- time (see Render()'s priorityText block).
+local PRIORITY_STATS = Flavor.STATS
 
 local CONTENTS = {
     { text = L.CONTENT_RAID,       value = "RAID" },

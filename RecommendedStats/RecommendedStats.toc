@@ -17,6 +17,8 @@ Locale\enUS.lua
 Locale\zhTW.lua
 Locale\ruRU.lua
 
+Flavor\Retail.lua
+
 Data\Meta.lua
 Data\StatTargets.lua
 Data\BiS.lua

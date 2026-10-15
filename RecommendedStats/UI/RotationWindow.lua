@@ -445,9 +445,7 @@ Refresh = function(fromMenu)
     bossDropdown:SetDefaultText(boss and boss.name or L.ROTATION_BOSS_OVERALL)
     bossDropdown:SetShown(spec ~= nil and spec.bosses ~= nil and #spec.bosses > 0)
 
-    local specName = ""
-    local specIndex = GetSpecialization and GetSpecialization()
-    if specIndex then specName = select(2, GetSpecializationInfo(specIndex)) or "" end
+    local specName = RS.Flavor.GetSpecName()
 
     local resolved, reason = Resolve()
     local noticeX = LayoutToggles(resolved)
