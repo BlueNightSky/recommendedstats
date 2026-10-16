@@ -1,4 +1,4 @@
--- GENERATED 2026-10-15 - do not hand-edit
+-- GENERATED 2026-10-16 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -65,11 +65,11 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 10746,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["haste"] = 13820,
+        ["haste"] = 13711,
         ["hasteHigh"] = 14553,
-        ["crit"] = 12777,
+        ["crit"] = 12929,
         ["critHigh"] = 14152,
-        ["mastery"] = 3126,
+        ["mastery"] = 3172,
         ["masteryHigh"] = 5405,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
@@ -97,7 +97,7 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 15041,
     },
     ["MAGE_FROST_RAID"] = {
-        ["haste"] = 14289,
+        ["haste"] = 14292,
         ["hasteHigh"] = 15716,
         ["crit"] = 5594,
         ["critHigh"] = 6361,
@@ -106,10 +106,10 @@ RecommendedStatsData_Targets = {
     },
     ["MONK_BREWMASTER_RAID"] = {
         ["haste"] = 10314,
-        ["hasteHigh"] = 12008,
-        ["crit"] = 19512,
+        ["hasteHigh"] = 12515,
+        ["crit"] = 19492,
         ["critHigh"] = 21102,
-        ["mastery"] = 2681,
+        ["mastery"] = 2408,
         ["masteryHigh"] = 6308,
     },
     ["MONK_MISTWEAVER_RAID"] = {
@@ -134,7 +134,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 1493,
         ["critHigh"] = 6456,
         ["mastery"] = 20855,
-        ["masteryHigh"] = 26259,
+        ["masteryHigh"] = 25834,
     },
     ["PALADIN_PROTECTION_RAID"] = {
         ["haste"] = 18399,
@@ -149,24 +149,24 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 15822,
         ["crit"] = 4991,
         ["critHigh"] = 6029,
-        ["mastery"] = 18004,
+        ["mastery"] = 17677,
         ["masteryHigh"] = 20947,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
         ["haste"] = 1998,
         ["hasteHigh"] = 2890,
-        ["crit"] = 15385,
+        ["crit"] = 16074,
         ["critHigh"] = 17734,
         ["mastery"] = 15089,
         ["masteryHigh"] = 17502,
     },
     ["PRIEST_HOLY_RAID"] = {
-        ["haste"] = 1309,
+        ["haste"] = 1487,
         ["hasteHigh"] = 3422,
-        ["crit"] = 11476,
+        ["crit"] = 11661,
         ["critHigh"] = 14502,
         ["mastery"] = 13386,
-        ["masteryHigh"] = 18258,
+        ["masteryHigh"] = 17825,
     },
     ["PRIEST_SHADOW_RAID"] = {
         ["haste"] = 17241,
@@ -182,7 +182,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 7871,
         ["critHigh"] = 8754,
         ["mastery"] = 13684,
-        ["masteryHigh"] = 14851,
+        ["masteryHigh"] = 15042,
     },
     ["ROGUE_COMBAT_RAID"] = {
         ["haste"] = 16349,
@@ -197,7 +197,7 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 16112,
         ["crit"] = 9543,
         ["critHigh"] = 10315,
-        ["mastery"] = 5710,
+        ["mastery"] = 5972,
         ["masteryHigh"] = 6782,
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
@@ -210,8 +210,8 @@ RecommendedStatsData_Targets = {
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
         ["haste"] = 12633,
-        ["hasteHigh"] = 13416,
-        ["crit"] = 4609,
+        ["hasteHigh"] = 13764,
+        ["crit"] = 4529,
         ["critHigh"] = 5681,
         ["mastery"] = 20383,
         ["masteryHigh"] = 21234,
@@ -237,8 +237,8 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 17996,
         ["crit"] = 4238,
         ["critHigh"] = 4993,
-        ["mastery"] = 17393,
-        ["masteryHigh"] = 19360,
+        ["mastery"] = 17535,
+        ["masteryHigh"] = 19543,
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
         ["haste"] = 10281,
@@ -259,13 +259,13 @@ RecommendedStatsData_Targets = {
     ["WARRIOR_FURY_RAID"] = {
         ["haste"] = 1224,
         ["hasteHigh"] = 2400,
-        ["crit"] = 24059,
+        ["crit"] = 24307,
         ["critHigh"] = 24792,
         ["mastery"] = 16129,
         ["masteryHigh"] = 16939,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
-        ["haste"] = 991,
+        ["haste"] = 1054,
         ["hasteHigh"] = 1912,
         ["crit"] = 9740,
         ["critHigh"] = 17408,
