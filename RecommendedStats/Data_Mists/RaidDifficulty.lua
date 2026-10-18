@@ -1,4 +1,4 @@
--- GENERATED 2026-10-16 - do not hand-edit
+-- GENERATED 2026-10-17 - do not hand-edit
 RecommendedStatsData_RaidDifficulty = {
     ["DEATHKNIGHT_BLOOD_RAID"] = "heroic",
     ["DEATHKNIGHT_FROST_RAID"] = "heroic",

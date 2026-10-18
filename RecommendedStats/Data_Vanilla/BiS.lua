@@ -1,4 +1,4 @@
--- GENERATED 2026-10-16 - do not hand-edit
+-- GENERATED 2026-10-17 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_BiS = {
     ["DRUID_BALANCE_RAID"] = {
@@ -2345,10 +2345,10 @@ RecommendedStatsData_BiS = {
         },
         ["CHEST"] = {
             ["itemID"] = 21364,
-            ["pct"] = 70,
+            ["pct"] = 75,
             ["ilvl"] = 88,
             ["altItemID"] = 22476,
-            ["altPct"] = 30,
+            ["altPct"] = 25,
             ["altIlvl"] = 92,
             ["enchantID"] = 1891,
             ["enchantPct"] = 100,
@@ -2356,10 +2356,10 @@ RecommendedStatsData_BiS = {
         },
         ["WAIST"] = {
             ["itemID"] = 22482,
-            ["pct"] = 55,
+            ["pct"] = 60,
             ["ilvl"] = 88,
             ["altItemID"] = 21586,
-            ["altPct"] = 45,
+            ["altPct"] = 40,
             ["altIlvl"] = 88,
             ["changedAt"] = "2000-01-01",
         },
@@ -2424,16 +2424,13 @@ RecommendedStatsData_BiS = {
         },
         ["TRINKET_2"] = {
             ["itemID"] = 23206,
-            ["pct"] = 90,
+            ["pct"] = 95,
             ["ilvl"] = 90,
-            ["altItemID"] = 23041,
-            ["altPct"] = 5,
-            ["altIlvl"] = 90,
             ["changedAt"] = "2000-01-01",
         },
         ["BACK"] = {
             ["itemID"] = 21710,
-            ["pct"] = 50,
+            ["pct"] = 45,
             ["ilvl"] = 88,
             ["altItemID"] = 21701,
             ["altPct"] = 30,
@@ -2466,10 +2463,10 @@ RecommendedStatsData_BiS = {
         },
         ["RANGED"] = {
             ["itemID"] = 17069,
-            ["pct"] = 55,
+            ["pct"] = 50,
             ["ilvl"] = 69,
             ["altItemID"] = 22812,
-            ["altPct"] = 45,
+            ["altPct"] = 50,
             ["altIlvl"] = 89,
             ["enchantID"] = 664,
             ["enchantPct"] = 75,
