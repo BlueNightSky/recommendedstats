@@ -1,4 +1,4 @@
--- GENERATED 2026-10-17 - do not hand-edit
+-- GENERATED 2026-10-18 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["n"] = 20,
@@ -1110,18 +1110,18 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 120479,
-                ["pct"] = 50,
+                ["pct"] = 55,
             },
             {
                 ["spellID"] = 125893,
-                ["pct"] = 40,
-            },
-            {
-                ["spellID"] = 125154,
                 ["pct"] = 35,
             },
             {
-                ["spellID"] = 125660,
+                ["spellID"] = 125154,
+                ["pct"] = 30,
+            },
+            {
+                ["spellID"] = 125151,
                 ["pct"] = 25,
             },
         },
@@ -1705,9 +1705,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 36554,
-                ["pct"] = 85,
+                ["pct"] = 90,
                 ["altSpellID"] = 108212,
-                ["altPct"] = 15,
+                ["altPct"] = 10,
             },
             {
                 ["spellID"] = 131511,
@@ -1739,7 +1739,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 56819,
-                ["pct"] = 50,
+                ["pct"] = 55,
             },
             {
                 ["spellID"] = 58032,
@@ -2255,9 +2255,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 55694,
-                ["pct"] = 80,
+                ["pct"] = 85,
                 ["altSpellID"] = 29838,
-                ["altPct"] = 15,
+                ["altPct"] = 10,
             },
             {
                 ["spellID"] = 102060,
@@ -2283,7 +2283,7 @@ RecommendedStatsData_Talents = {
         ["glyphs"] = {
             {
                 ["spellID"] = 94372,
-                ["pct"] = 100,
+                ["pct"] = 95,
             },
             {
                 ["spellID"] = 58098,
@@ -2291,7 +2291,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 63325,
-                ["pct"] = 65,
+                ["pct"] = 70,
             },
             {
                 ["spellID"] = 63327,
@@ -2310,7 +2310,7 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 35,
             },
             {
-                ["spellID"] = 115946,
+                ["spellID"] = 58099,
                 ["pct"] = 30,
             },
         },

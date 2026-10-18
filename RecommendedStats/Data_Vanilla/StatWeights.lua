@@ -1,9 +1,9 @@
--- GENERATED 2026-10-17 - do not hand-edit
+-- GENERATED 2026-10-18 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_StatWeights = {
     ["DRUID_BALANCE_RAID"] = {
         ["hit"] = -0.2234,
-        ["crit"] = -0.251,
+        ["crit"] = -0.2276,
     },
     ["DRUID_FERAL_RAID"] = {
         ["hit"] = -0.1443,
@@ -52,8 +52,8 @@ RecommendedStatsData_StatWeights = {
         ["crit"] = -0.0782,
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
-        ["hit"] = -0.238,
-        ["crit"] = -0.209,
+        ["hit"] = -0.2469,
+        ["crit"] = -0.2094,
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
         ["hit"] = -0.2685,

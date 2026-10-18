@@ -1,4 +1,4 @@
--- GENERATED 2026-10-17 - do not hand-edit
+-- GENERATED 2026-10-18 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
@@ -10,7 +10,7 @@ RecommendedStatsData_Talents = {
                     0,
                     16,
                 },
-                ["pct"] = 40,
+                ["pct"] = 45,
             },
             {
                 ["split"] = {
@@ -18,7 +18,7 @@ RecommendedStatsData_Talents = {
                     0,
                     14,
                 },
-                ["pct"] = 40,
+                ["pct"] = 35,
             },
             {
                 ["split"] = {
@@ -134,17 +134,17 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    5,
+                    7,
                     31,
-                    15,
+                    13,
                 },
                 ["pct"] = 5,
             },
             {
                 ["split"] = {
-                    7,
+                    5,
                     31,
-                    13,
+                    15,
                 },
                 ["pct"] = 5,
             },
@@ -480,7 +480,7 @@ RecommendedStatsData_Talents = {
                     0,
                     20,
                 },
-                ["pct"] = 90,
+                ["pct"] = 85,
             },
             {
                 ["split"] = {
@@ -488,7 +488,7 @@ RecommendedStatsData_Talents = {
                     0,
                     21,
                 },
-                ["pct"] = 10,
+                ["pct"] = 15,
             },
         },
         ["median"] = {

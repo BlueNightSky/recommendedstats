@@ -1,4 +1,4 @@
--- GENERATED 2026-10-17 - do not hand-edit
+-- GENERATED 2026-10-18 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -76,7 +76,7 @@ RecommendedStatsData_Targets = {
         ["haste"] = 10370,
         ["hasteHigh"] = 12768,
         ["crit"] = 15334,
-        ["critHigh"] = 15538,
+        ["critHigh"] = 15525,
         ["mastery"] = 4593,
         ["masteryHigh"] = 7499,
     },
@@ -94,7 +94,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 18029,
         ["critHigh"] = 18954,
         ["mastery"] = 12997,
-        ["masteryHigh"] = 15041,
+        ["masteryHigh"] = 15452,
     },
     ["MAGE_FROST_RAID"] = {
         ["haste"] = 14292,
@@ -121,10 +121,10 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 11281,
     },
     ["MONK_WINDWALKER_RAID"] = {
-        ["haste"] = 11579,
-        ["hasteHigh"] = 11795,
-        ["crit"] = 11577,
-        ["critHigh"] = 11792,
+        ["haste"] = 11575,
+        ["hasteHigh"] = 11778,
+        ["crit"] = 11566,
+        ["critHigh"] = 11780,
         ["mastery"] = 11606,
         ["masteryHigh"] = 11796,
     },
@@ -155,9 +155,9 @@ RecommendedStatsData_Targets = {
     ["PRIEST_DISCIPLINE_RAID"] = {
         ["haste"] = 1795,
         ["hasteHigh"] = 2359,
-        ["crit"] = 16074,
+        ["crit"] = 15718,
         ["critHigh"] = 17737,
-        ["mastery"] = 15089,
+        ["mastery"] = 15998,
         ["masteryHigh"] = 19367,
     },
     ["PRIEST_HOLY_RAID"] = {
@@ -174,7 +174,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 8042,
         ["critHigh"] = 8686,
         ["mastery"] = 11932,
-        ["masteryHigh"] = 13922,
+        ["masteryHigh"] = 14005,
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
         ["haste"] = 8164,
@@ -194,9 +194,9 @@ RecommendedStatsData_Targets = {
     },
     ["ROGUE_SUBTLETY_RAID"] = {
         ["haste"] = 14483,
-        ["hasteHigh"] = 16112,
-        ["crit"] = 9543,
-        ["critHigh"] = 10315,
+        ["hasteHigh"] = 15978,
+        ["crit"] = 9335,
+        ["critHigh"] = 10285,
         ["mastery"] = 5972,
         ["masteryHigh"] = 6782,
     },
@@ -259,9 +259,9 @@ RecommendedStatsData_Targets = {
     ["WARRIOR_FURY_RAID"] = {
         ["haste"] = 1224,
         ["hasteHigh"] = 2089,
-        ["crit"] = 24699,
+        ["crit"] = 24307,
         ["critHigh"] = 24792,
-        ["mastery"] = 16325,
+        ["mastery"] = 16066,
         ["masteryHigh"] = 16939,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
