@@ -1,4 +1,4 @@
--- GENERATED 2026-10-17 - do not hand-edit
+-- GENERATED 2026-10-19 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -95,7 +95,7 @@ RecommendedStatsData_Talents = {
                     0,
                     61,
                 },
-                ["pct"] = 30,
+                ["pct"] = 35,
             },
             {
                 ["split"] = {
@@ -103,7 +103,7 @@ RecommendedStatsData_Talents = {
                     0,
                     40,
                 },
-                ["pct"] = 25,
+                ["pct"] = 20,
             },
             {
                 ["split"] = {
@@ -143,17 +143,17 @@ RecommendedStatsData_Talents = {
         ["builds"] = {
             {
                 ["split"] = {
-                    7,
-                    48,
-                    6,
-                },
-                ["pct"] = 25,
-            },
-            {
-                ["split"] = {
                     14,
                     44,
                     3,
+                },
+                ["pct"] = 20,
+            },
+            {
+                ["split"] = {
+                    7,
+                    48,
+                    6,
                 },
                 ["pct"] = 15,
             },
@@ -167,7 +167,7 @@ RecommendedStatsData_Talents = {
             },
         },
         ["median"] = {
-            7,
+            9,
             45,
             6,
         },
@@ -181,7 +181,7 @@ RecommendedStatsData_Talents = {
                     20,
                     34,
                 },
-                ["pct"] = 90,
+                ["pct"] = 95,
             },
             {
                 ["split"] = {
@@ -189,7 +189,7 @@ RecommendedStatsData_Talents = {
                     20,
                     41,
                 },
-                ["pct"] = 10,
+                ["pct"] = 5,
             },
         },
         ["median"] = {
@@ -225,7 +225,7 @@ RecommendedStatsData_Talents = {
                     48,
                     11,
                 },
-                ["pct"] = 60,
+                ["pct"] = 55,
             },
             {
                 ["split"] = {
@@ -233,13 +233,13 @@ RecommendedStatsData_Talents = {
                     50,
                     11,
                 },
-                ["pct"] = 10,
+                ["pct"] = 15,
             },
             {
                 ["split"] = {
-                    2,
-                    45,
-                    14,
+                    0,
+                    40,
+                    21,
                 },
                 ["pct"] = 10,
             },
@@ -293,7 +293,7 @@ RecommendedStatsData_Talents = {
                     11,
                     5,
                 },
-                ["pct"] = 70,
+                ["pct"] = 75,
             },
             {
                 ["split"] = {
@@ -327,7 +327,7 @@ RecommendedStatsData_Talents = {
                     31,
                     30,
                 },
-                ["pct"] = 65,
+                ["pct"] = 60,
             },
             {
                 ["split"] = {
@@ -387,7 +387,7 @@ RecommendedStatsData_Talents = {
                     30,
                     0,
                 },
-                ["pct"] = 40,
+                ["pct"] = 45,
             },
             {
                 ["split"] = {
@@ -403,7 +403,7 @@ RecommendedStatsData_Talents = {
                     19,
                     0,
                 },
-                ["pct"] = 25,
+                ["pct"] = 20,
             },
         },
         ["median"] = {
@@ -439,7 +439,7 @@ RecommendedStatsData_Talents = {
                     0,
                     47,
                 },
-                ["pct"] = 85,
+                ["pct"] = 80,
             },
             {
                 ["split"] = {
@@ -447,7 +447,7 @@ RecommendedStatsData_Talents = {
                     0,
                     48,
                 },
-                ["pct"] = 10,
+                ["pct"] = 15,
             },
             {
                 ["split"] = {
@@ -525,7 +525,7 @@ RecommendedStatsData_Talents = {
                     0,
                     41,
                 },
-                ["pct"] = 20,
+                ["pct"] = 15,
             },
             {
                 ["split"] = {
@@ -573,17 +573,17 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    17,
-                    44,
+                    16,
+                    45,
                     0,
                 },
                 ["pct"] = 10,
             },
             {
                 ["split"] = {
-                    1,
-                    46,
-                    14,
+                    17,
+                    44,
+                    0,
                 },
                 ["pct"] = 10,
             },
@@ -637,7 +637,7 @@ RecommendedStatsData_Talents = {
                     0,
                     21,
                 },
-                ["pct"] = 40,
+                ["pct"] = 45,
             },
             {
                 ["split"] = {
@@ -645,7 +645,7 @@ RecommendedStatsData_Talents = {
                     2,
                     21,
                 },
-                ["pct"] = 30,
+                ["pct"] = 25,
             },
             {
                 ["split"] = {
@@ -657,7 +657,7 @@ RecommendedStatsData_Talents = {
             },
         },
         ["median"] = {
-            38,
+            39,
             0,
             21,
         },
@@ -671,7 +671,7 @@ RecommendedStatsData_Talents = {
                     40,
                     21,
                 },
-                ["pct"] = 50,
+                ["pct"] = 45,
             },
             {
                 ["split"] = {
@@ -679,7 +679,7 @@ RecommendedStatsData_Talents = {
                     39,
                     21,
                 },
-                ["pct"] = 40,
+                ["pct"] = 45,
             },
             {
                 ["split"] = {
