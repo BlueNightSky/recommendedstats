@@ -1,4 +1,4 @@
--- GENERATED 2026-10-19 - do not hand-edit
+-- GENERATED 2026-10-20 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_BiS = {
     ["DRUID_BALANCE_RAID"] = {
@@ -2345,10 +2345,10 @@ RecommendedStatsData_BiS = {
         },
         ["CHEST"] = {
             ["itemID"] = 21364,
-            ["pct"] = 75,
+            ["pct"] = 70,
             ["ilvl"] = 88,
             ["altItemID"] = 22476,
-            ["altPct"] = 25,
+            ["altPct"] = 30,
             ["altIlvl"] = 92,
             ["enchantID"] = 1891,
             ["enchantPct"] = 100,
@@ -2356,10 +2356,10 @@ RecommendedStatsData_BiS = {
         },
         ["WAIST"] = {
             ["itemID"] = 22482,
-            ["pct"] = 60,
+            ["pct"] = 55,
             ["ilvl"] = 88,
             ["altItemID"] = 21586,
-            ["altPct"] = 40,
+            ["altPct"] = 45,
             ["altIlvl"] = 88,
             ["changedAt"] = "2000-01-01",
         },
@@ -2376,7 +2376,7 @@ RecommendedStatsData_BiS = {
             ["pct"] = 100,
             ["ilvl"] = 86,
             ["enchantID"] = 1887,
-            ["enchantPct"] = 75,
+            ["enchantPct"] = 80,
             ["changedAt"] = "2000-01-01",
         },
         ["WRIST"] = {
@@ -2452,11 +2452,11 @@ RecommendedStatsData_BiS = {
         },
         ["OFF_HAND"] = {
             ["itemID"] = 23577,
-            ["pct"] = 35,
+            ["pct"] = 40,
             ["ilvl"] = 89,
-            ["altItemID"] = 23014,
-            ["altPct"] = 30,
-            ["altIlvl"] = 81,
+            ["altItemID"] = 21126,
+            ["altPct"] = 25,
+            ["altIlvl"] = 84,
             ["enchantID"] = 2564,
             ["enchantPct"] = 55,
             ["changedAt"] = "2000-01-01",
@@ -2466,7 +2466,7 @@ RecommendedStatsData_BiS = {
             ["pct"] = 50,
             ["ilvl"] = 69,
             ["altItemID"] = 22812,
-            ["altPct"] = 50,
+            ["altPct"] = 45,
             ["altIlvl"] = 89,
             ["enchantID"] = 664,
             ["enchantPct"] = 75,
