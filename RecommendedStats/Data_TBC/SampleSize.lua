@@ -1,4 +1,4 @@
--- GENERATED 2026-10-20 - do not hand-edit
+-- GENERATED 2026-10-21 - do not hand-edit
 RecommendedStatsData_SampleSize = {
     ["DRUID_BALANCE_RAID"] = 20,
     ["DRUID_FERAL_RAID"] = 20,

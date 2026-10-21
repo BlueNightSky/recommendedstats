@@ -1,9 +1,9 @@
--- GENERATED 2026-10-20 - do not hand-edit
+-- GENERATED 2026-10-21 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4327,
         ["crit"] = -0.613,
-        ["mastery"] = -0.6033,
+        ["mastery"] = -0.5674,
     },
     ["DEATHKNIGHT_FROST_RAID"] = {
         ["haste"] = -0.3507,
@@ -26,8 +26,8 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.1112,
     },
     ["DRUID_GUARDIAN_RAID"] = {
-        ["haste"] = -0.2212,
-        ["crit"] = -0.1999,
+        ["haste"] = -0.223,
+        ["crit"] = -0.1995,
         ["mastery"] = -0.6365,
     },
     ["DRUID_RESTORATION_RAID"] = {
@@ -38,22 +38,22 @@ RecommendedStatsData_StatWeights = {
     ["HUNTER_BEASTMASTERY_RAID"] = {
         ["haste"] = -0.08,
         ["crit"] = -0.2769,
-        ["mastery"] = -0.1691,
+        ["mastery"] = -0.1862,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["haste"] = -0.1002,
-        ["crit"] = -0.0822,
-        ["mastery"] = -0.3887,
+        ["haste"] = -0.0971,
+        ["crit"] = -0.0795,
+        ["mastery"] = -0.3858,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
         ["haste"] = -0.1131,
         ["crit"] = -0.1236,
-        ["mastery"] = -0.2985,
+        ["mastery"] = -0.318,
     },
     ["MAGE_ARCANE_RAID"] = {
         ["haste"] = -0.115,
         ["crit"] = -0.1228,
-        ["mastery"] = -0.0864,
+        ["mastery"] = -0.0689,
     },
     ["MAGE_FIRE_RAID"] = {
         ["haste"] = -0.1941,
@@ -81,9 +81,9 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.0579,
     },
     ["PALADIN_HOLY_RAID"] = {
-        ["haste"] = -0.2528,
-        ["crit"] = -1.0438,
-        ["mastery"] = -0.2053,
+        ["haste"] = -0.236,
+        ["crit"] = -1.1359,
+        ["mastery"] = -0.212,
     },
     ["PALADIN_PROTECTION_RAID"] = {
         ["haste"] = -0.031,
@@ -96,9 +96,9 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.1208,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
-        ["haste"] = -0.4306,
-        ["crit"] = -0.0885,
-        ["mastery"] = -0.1729,
+        ["haste"] = -0.4316,
+        ["crit"] = -0.0891,
+        ["mastery"] = -0.1752,
     },
     ["PRIEST_HOLY_RAID"] = {
         ["haste"] = -1.4596,
@@ -108,7 +108,7 @@ RecommendedStatsData_StatWeights = {
     ["PRIEST_SHADOW_RAID"] = {
         ["haste"] = -0.0544,
         ["crit"] = -0.1675,
-        ["mastery"] = -0.1493,
+        ["mastery"] = -0.1351,
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
         ["haste"] = -0.196,
@@ -116,24 +116,24 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.1779,
     },
     ["ROGUE_COMBAT_RAID"] = {
-        ["haste"] = -0.0539,
-        ["crit"] = -0.2553,
-        ["mastery"] = -0.114,
+        ["haste"] = -0.0605,
+        ["crit"] = -0.2469,
+        ["mastery"] = -0.1185,
     },
     ["ROGUE_SUBTLETY_RAID"] = {
-        ["haste"] = -0.1026,
-        ["crit"] = -0.1334,
-        ["mastery"] = -0.1714,
+        ["haste"] = -0.1326,
+        ["crit"] = -0.1147,
+        ["mastery"] = -0.2864,
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
         ["haste"] = -0.0808,
         ["crit"] = -0.153,
-        ["mastery"] = -0.03,
+        ["mastery"] = -0.0297,
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
-        ["haste"] = -0.1767,
-        ["crit"] = -0.2445,
-        ["mastery"] = -0.1079,
+        ["haste"] = -0.179,
+        ["crit"] = -0.2456,
+        ["mastery"] = -0.1092,
     },
     ["SHAMAN_RESTORATION_RAID"] = {
         ["haste"] = -0.2211,
@@ -156,14 +156,14 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.0739,
     },
     ["WARRIOR_ARMS_RAID"] = {
-        ["haste"] = -0.5051,
-        ["crit"] = -0.0794,
-        ["mastery"] = -0.208,
+        ["haste"] = -0.4936,
+        ["crit"] = -0.0827,
+        ["mastery"] = -0.2046,
     },
     ["WARRIOR_FURY_RAID"] = {
         ["haste"] = -0.4758,
         ["crit"] = -0.085,
-        ["mastery"] = -0.1492,
+        ["mastery"] = -0.1606,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
         ["haste"] = -1.0004,
