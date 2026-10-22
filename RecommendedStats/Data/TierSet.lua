@@ -1,2 +1,2 @@
--- GENERATED 2026-10-21 - do not hand-edit
+-- GENERATED 2026-10-22 - do not hand-edit
 RecommendedStatsData_TierSet = {}
