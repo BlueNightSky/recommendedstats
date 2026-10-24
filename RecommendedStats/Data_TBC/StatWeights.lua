@@ -1,4 +1,4 @@
--- GENERATED 2026-10-23 - do not hand-edit
+-- GENERATED 2026-10-24 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = -0.1127,
@@ -6,32 +6,32 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.545,
     },
     ["DRUID_FERAL_RAID"] = {
-        ["crit"] = -0.1009,
-        ["hit"] = -0.1045,
+        ["crit"] = -0.0955,
+        ["hit"] = -0.1034,
     },
     ["DRUID_GUARDIAN_RAID"] = {
         ["crit"] = -0.1352,
         ["hit"] = -0.0882,
     },
     ["DRUID_RESTORATION_RAID"] = {
-        ["haste"] = -0.8152,
+        ["haste"] = -0.7285,
     },
     ["HUNTER_BEASTMASTERY_RAID"] = {
-        ["crit"] = -0.1429,
-        ["hit"] = -0.0732,
+        ["crit"] = -0.1347,
+        ["hit"] = -0.0702,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["crit"] = -0.2028,
-        ["hit"] = -0.1537,
+        ["crit"] = -0.1616,
+        ["hit"] = -0.1581,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
-        ["crit"] = -0.1536,
-        ["hit"] = -0.3504,
+        ["crit"] = -0.1498,
+        ["hit"] = -0.3503,
     },
     ["MAGE_ARCANE_RAID"] = {
         ["crit"] = -0.0629,
         ["hit"] = -0.2235,
-        ["haste"] = -0.9879,
+        ["haste"] = -1.0095,
     },
     ["MAGE_FIRE_RAID"] = {
         ["crit"] = -0.121,
@@ -39,9 +39,9 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.5989,
     },
     ["MAGE_FROST_RAID"] = {
-        ["crit"] = -0.1368,
-        ["hit"] = -0.1974,
-        ["haste"] = -0.7435,
+        ["crit"] = -0.1352,
+        ["hit"] = -0.1971,
+        ["haste"] = -0.7354,
     },
     ["PALADIN_HOLY_RAID"] = {
         ["crit"] = -0.2179,
@@ -49,51 +49,51 @@ RecommendedStatsData_StatWeights = {
     },
     ["PALADIN_PROTECTION_RAID"] = {},
     ["PALADIN_RETRIBUTION_RAID"] = {
-        ["crit"] = -0.1306,
-        ["hit"] = -0.1504,
+        ["crit"] = -0.1288,
+        ["hit"] = -0.1692,
         ["haste"] = -0.6724,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
-        ["haste"] = -0.76,
+        ["haste"] = -0.7609,
     },
     ["PRIEST_HOLY_RAID"] = {
         ["haste"] = -0.5365,
     },
     ["PRIEST_SHADOW_RAID"] = {
-        ["crit"] = -0.2793,
-        ["hit"] = -0.1294,
-        ["haste"] = -0.4889,
+        ["crit"] = -0.2806,
+        ["hit"] = -0.1304,
+        ["haste"] = -0.4771,
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
         ["crit"] = -0.2047,
         ["hit"] = -0.2062,
     },
     ["ROGUE_COMBAT_RAID"] = {
-        ["crit"] = -0.158,
-        ["hit"] = -0.0652,
+        ["crit"] = -0.1646,
+        ["hit"] = -0.0616,
     },
     ["ROGUE_SUBTLETY_RAID"] = {
-        ["crit"] = -0.1824,
-        ["hit"] = -0.1822,
+        ["crit"] = -0.1836,
+        ["hit"] = -0.1966,
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
-        ["crit"] = -0.1143,
-        ["hit"] = -0.1548,
-        ["haste"] = -0.3959,
+        ["crit"] = -0.1137,
+        ["hit"] = -0.1609,
+        ["haste"] = -0.3891,
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
-        ["crit"] = -0.225,
-        ["hit"] = -0.144,
-        ["haste"] = -0.9593,
+        ["crit"] = -0.218,
+        ["hit"] = -0.1454,
+        ["haste"] = -0.9124,
     },
     ["SHAMAN_RESTORATION_RAID"] = {
-        ["crit"] = -0.6972,
-        ["haste"] = -0.6224,
+        ["crit"] = -0.6457,
+        ["haste"] = -0.6052,
     },
     ["WARLOCK_AFFLICTION_RAID"] = {
-        ["crit"] = -0.0737,
+        ["crit"] = -0.0763,
         ["hit"] = -0.0707,
-        ["haste"] = -0.5476,
+        ["haste"] = -0.4975,
     },
     ["WARLOCK_DEMONOLOGY_RAID"] = {
         ["crit"] = -0.1079,
@@ -101,20 +101,20 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.8038,
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
-        ["crit"] = -0.0618,
-        ["hit"] = -0.1139,
-        ["haste"] = -0.4119,
+        ["crit"] = -0.059,
+        ["hit"] = -0.111,
+        ["haste"] = -0.3899,
     },
     ["WARRIOR_ARMS_RAID"] = {
-        ["crit"] = -0.2124,
-        ["hit"] = -0.2189,
+        ["crit"] = -0.2095,
+        ["hit"] = -0.2117,
     },
     ["WARRIOR_FURY_RAID"] = {
-        ["crit"] = -0.1248,
-        ["hit"] = -0.1745,
+        ["crit"] = -0.1232,
+        ["hit"] = -0.196,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
-        ["crit"] = -0.1149,
-        ["hit"] = -0.1386,
+        ["crit"] = -0.1189,
+        ["hit"] = -0.1318,
     },
 }

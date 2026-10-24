@@ -1,4 +1,4 @@
--- GENERATED 2026-10-23 - do not hand-edit
+-- GENERATED 2026-10-24 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = 336,
@@ -10,7 +10,7 @@ RecommendedStatsData_Targets = {
     },
     ["DRUID_FERAL_RAID"] = {
         ["crit"] = 206,
-        ["critHigh"] = 220,
+        ["critHigh"] = 219,
         ["hit"] = 97,
         ["hitHigh"] = 120,
     },
@@ -21,24 +21,24 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 106,
     },
     ["DRUID_RESTORATION_RAID"] = {
-        ["haste"] = 104,
-        ["hasteHigh"] = 195,
+        ["haste"] = 125,
+        ["hasteHigh"] = 236,
     },
     ["HUNTER_BEASTMASTERY_RAID"] = {
         ["crit"] = 309,
         ["critHigh"] = 347,
-        ["hit"] = 98,
+        ["hit"] = 99,
         ["hitHigh"] = 111,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
         ["crit"] = 250,
-        ["critHigh"] = 282,
-        ["hit"] = 133,
-        ["hitHigh"] = 142,
+        ["critHigh"] = 283,
+        ["hit"] = 138,
+        ["hitHigh"] = 145,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
-        ["crit"] = 238,
-        ["critHigh"] = 275,
+        ["crit"] = 231,
+        ["critHigh"] = 270,
         ["hit"] = 52,
         ["hitHigh"] = 95,
     },
@@ -74,16 +74,16 @@ RecommendedStatsData_Targets = {
     },
     ["PALADIN_PROTECTION_RAID"] = {},
     ["PALADIN_RETRIBUTION_RAID"] = {
-        ["crit"] = 253,
+        ["crit"] = 259,
         ["critHigh"] = 296,
         ["hit"] = 58,
-        ["hitHigh"] = 76,
+        ["hitHigh"] = 77,
         ["haste"] = 108,
         ["hasteHigh"] = 144,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
         ["haste"] = 58,
-        ["hasteHigh"] = 125,
+        ["hasteHigh"] = 127,
     },
     ["PRIEST_HOLY_RAID"] = {
         ["haste"] = 97,
@@ -104,15 +104,15 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 299,
     },
     ["ROGUE_COMBAT_RAID"] = {
-        ["crit"] = 229,
+        ["crit"] = 241,
         ["critHigh"] = 285,
-        ["hit"] = 310,
+        ["hit"] = 307,
         ["hitHigh"] = 320,
     },
     ["ROGUE_SUBTLETY_RAID"] = {
         ["crit"] = 186,
         ["critHigh"] = 219,
-        ["hit"] = 267,
+        ["hit"] = 266,
         ["hitHigh"] = 310,
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
@@ -121,20 +121,20 @@ RecommendedStatsData_Targets = {
         ["hit"] = 102,
         ["hitHigh"] = 121,
         ["haste"] = 139,
-        ["hasteHigh"] = 194,
+        ["hasteHigh"] = 177,
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
         ["crit"] = 241,
-        ["critHigh"] = 299,
-        ["hit"] = 158,
+        ["critHigh"] = 293,
+        ["hit"] = 166,
         ["hitHigh"] = 201,
-        ["haste"] = 96,
+        ["haste"] = 101,
         ["hasteHigh"] = 102,
     },
     ["SHAMAN_RESTORATION_RAID"] = {
         ["crit"] = 15,
-        ["critHigh"] = 38,
-        ["haste"] = 155,
+        ["critHigh"] = 40,
+        ["haste"] = 157,
         ["hasteHigh"] = 200,
     },
     ["WARLOCK_AFFLICTION_RAID"] = {
@@ -142,7 +142,7 @@ RecommendedStatsData_Targets = {
         ["critHigh"] = 371,
         ["hit"] = 180,
         ["hitHigh"] = 200,
-        ["haste"] = 108,
+        ["haste"] = 83,
         ["hasteHigh"] = 163,
     },
     ["WARLOCK_DEMONOLOGY_RAID"] = {
@@ -156,27 +156,27 @@ RecommendedStatsData_Targets = {
     ["WARLOCK_DESTRUCTION_RAID"] = {
         ["crit"] = 357,
         ["critHigh"] = 383,
-        ["hit"] = 181,
+        ["hit"] = 185,
         ["hitHigh"] = 222,
         ["haste"] = 139,
-        ["hasteHigh"] = 194,
+        ["hasteHigh"] = 163,
     },
     ["WARRIOR_ARMS_RAID"] = {
-        ["crit"] = 344,
+        ["crit"] = 341,
         ["critHigh"] = 431,
-        ["hit"] = 136,
+        ["hit"] = 139,
         ["hitHigh"] = 170,
     },
     ["WARRIOR_FURY_RAID"] = {
-        ["crit"] = 308,
+        ["crit"] = 310,
         ["critHigh"] = 367,
-        ["hit"] = 117,
-        ["hitHigh"] = 155,
+        ["hit"] = 119,
+        ["hitHigh"] = 157,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
         ["crit"] = 302,
         ["critHigh"] = 337,
-        ["hit"] = 99,
-        ["hitHigh"] = 110,
+        ["hit"] = 97,
+        ["hitHigh"] = 109,
     },
 }

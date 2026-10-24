@@ -1,4 +1,4 @@
--- GENERATED 2026-10-23 - do not hand-edit
+-- GENERATED 2026-10-24 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -41,10 +41,10 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 13109,
     },
     ["DRUID_GUARDIAN_RAID"] = {
-        ["haste"] = 10818,
-        ["hasteHigh"] = 11713,
-        ["crit"] = 20608,
-        ["critHigh"] = 29082,
+        ["haste"] = 11064,
+        ["hasteHigh"] = 14608,
+        ["crit"] = 21064,
+        ["critHigh"] = 29934,
         ["mastery"] = 1839,
         ["masteryHigh"] = 5275,
     },
@@ -65,18 +65,18 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 10746,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["haste"] = 14101,
+        ["haste"] = 13820,
         ["hasteHigh"] = 14681,
         ["crit"] = 12929,
-        ["critHigh"] = 14152,
-        ["mastery"] = 2819,
+        ["critHigh"] = 14304,
+        ["mastery"] = 3126,
         ["masteryHigh"] = 4576,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
         ["haste"] = 10370,
-        ["hasteHigh"] = 12768,
+        ["hasteHigh"] = 12956,
         ["crit"] = 15334,
-        ["critHigh"] = 15538,
+        ["critHigh"] = 15525,
         ["mastery"] = 4593,
         ["masteryHigh"] = 6690,
     },
@@ -102,7 +102,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 5594,
         ["critHigh"] = 6361,
         ["mastery"] = 15195,
-        ["masteryHigh"] = 17071,
+        ["masteryHigh"] = 17174,
     },
     ["MONK_BREWMASTER_RAID"] = {
         ["haste"] = 10314,
@@ -114,10 +114,10 @@ RecommendedStatsData_Targets = {
     },
     ["MONK_MISTWEAVER_RAID"] = {
         ["haste"] = 7242,
-        ["hasteHigh"] = 11920,
+        ["hasteHigh"] = 12132,
         ["crit"] = 16320,
         ["critHigh"] = 18231,
-        ["mastery"] = 8823,
+        ["mastery"] = 8433,
         ["masteryHigh"] = 11281,
     },
     ["MONK_WINDWALKER_RAID"] = {
@@ -134,14 +134,14 @@ RecommendedStatsData_Targets = {
         ["crit"] = 1493,
         ["critHigh"] = 6456,
         ["mastery"] = 20855,
-        ["masteryHigh"] = 26259,
+        ["masteryHigh"] = 25834,
     },
     ["PALADIN_PROTECTION_RAID"] = {
         ["haste"] = 18399,
         ["hasteHigh"] = 19324,
         ["crit"] = 14135,
-        ["critHigh"] = 16831,
-        ["mastery"] = 3901,
+        ["critHigh"] = 16834,
+        ["mastery"] = 3220,
         ["masteryHigh"] = 6538,
     },
     ["PALADIN_RETRIBUTION_RAID"] = {
@@ -150,7 +150,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 4991,
         ["critHigh"] = 6029,
         ["mastery"] = 18004,
-        ["masteryHigh"] = 21274,
+        ["masteryHigh"] = 20947,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
         ["haste"] = 1927,
@@ -229,7 +229,7 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 18524,
         ["crit"] = 3491,
         ["critHigh"] = 4657,
-        ["mastery"] = 20201,
+        ["mastery"] = 20120,
         ["masteryHigh"] = 21678,
     },
     ["WARLOCK_DEMONOLOGY_RAID"] = {
