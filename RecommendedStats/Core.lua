@@ -636,7 +636,7 @@ SlashCmdList.RECSTATS = function(msg)
         if RS.ToggleTalents then RS:ToggleTalents() end
         return
     end
-    if msg == "rotation" then
+    if msg == "rotation" or msg == "priorities" or msg == "priority" then
         if RS.ToggleRotation then RS:ToggleRotation() end
         return
     end

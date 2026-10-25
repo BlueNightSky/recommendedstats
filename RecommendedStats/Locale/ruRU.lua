@@ -173,12 +173,20 @@ L.TALENTS_DIFFICULTY = { mythic = "Эпохальная", heroic = "Героич
 --------------------------------------------------------------------------------
 -- UI/RotationWindow.lua
 --------------------------------------------------------------------------------
-L.ROTATION_BUTTON          = "Ротация"
-L.ROTATION_TITLE           = "%s | Ротация"
-L.ROTATION_TITLE_TREE      = "%s | Ротация | %s"
+L.ROTATION_BUTTON          = "Приоритеты"
+L.ROTATION_TITLE           = "%s | Приоритеты"
+L.ROTATION_TITLE_TREE      = "%s | Приоритеты | %s"
 L.ROTATION_SUBTITLE        = "Что нажимают лучшие игроки; собрано на основе %d убийств боссов в %s рейдах от %d игроков (все боссы объединены)."
 L.ROTATION_SUBTITLE_BOSS   = "Что нажимают лучшие игроки на %s; собрано на основе %d убийств в %s рейдах от %d игроков."
 L.ROTATION_BOSS_OVERALL    = "В целом (все боссы)"
+-- Added 2026-10-25 (Priorities window, Mythic+), not yet reviewed by the translator.
+L.ROTATION_MPLUS_BOSSES    = "Эпох. ключи: боссы"
+L.ROTATION_MPLUS_TRASH     = "Эпох. ключи: треш (АоЕ)"
+L.ROTATION_SUBTITLE_MPLUS  = "Что нажимают лучшие игроки (%s): %d пуллов из лучших забегов от %d игроков."
+L.ROTATION_COL_PRIORITY    = "Приоритет"
+L.ROTATION_PRIO_PROC       = "Когда активен %s"
+L.ROTATION_PRIO_STACKS     = "(на %d стаках)"
+L.ROTATION_PRIO_FILLER     = "Заполнитель: когда всё выше не готово"
 L.ROTATION_HINT            = "Наведите курсор на любую иконку, чтобы узнать о заклинании и о том, как его используют лучшие игроки."
 L.ROTATION_DATA_AGE        = "Данные получены на патче %s, %s."
 L.ROTATION_NO_DATA         = "Для этой специализации пока нет данных о ротации."

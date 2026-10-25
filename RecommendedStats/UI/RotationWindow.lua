@@ -1,9 +1,11 @@
 -- RecommendedStats :: UI/RotationWindow.lua
--- One window (opened by the "Rotation" button on the main panel, or /rs rotation) laying out how
--- top players of your spec and hero talent tree actually play it, in four columns: Opener, Mid
--- Rotation, Filler, When to use CDs. Every spell and buff is an icon with its real tooltip, plus a
--- line on how top players use it. A dropdown picks one raid boss or all of them pooled: a council
--- or add fight is played differently from a single target one.
+-- The Priorities window (the "Priorities" button on the main panel, /rs priorities or /rs rotation;
+-- it was the Rotation window before 2.x) laying out how top players of your spec and hero talent
+-- tree actually play it, in three columns: Opener, Priority (one numbered list: procs to spend,
+-- spells on cooldown, spenders, the rest, filler last) and When to use CDs. Every spell and buff is
+-- an icon with its real tooltip, plus a line on how top players use it. A dropdown picks one raid
+-- boss, all of them pooled, or Mythic+ (boss pulls or trash pulls of top runs): a council, an add
+-- fight or a trash pack is played differently from a single target boss.
 -- The data (Data/Rotation.lua, RecommendedStatsNode/src/rotation.js) is read from the combat logs
 -- of top-parsing raid kills and carries spell ids only, so names, icons and tooltips come from
 -- the game in the player's own language.
@@ -36,10 +38,9 @@ local SMALL_ICON = 20
 local ROW_GAP    = 9
 
 local COLUMNS = {
-    { key = "opener", width = 180, title = L.ROTATION_COL_OPENER },
-    { key = "core",   width = 290, title = L.ROTATION_COL_CORE },
-    { key = "filler", width = 180, title = L.ROTATION_COL_FILLER },
-    { key = "cds",    width = 250, title = L.ROTATION_COL_CDS },
+    { key = "opener",   width = 180, title = L.ROTATION_COL_OPENER },
+    { key = "priority", width = 490, title = L.ROTATION_COL_PRIORITY },
+    { key = "cds",      width = 250, title = L.ROTATION_COL_CDS },
 }
 local BODY_W = 0
 for i, col in ipairs(COLUMNS) do
@@ -52,8 +53,12 @@ local function BorderColor()
     return RS:GetAccentColor()
 end
 
+-- edgeSize = 1 is one UI unit, not one screen pixel: below 1.0 UI scale the
+-- top and bottom edges can round away to nothing. Snapped to the nearest
+-- real pixel (at least one) so all four edges show.
 local function StyleBackdrop(frame)
-    frame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = 1 })
+    local edge = PixelUtil and PixelUtil.GetNearestPixelSize(1, frame:GetEffectiveScale(), 1) or 1
+    frame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = edge })
     frame:SetBackdropColor(0.043, 0.047, 0.063, 0.97)
     local b = BorderColor()
     frame:SetBackdropBorderColor(b[1], b[2], b[3], 0.7)
@@ -101,6 +106,14 @@ end
 local function SetBoss(id)
     RecommendedStatsDB = RecommendedStatsDB or {}
     RecommendedStatsDB.rotationBoss = id
+end
+
+-- Mythic+ comes in the data as two entries next to the bosses, id -1 (boss pulls) and -2 (trash
+-- pulls), named here so they read in the player's language.
+local MPLUS_NAMES = { [-1] = "ROTATION_MPLUS_BOSSES", [-2] = "ROTATION_MPLUS_TRASH" }
+local function BossLabel(boss)
+    local key = boss and MPLUS_NAMES[boss.id]
+    return key and L[key] or (boss and boss.name)
 end
 
 -- Which tree to show: { entry=, boss=, treeID=, tree=, notice= } or nil + a reason. entry is the
@@ -266,75 +279,89 @@ local function RenderOpener(col, tree)
     return y
 end
 
-local function RenderCore(col, tree)
-    local y = 0
-    if tree.core and #tree.core > 0 then
-        y = Section(col.x, y, col.width, L.ROTATION_SECTION_PRESSES)
-        for _, e in ipairs(tree.core) do
-            local details = { { Shares(e, tree) } }
-            local how
-            if e.kind == "cooldown" then
-                how = L.ROTATION_KIND_COOLDOWN:format(Duration(e.every or 0))
-            elseif e.kind == "spender" then
-                how = e.at and L.ROTATION_KIND_SPENDER_AT:format(Number(e.at)) or L.ROTATION_KIND_SPENDER
-            elseif e.kind == "proc" and e.buff then
-                how = L.ROTATION_KIND_PROC:format(SpellName(e.buff, tree))
-            end
-            if e.rank then
-                local rank = L.ROTATION_EMPOWER_RANK:format(Number(e.rank))
-                how = how and (how .. ". " .. rank) or rank
-            end
-            if how then details[#details + 1] = { how, SOFT } end
-            y = SpellRow(col.x, y, col.width, e.id, tree, SpellName(e.id, tree), details, { Shares(e, tree) })
-        end
+-- How a core press is used: "Press on cooldown, about every 12 sec", "Spender, usually pressed
+-- with 5 banked", "Only with Hot Streak!", plus an empowered spell's release rank. nil if nothing.
+local function CoreHow(e, tree)
+    local how
+    if e.kind == "cooldown" then
+        how = L.ROTATION_KIND_COOLDOWN:format(Duration(e.every or 0))
+    elseif e.kind == "spender" then
+        how = e.at and L.ROTATION_KIND_SPENDER_AT:format(Number(e.at)) or L.ROTATION_KIND_SPENDER
+    elseif e.kind == "proc" and e.buff then
+        how = L.ROTATION_KIND_PROC:format(SpellName(e.buff, tree))
     end
-
-    if tree.procs and #tree.procs > 0 then
-        y = Section(col.x, y + 4, col.width, L.ROTATION_SECTION_PROCS)
-        for _, p in ipairs(tree.procs) do
-            -- [what gives it] > [the buff] > [what spends it]
-            local x = col.x
-            local fromNames = {}
-            for _, id in ipairs(p.from or {}) do
-                PlaceIcon(x, y, SMALL_ICON + 4, id, tree)
-                fromNames[#fromNames + 1] = SpellName(id, tree)
-                x = x + SMALL_ICON + 8
-            end
-            if #fromNames > 0 then
-                PlaceText(x, y + 5, 12, "GameFontHighlight", ">", DIM)
-                x = x + 14
-            end
-            local buffName = SpellName(p.buff, tree)
-            PlaceIcon(x, y, SMALL_ICON + 4, p.buff, tree, { L.ROTATION_TIP_BUFF:format(p.up or 0, p.perFight or 0) }, true)
-            x = x + SMALL_ICON + 8
-            PlaceText(x, y + 5, 12, "GameFontHighlight", ">", DIM)
-            x = x + 14
-            PlaceIcon(x, y, SMALL_ICON + 4, p.by, tree)
-            y = y + SMALL_ICON + 4 + 4
-
-            local line = (#fromNames > 0)
-                and L.ROTATION_PROC_FROM:format(buffName, table.concat(fromNames, L.ROTATION_AND))
-                or L.ROTATION_PROC_RANDOM:format(buffName)
-            line = line .. " " .. L.ROTATION_PROC_BY:format(SpellName(p.by, tree))
-            y = y + PlaceText(col.x, y, col.width, "GameFontHighlightSmall", line, SOFT)
-            if p.stacks then
-                y = y + 2 + PlaceText(col.x, y + 2, col.width, "GameFontHighlightSmall", L.ROTATION_PROC_STACKS:format(p.stacks), GOLD)
-            end
-            y = y + ROW_GAP + 2
-        end
+    if e.rank then
+        local rank = L.ROTATION_EMPOWER_RANK:format(Number(e.rank))
+        how = how and (how .. ". " .. rank) or rank
     end
-    return y
+    return how
 end
 
-local function RenderFiller(col, tree)
-    local y = 0
-    if not tree.filler or #tree.filler == 0 then
-        return PlaceText(col.x, y, col.width, "GameFontHighlightSmall", L.ROTATION_FILLER_NONE, DIM)
+-- Order of the priority list after the procs: on cooldown, spenders, the rest. Logs show what top
+-- players press and how often, not why, so this is an order to learn the spec by, not a sim.
+local KIND_ORDER = { cooldown = 1, spender = 2, proc = 3 }
+
+-- The Priority column: one numbered list, each spell once.
+--   1. procs first, as the press that spends them ("When Hot Streak! is up"), since a wasted proc
+--      is the most common mistake
+--   2. the core presses by KIND_ORDER, in the data's order within a kind
+--   3. filler last ("when nothing above is ready")
+local function RenderPriority(col, tree)
+    local y, n, shown = 0, 0, {}
+    -- Long cooldowns have their own column: a proc spent by one (Spellfire Spheres by Combustion)
+    -- would otherwise put the cooldown first in the list.
+    local isCd = {}
+    for _, c in ipairs(tree.cds or {}) do if c.id then isCd[c.id] = true end end
+    local coreBy = {}
+    for _, e in ipairs(tree.core or {}) do coreBy[e.id] = e end
+    local function Row(id, details, tips)
+        n = n + 1
+        shown[id] = true
+        y = SpellRow(col.x, y, col.width, id, tree, ("%d. %s"):format(n, SpellName(id, tree)), details, tips)
     end
-    for _, e in ipairs(tree.filler) do
-        y = SpellRow(col.x, y, col.width, e.id, tree, SpellName(e.id, tree), { { Shares(e, tree) } }, { Shares(e, tree) })
+
+    for _, p in ipairs(tree.procs or {}) do
+        if p.by and not shown[p.by] and not isCd[p.by] then
+            local buffName = SpellName(p.buff, tree)
+            local when = L.ROTATION_PRIO_PROC:format(buffName)
+            if p.stacks then when = when .. " " .. L.ROTATION_PRIO_STACKS:format(p.stacks) end
+            local details = { { when, GOLD } }
+            local fromNames = {}
+            for _, id in ipairs(p.from or {}) do fromNames[#fromNames + 1] = SpellName(id, tree) end
+            details[#details + 1] = { (#fromNames > 0)
+                and L.ROTATION_PROC_FROM:format(buffName, table.concat(fromNames, L.ROTATION_AND))
+                or L.ROTATION_PROC_RANDOM:format(buffName), SOFT }
+            local e = coreBy[p.by]
+            if e then details[#details + 1] = { Shares(e, tree) } end
+            Row(p.by, details, { L.ROTATION_TIP_BUFF:format(p.up or 0, p.perFight or 0) })
+        end
     end
-    return y + PlaceText(col.x, y, col.width, "GameFontHighlightSmall", L.ROTATION_FILLER_HINT, DIM)
+
+    local core = {}
+    for i, e in ipairs(tree.core or {}) do core[#core + 1] = { e = e, i = i } end
+    table.sort(core, function(a, b)
+        local ka, kb = KIND_ORDER[a.e.kind] or 4, KIND_ORDER[b.e.kind] or 4
+        if ka ~= kb then return ka < kb end
+        return a.i < b.i
+    end)
+    for _, c in ipairs(core) do
+        local e = c.e
+        if e.id and not shown[e.id] then
+            local details = {}
+            local how = CoreHow(e, tree)
+            if how then details[#details + 1] = { how, SOFT } end
+            details[#details + 1] = { Shares(e, tree) }
+            Row(e.id, details, { Shares(e, tree) })
+        end
+    end
+
+    for _, e in ipairs(tree.filler or {}) do
+        if e.id and not shown[e.id] then
+            Row(e.id, { { L.ROTATION_PRIO_FILLER, SOFT }, { Shares(e, tree) } }, { Shares(e, tree) })
+        end
+    end
+    if n == 0 then return PlaceText(col.x, y, col.width, "GameFontHighlightSmall", L.ROTATION_FILLER_NONE, DIM) end
+    return y
 end
 
 -- "Press with:" followed by small icons on the next line. Returns the y below them.
@@ -377,7 +404,7 @@ local function RenderCooldowns(col, tree)
     return y
 end
 
-local RENDERERS = { opener = RenderOpener, core = RenderCore, filler = RenderFiller, cds = RenderCooldowns }
+local RENDERERS = { opener = RenderOpener, priority = RenderPriority, cds = RenderCooldowns }
 
 --------------------------------------------------------------------------------
 -- Refresh
@@ -442,7 +469,7 @@ Refresh = function(fromMenu)
     local spec = SpecData()
     if not fromMenu and bossDropdown.GenerateMenu then bossDropdown:GenerateMenu() end
     local boss = GetBoss(spec)
-    bossDropdown:SetDefaultText(boss and boss.name or L.ROTATION_BOSS_OVERALL)
+    bossDropdown:SetDefaultText(boss and BossLabel(boss) or L.ROTATION_BOSS_OVERALL)
     bossDropdown:SetShown(spec ~= nil and spec.bosses ~= nil and #spec.bosses > 0)
 
     local specName = RS.Flavor.GetSpecName()
@@ -469,7 +496,9 @@ Refresh = function(fromMenu)
     local treeName = TreeName(resolved.treeID, tree)
     titleText:SetText(treeName and L.ROTATION_TITLE_TREE:format(specName, treeName) or L.ROTATION_TITLE:format(specName))
     local difficulty = L.TALENTS_DIFFICULTY[entry.difficulty] or entry.difficulty or "?"
-    if resolved.boss then
+    if resolved.boss and MPLUS_NAMES[resolved.boss.id] then
+        subtitleText:SetText(L.ROTATION_SUBTITLE_MPLUS:format(BossLabel(resolved.boss), tree.fights or 0, tree.players or 0))
+    elseif resolved.boss then
         subtitleText:SetText(L.ROTATION_SUBTITLE_BOSS:format(resolved.boss.name, tree.fights or 0, difficulty, tree.players or 0))
     else
         subtitleText:SetText(L.ROTATION_SUBTITLE:format(tree.fights or 0, difficulty, tree.players or 0))
@@ -590,7 +619,7 @@ local function EnsureWindow()
             )
         end
         Add(L.ROTATION_BOSS_OVERALL, nil)
-        for _, boss in ipairs(spec and spec.bosses or {}) do Add(boss.name, boss.id) end
+        for _, boss in ipairs(spec and spec.bosses or {}) do Add(BossLabel(boss), boss.id) end
     end)
 
     body = CreateFrame("Frame", nil, frame)

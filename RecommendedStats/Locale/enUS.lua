@@ -18,7 +18,7 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 L.CHAT_PREFIX     = "|cff33ff99RecommendedStats|r"
 L.ADDON_TITLE     = "Recommended Stats"
--- Short on purpose: the panel header holds four equal buttons (Stats, BiS, Talents, Rotation).
+-- Short on purpose: the panel header holds four equal buttons (Stats, BiS, Talents, Priorities).
 L.TAB_STATS       = "Stats"
 L.TAB_BIS         = "BiS"
 L.SELECT          = "Select"
@@ -195,18 +195,25 @@ L.TALENTS_DIFFICULTY = { mythic = "Mythic", heroic = "Heroic", normal = "Normal"
 --------------------------------------------------------------------------------
 -- UI/RotationWindow.lua
 --------------------------------------------------------------------------------
-L.ROTATION_BUTTON          = "Rotation"
-L.ROTATION_TITLE           = "%s | Rotation"
-L.ROTATION_TITLE_TREE      = "%s | Rotation | %s"
+L.ROTATION_BUTTON          = "Priorities"
+L.ROTATION_TITLE           = "%s | Priorities"
+L.ROTATION_TITLE_TREE      = "%s | Priorities | %s"
 L.ROTATION_SUBTITLE        = "What top players press, read from %d %s raid kills by %d players, all bosses pooled."
 L.ROTATION_SUBTITLE_BOSS   = "What top players press on %s, read from %d %s kills by %d players."
 L.ROTATION_BOSS_OVERALL    = "Overall (all bosses)"
+L.ROTATION_MPLUS_BOSSES    = "Mythic+: bosses"
+L.ROTATION_MPLUS_TRASH     = "Mythic+: trash pulls (AoE)"
+L.ROTATION_SUBTITLE_MPLUS  = "What top players press in %s, read from %d pulls of top Mythic+ runs by %d players."
 L.ROTATION_HINT            = "Hover any icon for the spell and how top players use it."
 L.ROTATION_DATA_AGE        = "Read on patch %s, %s."
-L.ROTATION_NO_DATA         = "No rotation data for this spec yet."
+L.ROTATION_NO_DATA         = "No priority data for this spec yet."
 L.ROTATION_OTHER_TREE      = "Too few top players run %s to read a rotation from, so this is %s."
 L.ROTATION_COL_OPENER      = "Opener"
 L.ROTATION_COL_CORE        = "Mid Rotation"
+L.ROTATION_COL_PRIORITY    = "Priority"
+L.ROTATION_PRIO_PROC       = "When %s is up"
+L.ROTATION_PRIO_STACKS     = "(at %d stacks)"
+L.ROTATION_PRIO_FILLER     = "Filler: press when nothing above is ready"
 L.ROTATION_COL_FILLER      = "Filler"
 L.ROTATION_COL_CDS         = "When to use CDs"
 L.ROTATION_SECTION_PRESSES = "What the rotation is built on"

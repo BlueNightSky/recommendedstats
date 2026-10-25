@@ -55,6 +55,15 @@ local ANNOUNCEMENTS = {
             "It lists your raid nights from Warcraft Logs, every kill and wipe. Pick one to see your casts, cooldowns and buffs next to the top players on that boss.",
         },
     },
+    {
+        id = "2026-10-25-priorities",
+        title = "What's New in RecommendedStats",
+        lines = {
+            "The Rotation window is now Priorities: one numbered list of what to press, procs to spend first, then spells on cooldown, spenders, and filler last. Easy to learn on an alt.",
+            "Mythic+ is in: pick Mythic+: bosses or Mythic+: trash pulls (AoE) from the dropdown to see how top players play their key runs, read from the pulls of top runs of every dungeon this season.",
+            "The opener and when to use cooldowns stay in their own columns. Type /rs priorities (or /rs rotation) to open it.",
+        },
+    },
 }
 
 local function LatestAnnouncement()
