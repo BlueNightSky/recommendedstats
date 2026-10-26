@@ -24,7 +24,7 @@ The Classic versions are raid only and have no Priorities window yet.
 - **Raid / Mythic+ toggle** so targets match the content you're actually doing.
 - **BiS gear window**, opened from the BiS tab: the best item per slot for your class, spec and content, with the enchant and gem top players use, a tooltip on hover and a "% of top players using this" figure.
 - **Top player talents**, opened from the Talents tab: the full talent tree for your spec with the build most top players agree on, per boss (Raid) or per dungeon (Mythic+), plus a one-click copy of the loadout string to import in game.
-- **Priorities**, opened from the Priorities tab: a numbered list of what to press for your spec and hero talents (procs to spend first, spells on cooldown, spenders, filler last), with the opener and when to use cooldowns beside it. Per raid boss, all bosses pooled, or Mythic+ boss pulls and trash pulls.
+- **Priorities**, opened from the Priorities tab: a numbered list of what to press for your spec and hero talents (what top players press the moment it's ready first, then spenders and the rest, filler last), with the opener and when to use cooldowns beside it. Per raid boss, all bosses pooled, or Mythic+ boss pulls and trash pulls.
 - **Your pulls vs the top players**: the My pulls button links to your page on the [RecommendedStats Analyzer](https://rs.ctrlshiftzed.com), which compares your own logged raid pulls with the top players of your spec.
 - **Row sizes and skins**: four row sizes, from one compact line to a full readout, and a Default, Class Color or Custom Color skin you can export and share.
 - **Minimap button**: left-click to show or hide the panel, right-click to open options.
@@ -111,7 +111,7 @@ Click the **Priorities** tab (or type `/rs priorities`, `/rs rotation` still wor
 1. Leave the dropdown on **Overall** for all bosses pooled, pick a raid boss to see how that fight is played, or pick **Mythic+: bosses** or **Mythic+: trash pulls (AoE)** for keys. A trash pack or an add fight is played differently from a single target boss.
 2. Read the three columns left to right:
    - **Opener**: the presses most top players make at the pull, in their usual order.
-   - **Priority**: one numbered list. Procs come first ("When Hot Streak! is up"), with the press that gives them, then spells pressed on cooldown, spenders, the other core presses, and filler last.
+   - **Priority**: one numbered list, ordered by how quickly top players press each spell once it's ready (its cooldown back, or its proc up), quickest first. Then spenders and the other core presses, by what one press of each is worth, and filler last. A spell that spends a proc says so on its row ("When Hot Streak! is up"), with the press that gives it.
    - **When to use CDs**: when each long cooldown is first used, how often, and what it is pressed together with.
 3. Hover any icon for the spell's tooltip and a line on how top players use it.
 
@@ -176,7 +176,7 @@ The priorities are read from the combat logs of top-parsing raid kills on Warcra
 - **Filler** is what gets pressed back to back and does clearly less per press than the rest of the rotation.
 - **Potions, trinkets and racials** are folded into a single note rather than named, since they change every tier.
 - **Mythic+** runs log no talents, so a run's hero talents are worked out from the hero talent spells the player cast. Each pull's damage is estimated from the run's damage per press.
-- **The priority order** is an order to learn the spec by: procs first, then cooldowns, spenders and filler. Logs show what top players press and how often, not every condition behind it.
+- **The priority order** is an order to learn the spec by. Logs show when top players press each spell, not when it came off cooldown, so how quickly they press it once ready is measured from the gaps between presses (for cooldowns) and from when a proc appears until it's spent. A short cooldown with charges looks like any button pressed often, so a few spells confirmed by players (Hammer of Wrath) are put first by hand. It shows what top players press and how fast, not every condition behind it.
 - Rotations change with patches, not day to day, so this data is refreshed about once a month or after a patch rather than with every release. The window shows the patch and date it was read on.
 
 **It won't increase your DPS by itself.** It is a guide to how your class works and what takes priority in the rotation, not a "press this now" helper. It reads nothing about the fight you are in.

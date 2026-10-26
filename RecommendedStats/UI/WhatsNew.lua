@@ -64,6 +64,15 @@ local ANNOUNCEMENTS = {
             "The opener and when to use cooldowns stay in their own columns. Type /rs priorities (or /rs rotation) to open it.",
         },
     },
+    {
+        id = "2026-10-26-priority-order",
+        title = "What's New in RecommendedStats",
+        lines = {
+            "Priorities are now ordered by how quickly top players press each spell once it's ready, so a spell they press the moment it comes back (Hammer of Wrath, for example) sits at the top instead of low down.",
+            "Each spell says how fast top players press it once it's ready, and a proc is shown on the spell that spends it.",
+            "After those come spenders and the rest, by what one press of each is worth. Filler stays last.",
+        },
+    },
 }
 
 local function LatestAnnouncement()

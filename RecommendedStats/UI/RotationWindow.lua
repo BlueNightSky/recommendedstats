@@ -301,7 +301,61 @@ end
 -- players press and how often, not why, so this is an order to learn the spec by, not a sim.
 local KIND_ORDER = { cooldown = 1, spender = 2, proc = 3 }
 
--- The Priority column: one numbered list, each spell once.
+-- "Pressed the moment it's ready" or "Pressed about 2 sec after it's ready", from e.wait.
+local function ReadyText(e)
+    if not e.wait then return nil end
+    if e.wait <= 1 then return L.ROTATION_READY_NOW end
+    return L.ROTATION_READY_WAIT:format(Duration(e.wait))
+end
+
+-- The Priority column when the data measured how fast each spell is pressed once ready (e.wait,
+-- 2026-10-26): the core presses in the data's order (quickest once ready first, then spenders, then
+-- the rest), each with the proc it spends folded into its own row. Procs spent by something
+-- outside the core (a filler) follow, then the filler.
+local function RenderRanked(col, tree, isCd, Row)
+    local procOf = {}
+    for _, p in ipairs(tree.procs or {}) do
+        if p.by and not procOf[p.by] then procOf[p.by] = p end
+    end
+    local function ProcDetails(p, details)
+        local buffName = SpellName(p.buff, tree)
+        local when = L.ROTATION_PRIO_PROC:format(buffName)
+        if p.stacks then when = when .. " " .. L.ROTATION_PRIO_STACKS:format(p.stacks) end
+        details[#details + 1] = { when, GOLD }
+        local fromNames = {}
+        for _, id in ipairs(p.from or {}) do fromNames[#fromNames + 1] = SpellName(id, tree) end
+        details[#details + 1] = { (#fromNames > 0)
+            and L.ROTATION_PROC_FROM:format(buffName, table.concat(fromNames, L.ROTATION_AND))
+            or L.ROTATION_PROC_RANDOM:format(buffName), SOFT }
+    end
+    for _, e in ipairs(tree.core or {}) do
+        if e.id and not isCd[e.id] then
+            local details, tips = {}, { Shares(e, tree) }
+            local p = procOf[e.id]
+            if p then
+                ProcDetails(p, details)
+                tips[#tips + 1] = L.ROTATION_TIP_BUFF:format(p.up or 0, p.perFight or 0)
+            end
+            local how = (not p or e.kind ~= "proc") and CoreHow(e, tree) or nil
+            if how then details[#details + 1] = { how, SOFT } end
+            local ready = ReadyText(e)
+            if ready then details[#details + 1] = { ready, SOFT } end
+            details[#details + 1] = { Shares(e, tree) }
+            Row(e.id, details, tips)
+        end
+    end
+    -- Row skips a spell already in the list.
+    for _, p in ipairs(tree.procs or {}) do
+        if p.by and not isCd[p.by] then
+            local details = {}
+            ProcDetails(p, details)
+            Row(p.by, details, { L.ROTATION_TIP_BUFF:format(p.up or 0, p.perFight or 0) })
+        end
+    end
+end
+
+-- The Priority column: one numbered list, each spell once. With measured waits, RenderRanked;
+-- older data (no waits):
 --   1. procs first, as the press that spends them ("When Hot Streak! is up"), since a wasted proc
 --      is the most common mistake
 --   2. the core presses by KIND_ORDER, in the data's order within a kind
@@ -315,9 +369,25 @@ local function RenderPriority(col, tree)
     local coreBy = {}
     for _, e in ipairs(tree.core or {}) do coreBy[e.id] = e end
     local function Row(id, details, tips)
+        if shown[id] then return end
         n = n + 1
         shown[id] = true
         y = SpellRow(col.x, y, col.width, id, tree, ("%d. %s"):format(n, SpellName(id, tree)), details, tips)
+    end
+
+    local ranked = false
+    for _, e in ipairs(tree.core or {}) do
+        if e.wait then ranked = true break end
+    end
+    if ranked then
+        RenderRanked(col, tree, isCd, Row)
+        for _, e in ipairs(tree.filler or {}) do
+            if e.id and not shown[e.id] then
+                Row(e.id, { { L.ROTATION_PRIO_FILLER, SOFT }, { Shares(e, tree) } }, { Shares(e, tree) })
+            end
+        end
+        if n == 0 then return PlaceText(col.x, y, col.width, "GameFontHighlightSmall", L.ROTATION_FILLER_NONE, DIM) end
+        return y
     end
 
     for _, p in ipairs(tree.procs or {}) do
