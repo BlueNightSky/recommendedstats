@@ -1,4 +1,4 @@
--- GENERATED 2026-10-25 - do not hand-edit
+-- GENERATED 2026-10-26 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -9,7 +9,7 @@ RecommendedStatsData_Talents = {
                     0,
                     13,
                 },
-                ["pct"] = 80,
+                ["pct"] = 85,
             },
             {
                 ["split"] = {
@@ -18,14 +18,6 @@ RecommendedStatsData_Talents = {
                     14,
                 },
                 ["pct"] = 15,
-            },
-            {
-                ["split"] = {
-                    45,
-                    0,
-                    16,
-                },
-                ["pct"] = 5,
             },
         },
         ["median"] = {
@@ -43,7 +35,7 @@ RecommendedStatsData_Talents = {
                     44,
                     17,
                 },
-                ["pct"] = 60,
+                ["pct"] = 65,
             },
             {
                 ["split"] = {
@@ -51,7 +43,7 @@ RecommendedStatsData_Talents = {
                     47,
                     14,
                 },
-                ["pct"] = 40,
+                ["pct"] = 35,
             },
         },
         ["median"] = {
@@ -160,16 +152,16 @@ RecommendedStatsData_Talents = {
             {
                 ["split"] = {
                     7,
-                    45,
-                    9,
+                    48,
+                    6,
                 },
-                ["pct"] = 20,
+                ["pct"] = 15,
             },
             {
                 ["split"] = {
                     7,
-                    48,
-                    6,
+                    45,
+                    9,
                 },
                 ["pct"] = 15,
             },
@@ -233,7 +225,7 @@ RecommendedStatsData_Talents = {
                     48,
                     11,
                 },
-                ["pct"] = 55,
+                ["pct"] = 50,
             },
             {
                 ["split"] = {
@@ -241,7 +233,7 @@ RecommendedStatsData_Talents = {
                     40,
                     21,
                 },
-                ["pct"] = 15,
+                ["pct"] = 20,
             },
             {
                 ["split"] = {
@@ -301,7 +293,15 @@ RecommendedStatsData_Talents = {
                     11,
                     5,
                 },
-                ["pct"] = 65,
+                ["pct"] = 60,
+            },
+            {
+                ["split"] = {
+                    48,
+                    0,
+                    13,
+                },
+                ["pct"] = 10,
             },
             {
                 ["split"] = {
@@ -310,14 +310,6 @@ RecommendedStatsData_Talents = {
                     5,
                 },
                 ["pct"] = 10,
-            },
-            {
-                ["split"] = {
-                    41,
-                    7,
-                    13,
-                },
-                ["pct"] = 5,
             },
         },
         ["median"] = {
@@ -339,17 +331,17 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    10,
+                    0,
                     40,
-                    11,
+                    21,
                 },
-                ["pct"] = 5,
+                ["pct"] = 10,
             },
             {
                 ["split"] = {
-                    0,
-                    33,
-                    28,
+                    10,
+                    40,
+                    11,
                 },
                 ["pct"] = 5,
             },
@@ -369,7 +361,7 @@ RecommendedStatsData_Talents = {
                     11,
                     45,
                 },
-                ["pct"] = 75,
+                ["pct"] = 80,
             },
             {
                 ["split"] = {
@@ -377,7 +369,7 @@ RecommendedStatsData_Talents = {
                     8,
                     48,
                 },
-                ["pct"] = 25,
+                ["pct"] = 20,
             },
         },
         ["median"] = {
@@ -395,7 +387,7 @@ RecommendedStatsData_Talents = {
                     30,
                     0,
                 },
-                ["pct"] = 40,
+                ["pct"] = 45,
             },
             {
                 ["split"] = {
@@ -403,7 +395,7 @@ RecommendedStatsData_Talents = {
                     20,
                     0,
                 },
-                ["pct"] = 30,
+                ["pct"] = 35,
             },
             {
                 ["split"] = {
@@ -411,7 +403,7 @@ RecommendedStatsData_Talents = {
                     19,
                     0,
                 },
-                ["pct"] = 30,
+                ["pct"] = 20,
             },
         },
         ["median"] = {
@@ -447,7 +439,7 @@ RecommendedStatsData_Talents = {
                     0,
                     47,
                 },
-                ["pct"] = 75,
+                ["pct"] = 80,
             },
             {
                 ["split"] = {
@@ -455,7 +447,7 @@ RecommendedStatsData_Talents = {
                     0,
                     48,
                 },
-                ["pct"] = 15,
+                ["pct"] = 10,
             },
             {
                 ["split"] = {
@@ -653,7 +645,7 @@ RecommendedStatsData_Talents = {
                     0,
                     21,
                 },
-                ["pct"] = 45,
+                ["pct"] = 55,
             },
             {
                 ["split"] = {
@@ -669,11 +661,11 @@ RecommendedStatsData_Talents = {
                     0,
                     23,
                 },
-                ["pct"] = 25,
+                ["pct"] = 20,
             },
         },
         ["median"] = {
-            39,
+            40,
             0,
             21,
         },
