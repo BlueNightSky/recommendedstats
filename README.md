@@ -2,6 +2,8 @@
 
 A World of Warcraft addon that shows your secondary stats (Haste, Critical Strike, Mastery, Versatility) against targets pulled from top players for your class and spec, plus a best-in-slot gear list, the talent builds top players run for every boss and dungeon, and a rotation guide read from what those players actually press, right on the character screen.
 
+**New here?** The [wiki](wiki/Home.md) explains every feature step by step (also on the [website](https://ctrlshiftzed.com/wiki/recommended-stats/)). Questions it doesn't answer: ask on [Discord](https://discord.gg/wz7fw6jM9Z).
+
 ![Recommended Stats panel for a Restoration Druid, Mythic+, with the Stats, BiS, Talents and Rotation tabs](docs/druid_default_skin.png)
 
 ## Game versions
