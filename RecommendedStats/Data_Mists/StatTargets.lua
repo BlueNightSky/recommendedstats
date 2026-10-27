@@ -1,4 +1,4 @@
--- GENERATED 2026-10-26 - do not hand-edit
+-- GENERATED 2026-10-27 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -109,16 +109,16 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 12008,
         ["crit"] = 19512,
         ["critHigh"] = 21102,
-        ["mastery"] = 2731,
+        ["mastery"] = 2681,
         ["masteryHigh"] = 6308,
     },
     ["MONK_MISTWEAVER_RAID"] = {
-        ["haste"] = 7242,
+        ["haste"] = 6694,
         ["hasteHigh"] = 12132,
         ["crit"] = 16320,
         ["critHigh"] = 18231,
-        ["mastery"] = 8433,
-        ["masteryHigh"] = 11281,
+        ["mastery"] = 8823,
+        ["masteryHigh"] = 12349,
     },
     ["MONK_WINDWALKER_RAID"] = {
         ["haste"] = 11579,
@@ -233,19 +233,19 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 21678,
     },
     ["WARLOCK_DEMONOLOGY_RAID"] = {
-        ["haste"] = 15019,
-        ["hasteHigh"] = 17996,
+        ["haste"] = 14935,
+        ["hasteHigh"] = 15794,
         ["crit"] = 4238,
         ["critHigh"] = 4993,
-        ["mastery"] = 17393,
-        ["masteryHigh"] = 19360,
+        ["mastery"] = 17535,
+        ["masteryHigh"] = 19543,
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
         ["haste"] = 10281,
         ["hasteHigh"] = 12420,
         ["crit"] = 7167,
-        ["critHigh"] = 9106,
-        ["mastery"] = 19644,
+        ["critHigh"] = 8865,
+        ["mastery"] = 19614,
         ["masteryHigh"] = 21497,
     },
     ["WARRIOR_ARMS_RAID"] = {
